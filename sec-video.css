@@ -1,0 +1,42 @@
+
+.vidsec{position:relative;flex-shrink:0;display:flex;flex-direction:column;
+  align-items:center;gap:40px;padding:80px 100px;background-color:#222A30}
+.vidsec *{box-sizing:border-box;margin:0;padding:0}
+
+.vidsec .vd-head{display:flex;flex-direction:column;align-items:center;gap:16px;
+  text-align:center}
+
+.vidsec .vd-eb{display:flex;align-items:center;gap:10px;
+  font:500 14px/21px "Heebo",sans-serif;letter-spacing:1px;color:#fff}
+.vidsec .vd-eb i{width:5px;height:5px;border-radius:999px;background-color:#fff;
+  flex:0 0 auto}
+.vidsec h2{color:#fff;text-wrap:balance}
+
+@media (max-width:767.98px){ .vidsec h2{font-size:28px;line-height:36px} }
+.vidsec.w600 h2{font-size:28px !important;line-height:36px !important}
+
+
+.vidsec .vd-frame{width:1356px;max-width:100%;padding:5px;border-radius:16px;
+  background-color:rgba(255,255,255,.45);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.95), 0 0 0 .5px rgba(33,33,33,.08)}
+.vidsec .vd-box{position:relative;width:100%;aspect-ratio:1346 / 757;
+  overflow:hidden;border-radius:12px;background-color:#071620}
+.vidsec .vd-box iframe{position:absolute;inset:0;width:100%;height:100%;border:0;
+  background-color:#071620}
+
+.vidsec .vd-poster{position:absolute;inset:0;display:flex;align-items:center;
+  justify-content:center;background-color:#071620;
+  background-image:radial-gradient(rgba(255,255,255,.78) 1.1px,transparent 1.5px),
+    radial-gradient(ellipse 520px 300px at 50% 50%,rgba(0,131,161,.32) 0%,rgba(7,22,32,0) 100%);
+  background-size:48px 48px, 100% 100%;background-position:15.5px 2.8px, 0 0}
+.vidsec .vd-poster::before{content:"";position:absolute;inset:0;
+  background-color:rgba(7,22,32,.78)}
+.vidsec .vd-poster .dnb-btn{position:relative}
+.vidsec .vd-note{font:400 13px/19px "Heebo",sans-serif;color:#64727C}
+
+@media (max-width:1100px){ .vidsec{padding:64px 40px;gap:32px} }
+@media (max-width:600px){ .vidsec{padding:56px 20px;gap:24px}
+  .vidsec .vd-frame{padding:4px;border-radius:12px} }
+
+.vidsec.w600{padding:56px 20px;gap:24px}
+.vidsec.w600 .vd-frame{padding:4px;border-radius:12px}

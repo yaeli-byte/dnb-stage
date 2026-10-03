@@ -1,0 +1,14 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame 2147225651" clip-path="url(#clip0_564_24891)">
+<circle id="Ellipse 2" cx="8" cy="8" r="8" fill="#9EEDFA"/>
+<g id="Group 2147225523">
+<line id="Line 1" x1="8" y1="5.5" x2="8" y2="10.5" stroke="#848484"/>
+<line id="Line 2" x1="5.5" y1="8" x2="10.5" y2="8" stroke="#848484"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_564_24891">
+<rect width="16" height="16" fill="white"/>
+</clipPath>
+</defs>
+</svg>

@@ -1,0 +1,21 @@
+<!DOCTYPE html><html lang="he" dir="rtl"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex, nofollow, noarchive">
+<title>D&amp;B — מובייל 390</title>
+<style>
+html,body{margin:0;height:100%;background:#e9edf0;font-family:system-ui,sans-serif}
+.pane{height:100%;display:flex;align-items:flex-start;justify-content:center;padding:16px 0}
+iframe{width:390px;height:calc(100vh - 32px);border:0;background:#fff;
+  box-shadow:0 2px 18px rgba(11,22,32,.14);border-radius:14px}
+@media(max-width:480px){.pane{padding:0}iframe{width:100vw;height:100vh;border-radius:0;box-shadow:none}}
+</style></head><body><div class="pane"><iframe id="f"></iframe></div>
+<script>
+var sep={'family-a1.html':1,'family-a3.html':1,'family-b.html':1,'product.html':1};
+/* ⚠ a page missing from this list silently framed the LOBBY instead — the two
+   option boards added 29/09 did exactly that, and a wrong page shown without
+   complaint is worse than a 404. The list is DERIVED from the page table now,
+   so a new page cannot be forgotten. */
+var ok={'menu.html':1,'lobby.html':1,'ind-a.html':1,'ind-b.html':1,'menu-depth.html':1,'family-layouts.html':1,'sol-tabs-mobile.html':1,'family-process-mobile.html':1};
+var p=new URLSearchParams(location.search).get('p');
+document.getElementById('f').src = sep[p] ? p.replace('.html','-m.html')
+                                 : (ok[p] ? p : 'lobby.html');
+</script></body></html>

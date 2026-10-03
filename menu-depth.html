@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>D&B — התפריט, חמש אפשרויות למבנה</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500&family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+<style>
+
+*{box-sizing:border-box}
+:root{
+  --head:Heebo,sans-serif; --num:'Space Grotesk',monospace;
+  --teal:#0083A1; --teal-2:#5CCDE7; --teal-3:#9EEDFA; --teal-4:#80E7FF;
+  --black-teal:#071620; --ink:#000; --ink-2:#26333d; --ink-3:#51606b; --ink-4:#64727c;
+  --surface:#FCFDFE; --surface-1:#F8FAFC; --surface-2:#F6F8FA; --surface-3:#F3F5F7;
+  --hair:rgba(33,33,33,.1); --hair-w:.957px;
+  --e:cubic-bezier(.19,1,.22,1);
+}
+html,body{margin:0;padding:0;background:#e9edf0}
+body{font-family:var(--head);color:var(--ink-2)}
+
+
+#bar{position:sticky;inset-block-start:0;z-index:9999;display:flex;gap:10px;flex-wrap:wrap;
+  align-items:center;padding:10px 16px;background:#0b1620;color:#fff;font:500 12.5px/1.2 var(--head)}
+#bar b{font-weight:500;opacity:.62;margin-inline-end:6px}
+#bar a{color:#fff;text-decoration:none;padding:7px 13px;border-radius:999px;
+  background:rgba(255,255,255,.1);transition:background .16s}
+#bar a:hover{background:rgba(255,255,255,.2)}
+#bar a.on{background:var(--teal-4);color:#0b1620}
+#bar .hint{opacity:.5;margin-inline-start:auto;font-weight:400}
+.stage{padding:18px 0 60px}
+.wrap{width:1440px;margin:0 auto 46px}
+.plate{width:1440px;background:var(--surface);position:relative;overflow:hidden;
+  box-shadow:0 1px 3px rgba(11,22,32,.1)}
+.cap{background:#0b1620;color:#fff;font:500 11.5px/1.35 var(--head);letter-spacing:.4px;
+  padding:9px 16px;display:flex;gap:14px;align-items:baseline;flex-wrap:wrap}
+.cap b{font-weight:500}
+.cap span{font-weight:400;opacity:.62}
+.cap .tag{margin-inline-start:auto;background:rgba(255,255,255,.12);
+  padding:3px 10px;border-radius:999px;opacity:1;font-weight:500}
+
+
+.hdr{position:relative;z-index:40;height:79.67px;display:flex;align-items:center;
+  padding:22px 43px 14px 44px;background:var(--surface)}
+.hdr .logo{display:flex;align-items:center;flex:0 0 auto;order:3}
+.hdr .logo img{width:164.33px;height:26px;display:block;flex:0 0 auto}
+.hdr nav{display:flex;align-items:center;justify-content:center;gap:30px;order:2;flex:1 1 auto}
+.hdr nav a{position:relative;display:flex;align-items:center;gap:6px;text-decoration:none;
+  font:500 15px/22.5px var(--head);color:var(--ink-2);white-space:nowrap}
+.hdr nav a::after{content:"";position:absolute;right:-13px;top:50%;width:5px;height:5px;
+  border-radius:50%;background:var(--teal);transform:translateY(-50%) scale(0);transition:transform .2s var(--e)}
+.hdr nav a .cv{width:9px;height:9px;flex:0 0 auto;transition:transform .2s var(--e)}
+.hdr nav a:hover{color:var(--teal)}
+.hdr nav a.open{color:var(--teal)}
+.hdr nav a.open::after{transform:translateY(-50%) scale(1)}
+.hdr nav a.open .cv{transform:rotate(180deg)}
+.hdr .right{display:flex;align-items:center;gap:20px;order:1}
+.hdr .login{font:500 15px/22.5px var(--head);color:var(--ink-3);text-decoration:none}
+.btn{position:relative;display:inline-flex;align-items:center;height:43.67px;border-radius:11px;
+  background:var(--teal-4);box-shadow:inset 0 0 0 1px #282834;text-decoration:none;
+  padding:0 15.04px 0 7.86px;gap:8.19px}
+.btn .badge{width:22.8px;height:27.08px;border-radius:8.55px;background:#283032;
+  display:grid;place-items:center;flex:0 0 auto}
+.btn .badge img{width:8px;height:12.5px}
+.btn .lbl{font:500 13.3px/19.91px var(--head);letter-spacing:-.1px;color:#283032;min-width:51.143px;text-align:center}
+
+
+.body{height:300px;background:var(--surface-3);position:relative}
+.menu{position:absolute;inset-inline:0;inset-block-start:79.67px;z-index:30;
+  background:var(--surface);border-block-end:var(--hair-w) solid var(--hair);
+  box-shadow:0 18px 40px -20px rgba(7,22,32,.28)}
+.scrim{position:absolute;inset:79.67px 0 0;z-index:20;background:rgba(3,12,20,.28)}
+.arw{width:14px;height:14px;flex:0 0 auto;background:currentColor;
+  -webkit-mask:url(fig/arrow-dots.svg) center/contain no-repeat;
+          mask:url(fig/arrow-dots.svg) center/contain no-repeat}
+
+
+.feat{flex:0 0 288px;align-self:flex-start;margin:36px 0 44px;padding:20px;
+  border-radius:12px;background:linear-gradient(148.339deg,#F6F8FA 16.208%,#F3F5F7 96.765%);
+  box-shadow:inset 0 0 0 var(--hair-w) var(--hair)}
+.feat .art{height:138px;border-radius:12px;overflow:hidden;position:relative;
+  background:linear-gradient(147.349deg,#015A70 22.782%,#004657 101.15%)}
+.feat .art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.5}
+.feat h3{margin:20px 0 9px;font:400 20px/27.2px var(--head);color:var(--ink-2)}
+.feat p{margin:0 0 18px;font:400 14px/21px var(--head);color:var(--ink-3)}
+.feat .more{font:500 14px/21px var(--head);color:var(--teal);text-decoration:none;
+  display:inline-flex;align-items:center;gap:8px}
+
+
+.cnt{font:300 13px/1 var(--num);color:var(--teal);background:rgba(0,131,161,.08);
+  padding:4px 8px;border-radius:999px;flex:0 0 auto}
+.anchormark{font:400 12px/16px var(--head);color:var(--ink-4);
+  display:inline-flex;align-items:center;gap:5px}
+.anchormark::before{content:"#";color:var(--teal-2);font-weight:500}
+
+
+#o1 .in{display:flex;direction:rtl;padding:0 43px 0 44px;gap:44px}
+#o1 .feat{margin-inline-end:0}
+#o1 .cols{border-inline-start:var(--hair-w) solid var(--hair);padding-inline-start:0}
+#o1 .cols{flex:1 1 auto;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:22px;padding:36px 0 44px}
+#o1 .mcol h4{margin:0 0 6px;font:500 15px/21px var(--head);color:var(--ink-2)}
+#o1 .mcol .meta{display:flex;align-items:center;gap:8px;margin-bottom:13px}
+#o1 .mcol ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+#o1 .mcol a{font:400 14px/19px var(--head);color:var(--ink-3);text-decoration:none}
+#o1 .mcol a:hover{color:var(--teal)}
+#o1 .mcol .all{margin-top:14px;padding-top:12px;border-top:var(--hair-w) solid var(--hair);
+  font:500 13.3px/19px var(--head);color:var(--teal);display:inline-flex;align-items:center;gap:7px;text-decoration:none}
+#o1 .mcol .note{margin-top:14px;padding-top:12px;border-top:var(--hair-w) solid var(--hair);
+  font:400 12px/17px var(--head);color:var(--ink-4)}
+
+
+#o2 .in{display:flex;direction:rtl;min-height:326px}
+#o2 .rail{flex:0 0 302px;padding:26px 43px 26px 0;border-inline-end:var(--hair-w) solid var(--hair)}
+#o2 .rail button{width:100%;display:flex;align-items:center;gap:12px;background:none;border:0;
+  padding:13px 14px;border-radius:10px;cursor:pointer;text-align:start;font:500 15px/22px var(--head);
+  color:var(--ink-2);transition:background .16s}
+#o2 .rail button .sq{width:32px;height:32px;border-radius:9px;background:var(--teal-3);
+  display:grid;place-items:center;flex:0 0 auto}
+#o2 .rail button .sq i{width:18px;height:18px;background:#283032}
+#o2 .rail button[aria-selected="true"]{background:var(--surface-2)}
+#o2 .rail button .cnt{margin-inline-start:auto}
+#o2 .pane{flex:1 1 auto;padding:34px 44px 38px 44px;display:none}
+#o2 .pane.on{display:block}
+#o2 .pane h3{margin:0 0 6px;font:400 24px/31.2px var(--head);color:var(--ink-2)}
+#o2 .pane p.lede{margin:0 0 24px;font:400 15px/22.5px var(--head);color:var(--ink-3);max-width:58ch}
+#o2 .pane .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 32px;max-width:640px}
+#o2 .pane .grid a{font:400 15px/22px var(--head);color:var(--ink-3);text-decoration:none;
+  padding:9px 0;border-bottom:var(--hair-w) solid var(--hair)}
+#o2 .pane .grid a:hover{color:var(--teal)}
+#o2 .pane .chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+#o2 .pane .chips a{font:400 14px/19px var(--head);color:var(--ink-2);text-decoration:none;
+  padding:8px 13px;border-radius:999px;background:var(--surface-2);
+  box-shadow:inset 0 0 0 var(--hair-w) var(--hair)}
+#o2 .pane .cta{margin-top:26px;display:inline-flex;align-items:center;gap:8px;
+  font:500 14px/21px var(--head);color:var(--teal);text-decoration:none}
+
+
+#o3 .in{padding:20px 43px 26px 44px;max-width:920px;margin-inline-start:0}
+#o3 .row{border-bottom:var(--hair-w) solid var(--hair)}
+#o3 .row:last-child{border-bottom:0}
+#o3 .head{width:100%;display:flex;align-items:center;gap:14px;background:none;border:0;
+  padding:18px 4px;cursor:pointer;text-align:start;font:400 20px/27.2px var(--head);color:var(--ink-2)}
+#o3 .head .sq{width:36px;height:36px;border-radius:10px;background:var(--teal-3);
+  display:grid;place-items:center;flex:0 0 auto}
+#o3 .head .sq i{width:20px;height:20px;background:#283032}
+#o3 .head .cv{margin-inline-start:auto;width:10px;height:10px;flex:0 0 auto;
+  transition:transform .22s var(--e);background:var(--ink-4);
+  -webkit-mask:url(fig/nav-caret.svg) center/contain no-repeat;
+          mask:url(fig/nav-caret.svg) center/contain no-repeat}
+#o3 .row.open .cv{transform:rotate(180deg)}
+#o3 .row.direct .head{cursor:default}
+#o3 .row .inline{display:flex;gap:8px;margin-inline-start:auto;align-items:center;flex-wrap:wrap}
+#o3 .row .inline a{font:400 13.3px/19px var(--head);color:var(--ink-3);text-decoration:none;
+  padding:6px 11px;border-radius:999px;background:var(--surface-2);
+  box-shadow:inset 0 0 0 var(--hair-w) var(--hair)}
+#o3 .kids{display:grid;grid-template-rows:0fr;transition:grid-template-rows .3s var(--e)}
+#o3 .row.open .kids{grid-template-rows:1fr}
+#o3 .kids > div{overflow:hidden;min-height:0}
+#o3 .kids ul{list-style:none;margin:0;padding:0 54px 18px;display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 32px}
+#o3 .kids a{font:400 15px/22px var(--head);color:var(--ink-3);text-decoration:none;display:block;padding:6px 0}
+#o3 .kids a:hover{color:var(--teal)}
+
+
+#o4 .in{display:flex;direction:rtl;padding:32px 43px 40px 44px;gap:48px}
+#o4 .index{flex:1 1 auto;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px 28px}
+#o4 .index a{display:flex;flex-direction:column;gap:3px;padding:10px 0;text-decoration:none;
+  border-bottom:var(--hair-w) solid var(--hair)}
+#o4 .index a .t{font:400 15px/22px var(--head);color:var(--ink-2)}
+#o4 .index a .f{font:500 11.5px/16px var(--head);letter-spacing:.4px;color:var(--ink-4)}
+#o4 .index a:hover .t{color:var(--teal)}
+#o4 .side{flex:0 0 232px;align-self:flex-start}
+#o4 .side h4{margin:0 0 12px;font:500 13.3px/19px var(--head);letter-spacing:.5px;color:var(--ink-4)}
+#o4 .side a{display:flex;align-items:center;gap:10px;padding:9px 0;text-decoration:none;
+  font:400 14px/21px var(--head);color:var(--ink-3)}
+#o4 .side a:hover{color:var(--teal)}
+#o4 .side a .cnt{margin-inline-start:auto}
+
+
+#o5 .in{display:flex;direction:rtl;padding:30px 43px 36px 44px;gap:0}
+#o5 .lobbies{flex:1 1 auto;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;
+  padding-inline-end:0;padding-inline-start:34px}
+#o5 .lcard{display:block;text-decoration:none;color:inherit;border-radius:12px;padding:16px;
+  background:linear-gradient(148.339deg,#F6F8FA 16.208%,#F3F5F7 96.765%);
+  box-shadow:inset 0 0 0 var(--hair-w) var(--hair);transition:box-shadow .2s var(--e)}
+#o5 .lcard:hover{box-shadow:inset 0 0 0 var(--hair-w) var(--hair),0 2px 8px -4px rgba(11,46,56,.1)}
+#o5 .lcard .top{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+#o5 .lcard .sq{width:36px;height:36px;border-radius:10px;background:var(--teal-3);
+  display:grid;place-items:center;flex:0 0 auto}
+#o5 .lcard .sq i{width:20px;height:20px;background:#283032}
+#o5 .lcard h4{margin:0;font:500 15px/21px var(--head);color:var(--ink-2)}
+#o5 .lcard p{margin:0 0 14px;font:400 13.3px/19px var(--head);color:var(--ink-4)}
+#o5 .lcard .go{font:500 13.3px/19px var(--head);color:var(--teal);
+  display:inline-flex;align-items:center;gap:7px}
+#o5 .inpage{flex:0 0 306px;border-inline-start:var(--hair-w) solid var(--hair);padding-inline-start:34px}
+#o5 .inpage .eb{display:flex;align-items:center;gap:8px;margin-bottom:14px;
+  font:500 13.3px/19px var(--head);letter-spacing:.5px;color:var(--teal)}
+#o5 .inpage .eb i{width:5px;height:5px;border-radius:50%;background:var(--teal)}
+#o5 .inpage h4{margin:0 0 4px;font:500 15px/21px var(--head);color:var(--ink-2)}
+#o5 .inpage .sub{margin:0 0 14px;font:400 12px/17px var(--head);color:var(--ink-4)}
+#o5 .inpage ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+#o5 .inpage a{font:400 14px/21px var(--head);color:var(--ink-3);text-decoration:none;
+  display:flex;align-items:center;gap:7px}
+#o5 .inpage a:hover{color:var(--teal)}
+</style>
+<link rel="stylesheet" href="no-review-notes.css?v=1790850214">
+</head>
+<body>
+<div id="bar">
+  <b>אפשרות:</b>
+  <a href="?opt=1" data-o="1">1 · מונה</a>
+  <a href="?opt=2" data-o="2">2 · שתי רמות</a>
+  <a href="?opt=3" data-o="3">3 · יעד ראשון</a>
+  <a href="?opt=4" data-o="4">4 · לפי צורך</a>
+  <a href="?opt=5" data-o="5">5 · מפוצל</a>
+  <a href="?opt=all" data-o="all">כולן</a>
+  <span class="hint">הכלל: פחות מ-3 פתרונות ⇠ סקשנים בעמוד המשפחה · 3 ומעלה ⇠ עמוד לובי</span>
+</div>
+<div class="stage" id="stage"></div>
+
+<script>
+
+const FAM = [
+  {name:'ניהול סיכונים', ico:'fig/dotted/dot-alert-triangle.svg',
+   lede:'לדעת מה מצבם של הלקוחות והספקים שלכם לפני שמחליטים.',
+   items:['תמונת מצב פיננסית','ניהול סיכונים פיננסיים','סיכוני ספקים','בקרה וטיוב רגולטיבי']},
+  {name:'אשראי צרכני', ico:'fig/dotted/dot-gauge-marker.svg',
+   lede:'בדיקה, ניטור ובקרה של אשראי ללקוחות פרטיים.',
+   items:['בדיקות אשראי','ניטור ובקרת אשראי','פתרונות מותאמים לבחינת אשראי']},
+  {name:'צמיחה עסקית', ico:'fig/bico/trendup.svg',
+   lede:'למצוא את הלקוחות הבאים, ולהגדיל את הקיימים.',
+   items:['שיווק ומכירות','הזדמנויות עסקיות']},
+  {name:'ניהול דאטה ו-AI', ico:'fig/dotted/dot-harddrives.svg',
+   lede:'דאטה נקייה שנכנסת ישר למערכות שלכם.',
+   items:['Master Data','API','AI']},
+  {name:'פתרונות נוספים מבית D&B', ico:'fig/dotted/dot-building.svg',
+   lede:'הפלטפורמות הנוספות של D&B ישראל.',
+   items:['קפטן קרדיט','קפטן קרדיט לעסקים','duns 100',"Dun's Guide"]},
+];
+
+const isLobby = f => f.items.length >= 3;
+
+const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');
+const mask = u => `style="-webkit-mask-image:url(${u});mask-image:url(${u});` +
+  `-webkit-mask-size:contain;mask-size:contain;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;` +
+  `-webkit-mask-position:center;mask-position:center"`;
+
+const NAVITEMS = ['מרכז המידע','למה D&B?','פתרונות לפי תעשיות','מעטפת הפתרונות'];
+const header = () => `
+<header class="hdr">
+  <div class="right">
+    <a class="btn" href="#"><span class="badge"><img src="fig/btn-arrow.svg" alt=""></span><span class="lbl">צרו קשר</span></a>
+    <a class="login" href="#">התחברות</a>
+  </div>
+  <nav>
+    ${NAVITEMS.map(t=>`<a class="${t==='מעטפת הפתרונות'?'open':''}" href="#"><img class="cv" src="fig/nav-caret.svg" alt=""><span>${esc(t)}</span></a>`).join('')}
+    <a href="#"><span dir="ltr">D-U-N-S</span><span>מספר</span></a>
+  </nav>
+  <a class="logo" href="#"><img src="fig/logo-tagline.png" alt="dun &amp; bradstreet"></a>
+</header>`;
+
+const feat = `
+<div class="feat">
+  <div class="art"><img src="fig/sol-map.svg" alt=""></div>
+  <h3>לא בטוחים מה מתאים לכם?</h3>
+  <p>ענו על שלוש שאלות ונכוון אתכם למשפחת הפתרונות הנכונה.</p>
+  <a class="more" href="#">לכל הפתרונות <i class="arw"></i></a>
+</div>`;
+
+
+const O1 = `
+<div class="scrim"></div>
+<div class="menu" id="o1"><div class="in">
+  ${feat}
+  <div class="cols">${FAM.map(f=>`
+    <div class="mcol">
+      <h4>${esc(f.name)}</h4>
+      <div class="meta"><span class="cnt">${f.items.length} פתרונות</span></div>
+      <ul>${f.items.map(t=>`<li><a href="#">${esc(t)}</a></li>`).join('')}</ul>
+      ${isLobby(f)
+        ? `<a class="all" href="#">לכל ה${esc(f.name)} <i class="arw"></i></a>`
+        : `<p class="note">שני הפתרונות נמצאים בעמוד המשפחה עצמו.</p>`}
+    </div>`).join('')}
+  </div>
+</div></div>`;
+
+
+const O2 = `
+<div class="scrim"></div>
+<div class="menu" id="o2"><div class="in">
+  <div class="rail" role="tablist">${FAM.map((f,i)=>`
+    <button role="tab" data-i="${i}" aria-selected="${i===0}">
+      <span class="sq"><i ${mask(f.ico)}></i></span>
+      ${esc(f.name)}
+      <span class="cnt">${f.items.length}</span>
+    </button>`).join('')}
+  </div>
+  ${FAM.map((f,i)=>`
+  <div class="pane${i===0?' on':''}" data-i="${i}">
+    <h3>${esc(f.name)}</h3>
+    <p class="lede">${esc(f.lede)}</p>
+    ${isLobby(f)
+      ? `<div class="grid">${f.items.map(t=>`<a href="#">${esc(t)}</a>`).join('')}</div>
+         <a class="cta" href="#">לעמוד המשפחה <i class="arw"></i></a>`
+      : `<div class="chips">${f.items.map(t=>`<a href="#"><span class="anchormark">${esc(t)}</span></a>`).join('')}</div>
+         <a class="cta" href="#">לעמוד ${esc(f.name)} <i class="arw"></i></a>`}
+  </div>`).join('')}
+</div></div>`;
+
+
+const O3 = `
+<div class="scrim"></div>
+<div class="menu" id="o3"><div class="in">
+  ${FAM.map((f,i)=>`
+  <div class="row${isLobby(f)?'':' direct'}${i===0?' open':''}">
+    <button class="head" type="button">
+      <span class="sq"><i ${mask(f.ico)}></i></span>
+      ${esc(f.name)}
+      ${isLobby(f)
+        ? '<i class="cv"></i>'
+        : `<span class="inline">${f.items.map(t=>`<a href="#">${esc(t)}</a>`).join('')}</span>`}
+    </button>
+    ${isLobby(f) ? `<div class="kids"><div><ul>${
+      f.items.map(t=>`<li><a href="#">${esc(t)}</a></li>`).join('')}</ul></div></div>` : ''}
+  </div>`).join('')}
+</div></div>`;
+
+
+const O4 = `
+<div class="scrim"></div>
+<div class="menu" id="o4"><div class="in">
+  <div class="index">${FAM.flatMap(f=>f.items.map(t=>`
+    <a href="#"><span class="f">${esc(f.name)}</span><span class="t">${esc(t)}</span></a>`)).join('')}
+  </div>
+  <div class="side">
+    <h4>לפי משפחה</h4>
+    ${FAM.map(f=>`<a href="#">
+      ${esc(f.name)}<span class="cnt">${f.items.length}</span></a>`).join('')}
+  </div>
+</div></div>`;
+
+
+const O5 = `
+<div class="scrim"></div>
+<div class="menu" id="o5"><div class="in">
+  <div class="lobbies">${FAM.filter(isLobby).map(f=>`
+    <a class="lcard" href="#">
+      <span class="top"><span class="sq"><i ${mask(f.ico)}></i></span><h4>${esc(f.name)}</h4></span>
+      <p>${esc(f.lede)}</p>
+      <span class="go">${f.items.length} פתרונות <i class="arw"></i></span>
+    </a>`).join('')}
+  </div>
+  <div class="inpage">
+    <div class="eb"><i></i>בתוך עמוד המשפחה</div>
+    ${FAM.filter(f=>!isLobby(f)).map(f=>`
+      <h4>${esc(f.name)}</h4>
+      <p class="sub">שני הפתרונות הם סקשנים באותו עמוד — הקישור קופץ אליהם.</p>
+      <ul>${f.items.map(t=>`<li><a href="#"><span class="anchormark">${esc(t)}</span></a></li>`).join('')}</ul>`).join('')}
+  </div>
+</div></div>`;
+
+const OPTS = {
+  '1':['1 · מונה','המספר הוא האפשרות. כל משפחה מקבלת שבב-מונה, ומשפחה עם לובי מקבלת שורת ״לכל…״ בתחתית העמודה. משפחה עם שניים מקבלת במקומה משפט אחד.','הכי זול לבנות · הכי קרוב לקיים · ההבדל הוא שורה אחת, אולי לא מספיק ברור'],
+  '2':['2 · שתי רמות','התפריט הופך לדפדפן: רשימת המשפחות בצד הקריאה, והמשפחה הנבחרת נפרשת לידה. משפחה עם שניים מציגה תיאור ושני עוגנים במקום רשימה.','מקום לנשום לכל משפחה · מחייב קליק/הובר נוסף · הכי קרוב ל-maze'],
+  '3':['3 · יעד ראשון','כל שורה היא יעד. משפחה עם לובי מקבלת חץ ונפתחת במקום; משפחה עם שניים נכנסת ישר, ושני הסקשנים שלה מופיעים כשבבים בשורה עצמה.','אין קישור שאינו יעד · צר וקריא · פחות נראות לכלל 16 הפתרונות'],
+  '4':['4 · לפי צורך','בלי עמודות משפחה: שישה-עשר הפתרונות כאינדקס שטוח, כל אחד מתויג במשפחה שלו. המשפחות יורדות לסרגל צד והופכות לפילטר.','הקורא יודע את הבעיה, לא את הטקסונומיה · מוותר על ההיררכיה · הכי קרוב ל-lusha'],
+  '5':['5 · מפוצל','הכלל הוא הפריסה: ארבע משפחות-לובי ככרטיסים בצד הקריאה, ומעבר לקו — המשפחה שהפתרונות שלה הם סקשנים, עם קישור ישיר לכל סקשן.','הכי מפורש · מראה את המבנה כמו שהוא · יישבר אם היחס ישתנה (למשל 5 לובי ואפס סקשנים)'],
+};
+const MARK = {'1':O1,'2':O2,'3':O3,'4':O4,'5':O5};
+
+const q = new URLSearchParams(location.search);
+const pick = q.get('opt') || 'all';
+const show = pick === 'all' ? ['1','2','3','4','5'] : [pick];
+
+document.getElementById('stage').innerHTML = show.map(k => {
+  const [title, principle, cost] = OPTS[k];
+  return `<div class="wrap">
+    <div class="cap"><b>${title}</b><span>${principle}</span><span class="tag">${cost}</span></div>
+    <div class="plate">${header()}<div class="body">${MARK[k]}</div></div>
+  </div>`;
+}).join('');
+
+
+const fit = () => [].forEach.call(document.querySelectorAll('.plate'), pl => {
+  const m = pl.querySelector('.menu');
+  if (m) pl.querySelector('.body').style.height = (m.offsetHeight + 46) + 'px';
+});
+fit(); window.addEventListener('load', fit); setTimeout(fit, 400);
+
+[].forEach.call(document.querySelectorAll('#bar a'), a => {
+  if (a.dataset.o === pick) a.className = 'on';
+});
+
+
+[].forEach.call(document.querySelectorAll('#o2 .rail button'), b => {
+  const act = () => {
+    const root = b.closest('#o2');
+    [].forEach.call(root.querySelectorAll('.rail button'), x => x.setAttribute('aria-selected', x === b));
+    [].forEach.call(root.querySelectorAll('.pane'), p => p.classList.toggle('on', p.dataset.i === b.dataset.i));
+  };
+  b.addEventListener('mouseenter', act);
+  b.addEventListener('click', e => { e.preventDefault(); act(); });
+});
+
+
+[].forEach.call(document.querySelectorAll('#o3 .row:not(.direct) .head'), h => {
+  h.addEventListener('click', () => {
+    const row = h.closest('.row'), root = h.closest('#o3');
+    const was = row.classList.contains('open');
+    [].forEach.call(root.querySelectorAll('.row'), r => r.classList.remove('open'));
+    if (!was) row.classList.add('open');
+  });
+});
+</script>
+</body>
+</html>

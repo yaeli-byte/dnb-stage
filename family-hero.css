@@ -1,0 +1,35 @@
+
+.fam-hero{display:grid!important;grid-template-columns:minmax(0,560fr) minmax(0,624fr);
+  gap:56px;align-items:center;padding:48px 100px!important;
+  max-width:1440px;margin-inline:auto;box-sizing:border-box}
+
+.fam-hero > div:first-child{align-items:flex-start!important;text-align:right!important;
+  gap:24px!important}
+.fam-hero > div:first-child > div{align-items:flex-start!important}
+.fam-hero h1{font-size:48px!important;line-height:54px!important;max-width:none!important}
+.fam-hero > div:first-child p{max-width:none!important}
+
+
+.fam-hero .lobplate{width:auto!important;max-width:none!important;height:486px!important;
+  margin:0!important;background:transparent!important;overflow:visible!important;
+  border-radius:0!important}
+.fam-hero .lobplate > .lobshot{position:absolute;inset:auto;border-radius:0;
+  object-fit:contain;height:auto;display:block}
+.fam-hero .lobplate > .lobshot--port{top:0;right:0;width:624px;
+  border-radius:12px;box-shadow:0 2px 8px -4px rgba(11,46,56,.10)}
+
+.fam-hero .lobplate > .lobshot--hi{width:362px;left:-56px;top:126px;z-index:3}
+
+@media (max-width:1100px){
+  .fam-hero{grid-template-columns:minmax(0,1fr)!important;gap:32px}
+  .fam-hero .lobplate > .lobshot--hi{left:0}
+}
+
+@media (max-width:767.98px){
+  .fam-hero{grid-template-columns:minmax(0,1fr)!important;gap:28px;
+    padding:32px 20px!important}
+  .fam-hero h1{font-size:34px!important;line-height:37.4px!important}
+  .fam-hero .lobplate{height:250px!important}
+  .fam-hero .lobplate > .lobshot--port{width:100%}
+  .fam-hero .lobplate > .lobshot--hi{width:60%;left:0;top:64px}
+}

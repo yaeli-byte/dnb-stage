@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" data-motion="on">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>D&B — יבוא ויצוא (אפשרות ב׳)</title>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500&family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="sec-marks.css?v=1790856074">
+<link rel="stylesheet" href="ds/components.css?v=1790843651">
+<link rel="stylesheet" href="ind-shared.css?v=1790762765">
+<link rel="stylesheet" href="home-sections.css?v=1790859062">
+<style>
+
+
+
+
+.tasks{padding:24px 56px 80px;background:var(--paper)}
+.tasks .panel{background:var(--s-1);border-radius:16px;height:1059px;padding:62px 48px}
+.tasks .head{text-align:center;width:1232px;height:204px;margin:0 auto 48px}
+.tasks .head h2{font:400 56px/61.6px var(--head);color:var(--ink);margin-top:14px}
+.tasks .head p{font:400 20px/27.2px var(--head);color:var(--ink-2);margin-top:16px}
+
+.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;height:683px;direction:ltr}
+.tcard{direction:rtl}
+.tcard{background:#fff;border-radius:16px;padding:28px;display:flex;flex-direction:column;
+  box-shadow:var(--card-hair);text-decoration:none;color:inherit;
+  transition:box-shadow 200ms cubic-bezier(.4,0,.2,1)}
+.tcard:hover{box-shadow:var(--card-hair),0 2px 8px -4px rgba(11,46,56,.1)}
+.tcard .tile{width:64px;height:64px;border-radius:14px;background:var(--teal-lite);
+  display:grid;place-items:center;margin-inline-end:auto}
+
+.tcard .tile i{width:30px;height:30px;background:var(--teal);
+  -webkit-mask-size:92%!important;mask-size:92%!important;
+  -webkit-mask-size:contain;mask-size:contain;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;
+  -webkit-mask-position:center;mask-position:center}
+.tcard h3{font:400 24px/31.2px var(--head);color:var(--ink);margin-top:22px;text-align:start}
+.tcard p{font:400 16px/23px var(--head);color:var(--ink-3);margin-top:12px;text-align:start;flex:1}
+.tcard .foot{display:flex;flex-direction:row-reverse;align-items:center;justify-content:space-between;gap:16px;
+  margin-top:24px;padding-top:18px;border-top:1px solid var(--hair)}
+.tcard .go{width:40px;height:40px;border-radius:5.56px;background:rgba(255,255,255,.34);
+  box-shadow:inset 0 0 0 1px rgba(11,22,32,.13);display:grid;place-items:center;flex:0 0 auto}
+.tcard .go i{width:17px;height:17px;background:var(--ink);transform:rotate(180deg);
+  -webkit-mask:url(fig/arrow-dots.svg) center/contain no-repeat;
+          mask:url(fig/arrow-dots.svg) center/contain no-repeat}
+
+.tcard .pl{text-align:start}
+.tcard .pl span{display:block;font:400 13.3px/18px var(--head);color:var(--ink-3)}
+.tcard .pl b{display:block;font:500 15px/21px var(--head);color:var(--teal)}
+
+
+
+.case{padding:80px 0 80px}
+.case .head{text-align:center;height:99px;margin-bottom:40px}
+.case .head h2{font:400 56px/61.6px var(--head);color:var(--ink);margin-top:14px}
+
+
+.case .panel{border-radius:16px;overflow:hidden}
+.case .logos{display:grid;grid-template-columns:repeat(6,193px);gap:16px;margin-top:40px;
+  justify-content:space-between;direction:ltr}
+.case .logos li{direction:rtl}
+.case .logos li{list-style:none;height:80px;border-radius:10px;background:var(--s-1);
+  box-shadow:inset 0 0 0 1px var(--hair);display:grid;place-items:center;
+  font:400 13.3px/18px var(--head);color:var(--ink-3)}
+
+.case .logos li img{width:auto;height:34px;max-width:70%;object-fit:contain;display:block;
+  filter:grayscale(1) opacity(.45);transition:filter 180ms cubic-bezier(.4,0,.2,1)}
+.case .logos li.on{background:#fff;box-shadow:inset 0 0 0 1px rgba(0,131,161,.34)}
+.case .logos li.on img{filter:none}
+
+
+
+
+
+.tst{padding-block:90px;background:var(--paper)}
+.tst .head{max-width:420px;margin-bottom:40px}
+.tst h2{font:400 56px/61.6px var(--head);color:var(--ink);margin-top:14px}
+.tst .rail{display:flex;gap:32px;overflow:hidden}
+.tst .q{flex:0 0 699px;border-radius:16px;padding:40px 44px;
+  background:linear-gradient(166.705deg,#F6F8FA 16%,#F1F3F5 97%);box-shadow:var(--card-hair)}
+.tst .q img.qm{width:54.6px;height:59.4px;margin-inline-start:auto;opacity:.9}
+.tst .q blockquote{font:400 28px/39.2px var(--head);color:var(--ink);margin-top:18px;text-align:start}
+.tst .q .who{display:flex;align-items:center;gap:14px;justify-content:flex-start;margin-top:28px}
+.tst .q .who img{width:56px;height:56px;border-radius:10px;object-fit:cover}
+.tst .q .who b{display:block;font:500 16px/21px var(--head);color:var(--ink)}
+.tst .q .who span{font:400 14px/18px var(--head);color:var(--ink-3)}
+
+
+.flag{display:none}
+html[data-flags] .flag{display:block}
+html[data-flags] .flag{background:rgba(175,45,29,.05);box-shadow:inset 0 0 0 1px rgba(175,45,29,.26);
+  border-radius:10px;padding:14px 18px;margin-top:22px;
+  font:400 14px/21px var(--head);color:#AF2D1D;text-align:center}
+</style>
+<link rel="stylesheet" href="menu.css?v=1791052042">
+<link rel="stylesheet" href="menu-motion.css?v=1791051341">
+<link rel="stylesheet" href="sec-data.css?v=1790745411">
+<link rel="stylesheet" href="ind-mobile.css?v=1790790769">
+<link rel="stylesheet" href="home-sections-mobile.css?v=1791052281">
+<link rel="stylesheet" href="micro-pages.css?v=1790679321">
+<link rel="stylesheet" href="tile-arrow.css?v=1790861149">
+<link rel="stylesheet" href="entrance-pages.css?v=1790685785">
+<link rel="stylesheet" href="eyebrow-dots.css?v=1790791514">
+<link rel="stylesheet" href="type-h12.css?v=1790843452">
+<link rel="stylesheet" href="type-mobile.css?v=1791050677">
+<link rel="stylesheet" href="no-review-notes.css?v=1790850214">
+<link rel="stylesheet" href="ind-content.css?v=1790850214">
+<link rel="stylesheet" href="ind-hero-motion.css">
+</head>
+<body>
+
+<div data-home="hdr"></div>
+
+<div data-home="crumb"><script type="application/json">{"items": [{"t": "ראשי", "href": "#"}, {"t": "תעשיות", "href": "#"}, {"t": "יבוא ויצוא"}]}</script></div>
+
+
+<section class="ihero-sec">
+  <div class="ihero">
+    <div class="dotbg"></div><div class="scrim-a"></div><div class="scrim-b"></div>
+    <div class="mock">
+      <div class="slab"></div>
+      <div class="shot"><img src="fig/ind-hero-ship.jpg" alt=""></div>
+      <div class="mark"><i></i></div>
+      <div class="statuspill"><div class="in"><span class="lbl">שינוי במצב הלקוח</span></div></div>
+      <div class="tagpill">השוואה בין ספקים</div>
+      
+<div class="mockcards ifacts">
+  <div class="mockcard"><div class="in">
+    <span class="lbl">דירוג מדינה</span>
+    <span class="fig">72<i class="trend up" aria-hidden="true"></i></span>
+  </div></div>
+  <div class="mockcard"><div class="in">
+    <span class="lbl">הזדמנויות צמיחה</span>
+    <span class="fig">18<i class="trend down" aria-hidden="true"></i></span>
+  </div></div>
+  <div class="mockcard"><div class="in">
+    <span class="lbl">תעודת אמינות</span>
+    <span class="fig">בתוקף</span>
+  </div></div>
+</div>
+    </div>
+    <div class="icopy">
+      <div class="stack">
+        
+<div class="eb"><i></i>יבוא יצוא</div>
+        <h1>מידע עסקי שמניע סחר גלובלי</h1>
+        <p>בדקו ספקים ולקוחות בחו״ל לפני שאתם מעבירים כסף או שולחים סחורה. חשוב לוודא את אמינותם ואת תקינות העסקה כדי למנוע הונאות ובעיות עתידיות. בצעו בדיקות רקע, קראו חוות דעת ובקשו המלצות כדי להבטיח שיתוף פעולה בטוח ומוצלח.</p>
+      </div>
+      <div class="btns">
+        <a class="dnb-btn dnb-btn--ghost" href="#"><span class="dnb-btn__badge"><img src="fig/btn-arrow.svg" alt=""></span><span class="dnb-btn__label">צפו בדוח לדוגמה</span></a>
+        <a class="dnb-btn dnb-btn--dark" href="#"><span class="dnb-btn__badge"><img src="fig/btn-arrow.svg" alt=""></span><span class="dnb-btn__label">דברו עם מומחה</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div data-home="trust"></div>
+
+
+<section class="tasks"><div class="panel">
+  <div class="head">
+    <div class="eb"><i></i>מה אפשר לעשות<i></i></div>
+    <h2>מה יבואנים ויצואנים<br>בודקים עם D&amp;B?</h2>
+    <p>בחרו משימה, ותגיעו ישר למוצר שעושה אותה.</p>
+  </div>
+  <div class="tgrid">
+    <a class="tcard" href="#"><span class="tile"><i style="-webkit-mask-image:url(fig/bico/search.svg);mask-image:url(fig/bico/search.svg)"></i></span>
+      <h3>לבדוק ספק חדש</h3>
+      <p>לפני שמעבירים מקדמה, מוודאים שהספק קיים, פעיל ויציב. בנוסף, בודקים את ההיסטוריה העסקית שלו ואת יכולת האספקה כדי להבטיח שהעסקה תתבצע בצורה חלקה וללא תקלות.</p>
+      <span class="foot"><span class="go"><i></i></span><span class="pl"><span>המוצר</span><b>דוח אשראי עסקי</b></span></span></a>
+
+    <a class="tcard" href="#"><span class="tile"><i style="-webkit-mask-image:url(fig/bico/globe.svg);mask-image:url(fig/bico/globe.svg)"></i></span>
+      <h3>לבדוק לקוח לפני משלוח</h3>
+      <p>מוודאים שהלקוח בחו״ל יוכל לשלם לפני שהסחורה יוצאת. כמו כן, בודקים את אמצעי התשלום הזמינים ואת אמינותו הכלכלית של הלקוח כדי למנוע סיכונים מיותרים.</p>
+      <span class="foot"><span class="go"><i></i></span><span class="pl"><span>המוצר</span><b>דוח אשראי עסקי</b></span></span></a>
+
+    <a class="tcard" href="#"><span class="tile"><i style="-webkit-mask-image:url(fig/bico/gauge.svg);mask-image:url(fig/bico/gauge.svg)"></i></span>
+      <h3>להעריך לקוח</h3>
+      <p>מקבלים דירוג סיכון והמלצה על מסגרת ותנאי תשלום. בנוסף, מנתחים את ההיסטוריה הפיננסית של הלקוח ומציעים פתרונות מותאמים לניהול הסיכונים בעסקה.</p>
+      <span class="foot"><span class="go"><i></i></span><span class="pl"><span>המוצר</span><b>ניהול סיכוני אשראי עסקי</b></span></span></a>
+
+    <a class="tcard" href="#"><span class="tile"><i style="-webkit-mask-image:url(fig/bico/bell.svg);mask-image:url(fig/bico/bell.svg)"></i></span>
+      <h3>לנטר תיק לקוחות</h3>
+      <p>מקבלים התראה כשמשהו משתנה אצל לקוח, בארץ או בחו״ל. כך ניתן להגיב במהירות לשינויים במצב הכלכלי או העסקי ולשמור על יציבות העסקה.</p>
+      <span class="foot"><span class="go"><i></i></span><span class="pl"><span>המוצר</span><b>ניהול סיכוני אשראי עסקי</b></span></span></a>
+
+    <a class="tcard" href="#"><span class="tile"><i style="-webkit-mask-image:url(fig/bico/shield.svg);mask-image:url(fig/bico/shield.svg)"></i></span>
+      <h3>KYC ורגולציה</h3>
+      <p>יודעים מי עומד מאחורי החברה שמולכם, ועומדים בדרישות הציות. בנוסף, מבצעים בדיקות רקע מקיפות כדי להבטיח שהעסקה מתבצעת עם שותף אמין ותקין מבחינה חוקית.</p>
+      <span class="foot"><span class="go"><i></i></span><span class="pl"><span>המוצר</span><b>ניהול סיכוני צד שלישי</b></span></span></a>
+
+    <a class="tcard" href="#"><span class="tile"><i style="-webkit-mask-image:url(fig/bico/trendup.svg);mask-image:url(fig/bico/trendup.svg)"></i></span>
+      <h3>לבחור בין ספקים</h3>
+      <p>משווים ספקים לפי ותק, גודל ויציבות לפני שבוחרים. כמו כן, בוחנים את איכות השירות, מחירי המוצרים והמלצות מלקוחות קודמים כדי לקבל החלטה מושכלת.</p>
+      <span class="foot"><span class="go"><i></i></span><span class="pl"><span>המוצר</span><b>נתוני ספקים</b></span></span></a>
+  </div>
+</section>
+
+
+<section class="case"><div class="wrap">
+  <div class="head">
+    <div class="eb"><i></i>לקוחות מספרים<i></i></div>
+    <h2>יבואנים ויצואנים שכבר עובדים איתנו</h2>
+  </div>
+  <div class="panel">
+    <div class="quote1">
+      <div class="tags"><span>סיפור לקוח</span><span>לוגו הלקוח</span></div>
+      <img class="qm" src="fig/t2-quote.svg" alt="">
+      
+<blockquote>כשזיהינו ספק חדש בשוק בינלאומי שבו עדיין לא פעלנו, היה לנו חשוב להבין אם מדובר בשותף שאפשר לבנות איתו מערכת יחסים ארוכת טווך. בדקנו את החברה באמצעות <span dir="ltr">D&amp;B</span> וקיבלנו מידע שעזר לנו להבין את הפעילות שלה, את הרקע העסקי ואת רמת הסיכון. המידע אפשר לנו להגיע למשא ומתן מוכנים יותר, ובסופו של דבר להתקדם לעסקה בביטחון.</blockquote>
+      <div class="base">
+        <div class="who"><div>
+          <div class="n">ישראל ישראלי</div>
+          <div class="r">סמנכ"ל סחר, חברת מיצאים ומיבאים</div>
+        </div></div>
+        <div class="fig"><b>40%</b><span>קיצור זמן בדיקת ספקים חדשים</span></div>
+      </div>
+      <div class="btnw"><a class="dnb-btn dnb-btn--lite" href="#"><span class="dnb-btn__badge"><img src="fig/btn-arrow-dark.svg" alt=""></span><span class="dnb-btn__label">לסיפור המלא</span></a></div>
+    </div>
+  </div>
+  
+  
+</div></section>
+
+
+<section class="data"><div class="wrap">
+  <div class="in">
+    <div style="text-align:start">
+      <div class="eb" style="justify-content:flex-start"><i></i>איכות דאטה וציות</div>
+      <h2>מידע שאפשר לסמוך עליו</h2>
+      <p class="lede">המידע נאסף ממקורות מתועדים, מתעדכן באופן שוטף ונשמר לפי תקני אבטחת מידע ופרטיות.</p>
+      
+    </div>
+    
+<div class="dtable">
+<table>
+<thead><tr><th>נושא</th><th>איך זה מטופל</th></tr></thead>
+<tbody>
+<tr><td>הרשאות</td><td>הרשאות לפי תפקיד — צפייה, הורדה וניהול משתמשים, בשליטת מנהל המערכת בארגון</td></tr>
+<tr><td>אבטחת מידע</td><td>מבוקרת לפי <span dir="ltr">ISO 27001</span></td></tr>
+<tr><td>פרטיות</td><td>לפי <span dir="ltr">ISO 27701</span> והדין החל</td></tr>
+<tr><td>העברת נתונים</td><td>חיבור מאובטח למערכות הארגון דרך <span dir="ltr">API</span> ייעודי ובממשק <span dir="ltr">D&amp;B Connect</span></td></tr>
+<tr><td>מקורות המידע</td><td>מקורות רשמיים ומתועדים</td></tr>
+<tr><td>זמינות וגיבוי</td><td>גיבוי יומי, ניטור רציף ותוכנית המשכיות עסקית</td></tr>
+</tbody>
+</table>
+</div>
+  </div>
+  
+</div></section>
+
+
+
+
+
+<div data-home="ctaw" data-h2="לפני שאתם שולחים סחורה — בדקו עם מי אתם עובדים"></div>
+
+
+
+
+<div data-sec="marks"></div>
+<div data-home="guides"></div>
+<div data-home="faq"></div>
+<script src="home-sections.js?v=1791048978"></script>
+<script src="content/faq.js?v=1788190793"></script>
+<script src="content/cta-chips.js?v=1789645921"></script>
+<script>
+if (/[?&]flags=1/.test(location.search)) document.documentElement.setAttribute('data-flags','');
+</script>
+<script src="menu-panels.js?v=1790789982"></script>
+<script src="menu.js?v=1791051400"></script>
+<script src="nav-wire.js?v=1791052132"></script>
+<script src="micro/micro.js?v=1787833609"></script>
+<script src="tile-arrow.js?v=1790861149"></script>
+<script src="entrance-pages.js?v=1790685922"></script>
+<script src="sec-marks.js?v=1790791008"></script>
+<script src="eyebrow-dots.js?v=1790791514"></script>
+<script src="ind-content.js?v=1790850275"></script>
+</body>
+</html>

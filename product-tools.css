@@ -1,0 +1,149 @@
+
+.tools-rail[role="tablist"]{
+  display:flex;flex-direction:column;grid-template-columns:none;gap:0}
+.tools-rail[role="tab"],
+.tools-rail > [role="tab"]{
+  position:relative;display:flex;align-items:center;justify-content:flex-start;gap:20px;
+  height:auto;padding:20px 24px;border:0;cursor:pointer;width:100%;
+  background:transparent;box-shadow:inset 0 -1px 0 rgba(0,0,0,.12);
+  font:400 24px/31.2px "Heebo",sans-serif;letter-spacing:-.39px;color:#000;
+  text-align:start}
+.tools-rail > [role="tab"]:last-child{box-shadow:none}
+.tools-rail > [role="tab"][aria-selected="true"]{
+  border-radius:10px;background:#F3F5F7;box-shadow:none}
+
+.tools-rail > [role="tab"][aria-selected="true"]::before{
+  content:"";position:absolute;right:0;top:18px;bottom:18px;width:3px;
+  border-radius:2px;background:#0083A1}
+
+.tools-rail > [role="tab"] .rail-go{
+  width:40px;height:40px;flex:0 0 auto;border-radius:5.556px;
+  box-shadow:inset 0 0 0 1px rgba(11,22,32,.13);
+  display:flex;align-items:center;justify-content:center;margin-inline-start:auto}
+.tools-rail > [role="tab"][aria-selected="true"] .rail-go{
+  background:#0083A1;box-shadow:none}
+.tools-rail > [role="tab"] .rail-go i{
+  width:17px;height:17px;background:#333;transform:rotate(180deg);
+  -webkit-mask:url(fig/arrow-dots.svg) center/contain no-repeat;
+          mask:url(fig/arrow-dots.svg) center/contain no-repeat}
+.tools-rail > [role="tab"][aria-selected="true"] .rail-go i{background:#fff}
+
+
+.tools-split{display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:48px;align-items:start}
+@media (max-width:900px){.tools-split{grid-template-columns:minmax(0,1fr)}}
+
+
+.tools-split > [role="tabpanel"]{overflow:hidden;border-radius:12px}
+
+
+
+
+.tools-checklist{margin-top:48px;background:#071620;border-radius:16px;
+  padding:40px 64px!important;box-sizing:border-box;list-style:none;
+  column-gap:40px!important;row-gap:24px!important}
+.tools-checklist > *{min-width:0}
+
+.tools-checklist,.tools-checklist *{color:#fff!important}
+.tools-checklist svg,.tools-checklist svg *{stroke:#5CCDE7!important}
+
+.tools-checklist [style*="background-color"]{background-color:transparent!important;box-shadow:none!important}
+
+.tools-checklist svg circle{fill:none!important;stroke:none!important}
+.tools-checklist svg path{stroke:#5CCDE7!important;stroke-width:2.4!important;fill:none!important}
+
+
+.tools-rail[role="tablist"],
+[role="tablist"].t-light{display:flex!important;flex-wrap:wrap!important;
+  justify-content:center!important;width:fit-content!important;margin:0 auto!important;
+  gap:2px!important;padding:4px!important;border-radius:10px!important;
+  background:#e9edf2!important;box-shadow:inset 0 0 0 1px #eaeaea!important}
+[role="tablist"].t-light > [role="tab"]{width:auto!important;min-width:180px!important;
+  height:auto!important;padding:9px 22px!important;border-radius:8px!important;
+  background:transparent!important;box-shadow:none!important;border:0!important;
+  color:#51606b!important;font:500 14px/1.5 "Heebo",sans-serif!important}
+[role="tablist"].t-light > [role="tab"][aria-selected="true"]{
+  background:#0083A1!important;box-shadow:none!important;color:#fff!important}
+[role="tablist"].t-light > [role="tab"][aria-selected="true"] svg path{stroke:#fff!important}
+.todo-name{margin:10px 0 0;font:400 13.3px/19.91px "Heebo",sans-serif;color:#AF2D1D;
+  text-align:center}
+
+
+.integ-art{flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;gap:16px}
+.integ-art svg{width:100%;max-width:520px;height:auto;display:block}
+.integ-art .integ-cap{margin:0;font:400 16px/21px "Heebo",sans-serif;color:#51606B;text-align:center}
+@media (max-width:767.98px){.integ-art svg{max-width:100%}}
+
+
+.ns-prod-media.has-prodart{overflow:hidden;background-image:none!important;background:#F6F8FA}
+.ns-prod-media .ns-art-slot{position:absolute;left:16px;right:16px;bottom:12px;margin:0;
+  font:400 13.3px/19.91px "Heebo",sans-serif;color:#AF2D1D;text-align:center;direction:rtl}
+
+
+@media (max-width:767.98px){
+  [data-t="hero"] h1,[data-t="hero"] p{width:auto!important;max-width:100%!important}
+  
+     ⚠ AND THE ZOOM BELONGS ON THE STAGE FRAME, NOT ON `.tool-scene`. Measured:
+     the 580x420 box is `.tool-scene`'s PARENT — zooming the child left the frame
+     itself declared at 580, so the section still measured 580 wide. The frame is
+     matched by its own inline width, which is how the export writes it. */
+  .t-feature div[style*="width:580px"]{zoom:calc((100vw - 40px) / 580px)}
+  .zs,.zs.zn-new{width:auto!important;max-width:100%!important}
+  [data-t="integrations"] .integ-art{width:auto;max-width:100%}
+  [data-t] div[style*="width:400px"],[data-t] div[style*="width:512px"],
+  [data-t] div[style*="width:560px"]{width:auto!important;max-width:100%!important}
+}
+
+
+[role="tabpanel"][hidden]{display:none!important}
+
+[role="tablist"].t-light > [role="tab"]{gap:0!important}
+
+
+[role="tablist"].t-light{margin-bottom:0!important}
+
+
+.pf-card{position:relative;margin-top:32px;margin-inline:100px;padding:40px 48px;
+  border-radius:16px;overflow:hidden;background:var(--black-teal,#071620)}
+.pf-card .pf-dots{position:absolute;inset:0;pointer-events:none;
+  background-image:radial-gradient(rgba(255,255,255,.78) 1.1px,transparent 1.5px);
+  background-size:48px 48px;background-position:15.5px 2.8px;opacity:.22}
+
+.pf-card .pf-eb{position:relative;display:flex;align-items:center;gap:8px;width:fit-content;
+  margin-bottom:24px;font:500 14px/21px "Heebo",sans-serif;letter-spacing:1px;color:#5CCDE7}
+.pf-card ul{position:relative;margin:0;padding:0;list-style:none;
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:40px;row-gap:24px;
+  box-shadow:none!important}
+.pf-card ul li{color:#E6EDF2!important;font-size:18px!important;line-height:25px!important}
+.pf-card ul li svg circle{fill:rgba(92,205,231,.22)!important}
+.pf-card ul li svg path{stroke:#5CCDE7!important}
+@media (max-width:1100px){.pf-card{margin-inline:40px}
+  .pf-card ul{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:767.98px){.pf-card{margin-inline:0;padding:28px 20px}
+  .pf-card ul{grid-template-columns:minmax(0,1fr);row-gap:16px}}
+
+
+.tool-scene.pf-wait{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:8px;text-align:center;padding:24px;box-sizing:border-box;
+  border:1px dashed rgba(11,22,32,.28);border-radius:12px;background:#F6F8FA}
+.tool-scene.pf-wait span{font:500 16px/22px "Heebo",sans-serif;color:#64727C}
+.tool-scene.pf-wait .sub{font:400 14px/20px "Heebo",sans-serif;color:#8A97A1}
+
+
+
+
+
+.pf-card{margin-inline:0 !important}
+
+[role="tablist"].t-light{width:auto !important;margin:0 !important}
+@media (max-width:1100px){.pf-card{margin-inline:0 !important}}
+
+
+.pf-card .pf-eb{margin-inline:auto}
+
+
+.t-feature{align-items:start !important}
+
+
+.moresec .arrow-tile{overflow:hidden}
+.moresec .arrow-tile svg,
+.moresec .arrow-tile .arw{width:14px;height:14px;flex:0 0 auto}

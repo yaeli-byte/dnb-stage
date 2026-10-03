@@ -1,0 +1,311 @@
+
+
+
+:root{
+  
+  --dnb-ref-palette-teal-15: #004657;
+  --dnb-ref-palette-teal-20: #015A70;
+  --dnb-ref-palette-teal-40: #0083A1;
+  --dnb-ref-palette-teal-70: #5CCDE7;
+  --dnb-ref-palette-teal-80: #80E7FF;
+  --dnb-ref-palette-teal-85: #9EEDFA;
+  --dnb-ref-palette-teal-90: #A9F3FF;
+  --dnb-ref-palette-teal-93: #AEEBF9;
+  --dnb-ref-palette-teal-97: #BFE4EF;
+  --dnb-ref-palette-red-18: #4F140D;
+  --dnb-ref-palette-red-40: #AF2D1D;
+  --dnb-ref-palette-red-93: #FCE2DF;
+  --dnb-ref-palette-red-63: #F5614E;
+  --dnb-ref-neutral-0: #000000;
+  --dnb-ref-neutral-4: #071620;
+  --dnb-ref-neutral-9: #171717;
+  --dnb-ref-neutral-11: #121212;
+  --dnb-ref-neutral-12: #1A1C1C;
+  --dnb-ref-neutral-16: #283032;
+  --dnb-ref-neutral-18: #26333D;
+  --dnb-ref-neutral-20: #2F3B45;
+  --dnb-ref-neutral-34: #51606B;
+  --dnb-ref-neutral-40: #5B6875;
+  --dnb-ref-neutral-42: #64727C;
+  --dnb-ref-neutral-62: #8FA2AF;
+  --dnb-ref-neutral-68: #9FB0BD;
+  --dnb-ref-neutral-82: #CFE0EA;
+  --dnb-ref-neutral-94: #F1F3F5;
+  --dnb-ref-neutral-95: #F3F5F7;
+  --dnb-ref-neutral-96: #F5F5F5;
+  --dnb-ref-neutral-97: #F6F8FA;
+  --dnb-ref-neutral-98: #F8FAFC;
+  --dnb-ref-neutral-99: #FCFCFC;
+  --dnb-ref-neutral-99b: #FCFDFE;
+  --dnb-ref-neutral-100: #FFFFFF;
+  --dnb-ref-brand-hero-ink: #F0F8FA;
+  --dnb-ref-brand-scrim: #030C14;
+
+  
+  --dnb-sys-color-primary: var(--dnb-ref-palette-teal-40);  
+  --dnb-sys-color-on-primary: var(--dnb-ref-neutral-100);  
+  --dnb-sys-color-primary-container: var(--dnb-ref-palette-teal-85);  
+  --dnb-sys-color-on-primary-container: var(--dnb-ref-neutral-16);  
+  --dnb-sys-color-secondary: var(--dnb-ref-palette-teal-70);  
+  --dnb-sys-color-on-secondary: var(--dnb-ref-neutral-9);  
+  --dnb-sys-color-tertiary: var(--dnb-ref-palette-teal-80);  
+  --dnb-sys-color-on-tertiary: var(--dnb-ref-neutral-16);  
+  --dnb-sys-color-error: var(--dnb-ref-palette-red-40);  
+  --dnb-sys-color-on-error: var(--dnb-ref-neutral-100);  
+  --dnb-sys-color-error-container: var(--dnb-ref-palette-red-93);  
+  --dnb-sys-color-on-error-container: var(--dnb-ref-palette-red-18);  
+  --dnb-sys-color-surface: var(--dnb-ref-neutral-99b);  
+  --dnb-sys-color-surface-container-lowest: var(--dnb-ref-neutral-100);
+  --dnb-sys-color-surface-container-low: var(--dnb-ref-neutral-99);  
+  --dnb-sys-color-surface-container: var(--dnb-ref-neutral-98);  
+  --dnb-sys-color-surface-container-high: var(--dnb-ref-neutral-96);  
+  --dnb-sys-color-surface-container-highest: var(--dnb-ref-neutral-95);  
+  --dnb-sys-color-on-surface: var(--dnb-ref-neutral-0);  
+  --dnb-sys-color-on-surface-variant: var(--dnb-ref-neutral-34);  
+  --dnb-sys-color-on-surface-variant-2: var(--dnb-ref-neutral-42);  
+  --dnb-sys-color-inverse-surface: var(--dnb-ref-neutral-4);  
+  --dnb-sys-color-on-inverse-surface: var(--dnb-ref-neutral-68);  
+  --dnb-sys-color-on-inverse-surface-variant: var(--dnb-ref-neutral-62);  
+  --dnb-sys-color-on-inverse-surface-hover: var(--dnb-ref-neutral-82);  
+  --dnb-sys-color-hero-headline: var(--dnb-ref-brand-hero-ink);  
+  --dnb-sys-color-hero-tab: var(--dnb-ref-palette-teal-90);  
+  --dnb-sys-color-icon-on-dark: var(--dnb-ref-palette-teal-97);  
+  --dnb-sys-color-card-dark-from: var(--dnb-ref-palette-teal-20);  
+  --dnb-sys-color-card-dark-to: var(--dnb-ref-palette-teal-15);  
+  --dnb-sys-color-scrim: var(--dnb-ref-brand-scrim);  
+
+  
+  --dnb-sys-shape-corner-none: 0px;  
+  --dnb-sys-shape-corner-extra-small: 4px;  
+  --dnb-sys-shape-corner-small: 8px;  
+  --dnb-sys-shape-corner-medium: 12px;  
+  --dnb-sys-shape-corner-large: 16px;  
+  --dnb-sys-shape-corner-extra-extra-large: 48px;  
+  --dnb-sys-shape-corner-full: 999px;  
+  --dnb-sys-shape-corner-tag: 4.8px;  
+  --dnb-sys-shape-corner-icon-tile: 5.556px;  
+  --dnb-sys-shape-corner-category-tag: 6px;  
+  --dnb-sys-shape-corner-carousel-control: 6.533px;  
+  --dnb-sys-shape-corner-icon-box: 8.167px;  
+  --dnb-sys-shape-corner-badge: 8.55px;  
+  --dnb-sys-shape-corner-button: 11px;  
+  --dnb-sys-shape-corner-card-dark: 11.488px;  
+  --dnb-sys-shape-corner-data-node: 13px;  
+
+  
+  --dnb-sys-state-hover-tone: 0.04;  
+  --dnb-sys-state-pressed-tone: 0.06;  
+  --dnb-sys-state-disabled-container: 0.12;  
+  --dnb-sys-state-disabled-content: 0.38;  
+  --dnb-sys-state-focus-ring-width: 2px;  
+  --dnb-sys-state-focus-ring-offset: 3px;
+
+  
+  --dnb-sys-motion-easing-emphasized: cubic-bezier(.19, 1, .22, 1);  
+  --dnb-sys-motion-easing-standard: cubic-bezier(.4, 0, .6, 1);  
+  --dnb-sys-motion-duration-micro: 140ms;  
+  --dnb-sys-motion-duration-short: 160ms;  
+  --dnb-sys-motion-duration-badge: 180ms;  
+  --dnb-sys-motion-duration-tag: 200ms;  
+  --dnb-sys-motion-duration-medium: 340ms;  
+  --dnb-sys-motion-duration-long: 550ms;  
+  --dnb-sys-motion-duration-settle: 900ms;  
+  --dnb-sys-motion-stagger-cascade: 60ms;  
+  --dnb-sys-motion-stagger-dot: 16ms;  
+
+  
+  --dnb-sys-elevation-level-0: 0;  
+  --dnb-sys-elevation-hairline-width: 0.957px;  
+  --dnb-sys-elevation-hover-blur-max: 8;  
+  --dnb-sys-elevation-hover-alpha-max: 0.26;  
+
+  
+  --dnb-sys-spacing-section-padding-block: 80px;  
+  --dnb-sys-spacing-section-inset-inline: 100px;  
+  --dnb-sys-spacing-block-gap: 56px;  
+  --dnb-sys-spacing-block-gap-large: 90px;  
+}
+
+@media (max-width:767.98px){
+  :root{
+    --dnb-sys-spacing-section-padding-block: 64px;
+    --dnb-sys-spacing-section-inset-inline: 20px;
+    --dnb-sys-spacing-block-gap: 32px;
+  }
+}
+
+
+.dnb-sys-typescale-display-large{
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 54px;
+}  
+
+.dnb-sys-typescale-display-medium{
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 54px;
+}  
+
+.dnb-sys-typescale-display-small{
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 57.6px;
+}  
+
+.dnb-sys-typescale-headline-large{
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 38px;
+}  
+
+.dnb-sys-typescale-headline-medium{
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 39.2px;
+}  
+
+.dnb-sys-typescale-headline-small{
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 34px;
+}  
+
+.dnb-sys-typescale-title-large{
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31.2px;
+  letter-spacing: -0.39px;
+}  
+
+.dnb-sys-typescale-title-medium{
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27.2px;
+}  
+
+.dnb-sys-typescale-title-small{
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}  
+
+.dnb-sys-typescale-body-large{
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  font-size: 17.61px;
+  line-height: 22.89px;
+}  
+
+.dnb-sys-typescale-body-medium{
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20.8px;
+}  
+
+.dnb-sys-typescale-body-small{
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}  
+
+.dnb-sys-typescale-label-large{
+  font-family: "Heebo", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22.5px;
+}  
+
+.dnb-sys-typescale-label-medium{
+  font-family: "Heebo", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 1px;
+}  
+
+.dnb-sys-typescale-label-small{
+  font-family: "Heebo", sans-serif;
+  font-weight: 500;
+  font-size: 13.3px;
+  line-height: 19.91px;
+  letter-spacing: -0.1px;
+}  
+
+.dnb-sys-typescale-stat-figure{
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 300;
+  font-size: 108.3px;
+  line-height: 108.3px;
+  letter-spacing: 1.083px;
+}  
+
+
+@media (max-width:767.98px){
+  .dnb-sys-typescale-m-h2{
+    font-family: "Heebo", sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+  }  
+  .dnb-sys-typescale-m-h3{
+    font-family: "Heebo", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+  }  
+  .dnb-sys-typescale-m-body-large{
+    font-family: "Heebo", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+  }  
+  .dnb-sys-typescale-m-body-medium{
+    font-family: "Heebo", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+  }  
+  .dnb-sys-typescale-m-label{
+    font-family: "Heebo", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+  }  
+  .dnb-sys-typescale-m-small{
+    font-family: "Heebo", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+  }  
+  .dnb-sys-typescale-m-small-strong{
+    font-family: "Heebo", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 1px;
+  }  
+  .dnb-sys-typescale-m-tag{
+    font-family: "Heebo", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+  }  
+  .dnb-sys-typescale-m-micro{
+    font-family: "Heebo", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+  }  
+}

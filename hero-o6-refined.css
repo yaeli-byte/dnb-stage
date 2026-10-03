@@ -1,0 +1,69 @@
+
+
+
+.fh--o6{--fh-gradient:linear-gradient(0deg,
+  rgba(92,205,231,.45) 0%,
+  rgba(174,235,249,.36) 45.11%,
+  rgba(174,235,249,0) 74.09%) !important}
+
+
+.fh--o6 .fh__dots > *{display:none}
+.fh--o6 .fh__dots{
+  background-image:radial-gradient(rgba(11,22,32,.15) 1.2px, rgba(0,0,0,0) 1.65px);
+  background-size:25px 25px;
+  background-position:0 0}
+
+
+
+.fh--o6 .hv-frame{background-color:rgba(255,255,255,.49) !important;
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.95) !important}
+.fh--o6 .hv-card{background-color:#E1F4FA !important;
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.90) !important}
+
+
+
+
+.fh--o6 .hv-a.hv-t{width:168px !important; height:41px !important;
+  min-height:41px !important; translate:2px 2px}
+.fh--o6 .fh-x-tile{translate:21px -106px}
+.fh--o6 .fh-x-sub{translate:-48px 113.5px}
+
+
+
+
+.fh--o6 .fh-x-sub > div > div:nth-child(-n+2){background-color:#F5FDFE !important}
+
+
+.fh--o6 .fh-x-sub > div{backdrop-filter:blur(6px) !important;
+  -webkit-backdrop-filter:blur(6px) !important}
+
+
+.fh--centred.fh--o6 .fh__title,
+.fh--centred.fh--o6 .fh__lede{text-wrap:wrap !important}
+
+
+
+.fh--o6{width:1356px !important; max-width:calc(100% - 84px) !important;
+  margin-inline:auto !important; height:800px !important;
+  border-radius:14px !important; overflow:hidden !important}
+
+.fh--o6 .fh__bg::after{content:""; position:absolute; inset-block-start:0;
+  left:50%; transform:translateX(-50%); width:1354px; max-width:100%; height:441px;
+  background-image:linear-gradient(180deg,#FCFDFE 0%, rgba(252,253,254,0) 100%);
+  pointer-events:none}
+
+.fh--m.fh--o6{width:auto !important; max-width:calc(100% - 40px) !important;
+  height:auto !important; border-radius:14px !important}
+
+
+
+
+.fh--o6 .fh__inner{z-index:2}
+
+.fh--o6 .fh__visual{overflow:visible}
+.fh--o6 .fh__visual::after{content:""; position:absolute; left:50%;
+  transform:translateX(-50%); width:1356px; max-width:none;
+  top:264.55px; height:122px; z-index:2; pointer-events:none;
+  background-image:linear-gradient(180deg, rgba(186,236,248,0) 0%, #C3EBF5 100%)}
+
+.fh--o6 .fh-x-sub{position:relative; z-index:3}

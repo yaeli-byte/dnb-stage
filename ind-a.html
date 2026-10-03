@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" data-motion="on">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>D&B — יבוא ויצוא (אפשרות א׳)</title>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500&family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="sec-marks.css?v=1790856074">
+<link rel="stylesheet" href="ind-prod-media.css?v=1790866668">
+<link rel="stylesheet" href="sec-data.css?v=1790745411">
+<link rel="stylesheet" href="sec-integ.css">
+<link rel="stylesheet" href="ds/components.css?v=1790843651">
+<link rel="stylesheet" href="ind-shared.css?v=1790762765">
+<link rel="stylesheet" href="home-sections.css?v=1790859062">
+<style>
+
+
+
+.chal{background:var(--paper);padding:24px 56px 80px}
+.chal .band{background:var(--black-teal);border-radius:16px;padding:62px 48px;
+  display:flex;flex-direction:column;gap:48px}
+.chal .head{display:flex;flex-direction:column;gap:15.5px;align-items:center}
+.chal h2{font:400 56px/61.6px var(--head);color:#fff;text-align:center}
+.chal .row{display:flex;gap:20px;flex-wrap:wrap}
+.chal .c{flex:1 0 362px;min-width:362px;height:372px;background:#0F1E2D;border-radius:12px;
+  padding:28px;display:flex;flex-direction:column;gap:22px;align-items:flex-start;
+  box-shadow:inset 0 0 0 .957px rgba(33,33,33,.1);text-decoration:none}
+.chal .c .tile{width:69.12px;height:69.12px;border-radius:15.84px;background:#0A3C50;
+  display:grid;place-items:center;flex:0 0 auto}
+.chal .c .tile i{width:34.56px;height:34.56px;background:var(--teal-2);
+  -webkit-mask-size:contain;mask-size:contain;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;
+  -webkit-mask-position:center;mask-position:center}
+.chal .c .lbl{font:400 13.3px/18px var(--head);color:#9FB0BD}   
+.chal .c h3{font:400 24px/31.2px var(--head);color:#fff;letter-spacing:-.39px;margin-top:2px}
+.chal .c p{font:400 16px/20.8px var(--head);color:#9FB0BD;margin-top:9px}
+
+
+.chal .c .foot{position:relative;margin-top:auto;padding-top:18px;width:100%;display:flex;align-items:center;
+  justify-content:space-between;box-shadow:inset 0 1px 0 rgba(0,0,0,.08)}
+.chal .c .foot::before{content:"";position:absolute;inset-inline:0;top:0;height:1px;
+  background-image:repeating-linear-gradient(to right,rgba(255,255,255,.16) 0 2px,transparent 2px 6px);
+  pointer-events:none}
+.chal .c .foot .go{order:2}
+.chal .c .foot .plabel{order:1}
+.chal .c .go{width:40px;height:40px;border-radius:5.56px;background:rgba(255,255,255,.08);
+  border:1px solid rgba(60,80,100,.13);display:grid;place-items:center}
+.chal .c .go i{width:17px;height:17px;background:#fff;transform:rotate(180deg);
+  -webkit-mask:url(fig/arrow-dots.svg) center/contain no-repeat;
+          mask:url(fig/arrow-dots.svg) center/contain no-repeat}
+.chal .c .plabel{text-align:start}
+.chal .c .plabel b{display:block;font:500 15px/21px var(--head);color:var(--teal-2)}
+
+
+.proof{padding-block:var(--sec-pad)}
+.proof .in{display:grid;grid-template-columns:420px 1fr;gap:64px;align-items:center}
+.proof h2{font:400 56px/61.6px var(--head);color:var(--ink)}
+.proof .lede{font:400 16px/20.8px var(--head);color:var(--ink-2);margin-top:20px;max-width:34ch}
+.proof .btnw{margin-top:28px}
+
+
+
+
+
+.products{padding-block:var(--sec-pad)}
+
+.products .head{margin-bottom:34px;display:flex;flex-direction:column;
+  gap:15.5px;align-items:center;text-align:center}
+.products .head h2{font:400 56px/61.6px var(--head);color:var(--ink);margin-top:14px}
+.prow{display:flex;gap:48px;align-items:stretch;background:#fff;border-radius:16px;padding:16px;
+  box-shadow:inset 0 0 0 .957px rgba(33,33,33,.1);margin-bottom:20px}
+.prow:nth-child(even){flex-direction:row-reverse}
+.pmock{flex:0 0 560px;height:400px;background:var(--s-3);border-radius:12px;position:relative;overflow:hidden}
+.pmock .patch{position:absolute;inset-inline-end:-40px;top:-40px;width:340px;height:280px;
+  background-image:radial-gradient(rgba(11,22,32,.106) 1.05px,transparent 1.45px);
+  background-size:18.2px 18.2px;
+  -webkit-mask:radial-gradient(120% 120% at 100% 0,#000 42%,transparent 80%);
+          mask:radial-gradient(120% 120% at 100% 0,#000 42%,transparent 80%)}
+.pmock .badge{position:absolute;left:66px;top:30px;width:46px;height:46px;border-radius:11px;
+  background:var(--black-teal);display:grid;place-items:center;z-index:3}
+.pmock .badge i{width:20px;height:20px;background:var(--teal-2);
+  -webkit-mask-size:contain;mask-size:contain;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-position:center;mask-position:center}
+.pmock .card{position:absolute;left:100px;top:56px;width:360px;background:#fff;border-radius:14px;
+  padding:18px;display:flex;flex-direction:column;gap:10px;
+  box-shadow:inset 0 0 0 .957px rgba(33,33,33,.08)}
+.pmock .ctop{display:flex;align-items:center;justify-content:space-between}
+.pmock .ctop .nm{text-align:start}
+.pmock .ctop .nm b{display:block;font:500 15px/21px var(--head);color:var(--ink)}
+.pmock .ctop .nm span{font:400 13.3px/17px var(--head);color:#64727c}
+.pmock .ctop .ic{width:36px;height:36px;border-radius:9px;background:var(--teal);flex:0 0 auto}
+.pmock .chip{background:#BFE4EF;border-radius:999px;padding:2px 10px;
+  font:500 13.3px/17px var(--head);color:var(--teal)}
+.pmock .r{background:var(--s-3);border-radius:8px;padding:9px 12px;
+  display:flex;align-items:center;justify-content:space-between;
+  font:400 13.3px/17px var(--head);color:#283032}
+.pmock .r em{font-style:normal;color:#64727c;font-size:13.3px}
+.pmock .rail{height:8px;border-radius:4px;margin-top:9px;
+  background:linear-gradient(90deg,var(--teal),#9CCB5A,#F2C94C)}
+.pmock .rail span{display:block;width:14px;height:14px;border-radius:7px;background:#fff;
+  margin-top:-3px;margin-inline-start:70%;box-shadow:inset 0 0 0 3px #283032}
+.pmock .pill{position:absolute;inset-inline-end:51px;top:338px;height:36px;display:flex;align-items:center;
+  gap:8px;padding:0 14px;border-radius:999px;background:var(--teal);
+  font:500 13.3px/18px var(--head);color:#fff}
+.pmock .pill i{width:6px;height:6px;border-radius:50%;background:var(--teal-lite)}
+.pcopy{flex:1;min-width:0;display:flex;flex-direction:column;gap:20px;align-items:flex-start;
+  justify-content:center;padding:32px 32px 32px 8px;text-align:start}
+
+.pcopy .tag{background:none;box-shadow:none;border-radius:0;padding:0;
+  display:inline-flex;align-items:center;gap:8px;
+  font:500 14px/21px var(--head);letter-spacing:1px;color:var(--teal)}
+.pcopy .tag::before{content:"";width:4px;height:4px;border-radius:3px;
+  background:var(--teal);flex:0 0 auto}
+.pcopy h3{font:400 34px/38px var(--head);color:var(--ink)}
+.pcopy p{font:400 18px/27px var(--head);color:var(--ink-2);max-width:520px}
+
+
+
+.rel{margin-top:0;padding-top:20px}
+
+.rel .lbl{font:400 14px/19px var(--head);color:var(--ink-3);text-align:start;height:19px;margin-bottom:14px}
+.rel .pair{display:grid;grid-template-columns:610px 610px;gap:20px}
+
+
+.rel a{background:#fff;border-radius:16px;padding:24px 28px;height:142px;display:flex;align-items:flex-end;
+  justify-content:space-between;gap:20px;text-decoration:none;color:inherit;
+  box-shadow:var(--card-hair);transition:box-shadow 200ms cubic-bezier(.4,0,.2,1)}
+.rel a:hover{box-shadow:var(--card-hair),0 2px 8px -4px rgba(11,46,56,.1)}
+.rel .tx{text-align:start;order:1}
+.rel .go{order:2}
+
+.rel .tag{display:inline-flex;align-items:center;gap:8px;
+  font:500 13.3px/18px var(--head);letter-spacing:1px;color:var(--teal);
+  background:none;box-shadow:none;border-radius:0;padding:0}
+.rel .tag::before{content:"";width:4px;height:4px;border-radius:3px;
+  background:var(--teal);flex:0 0 auto}
+.rel h3{font:400 24px/31.2px var(--head);color:var(--ink);margin-top:10px}
+.rel p{font:400 14px/21px var(--head);color:var(--ink-3);margin-top:6px}
+.rel .go{width:40px;height:40px;border-radius:5.56px;background:rgba(255,255,255,.34);
+  box-shadow:inset 0 0 0 1px rgba(11,22,32,.13);display:grid;place-items:center;flex:0 0 auto}
+.rel .go i{width:17px;height:17px;background:var(--ink);transform:rotate(180deg);
+  -webkit-mask:url(fig/arrow-dots.svg) center/contain no-repeat;
+          mask:url(fig/arrow-dots.svg) center/contain no-repeat}
+
+
+.integ{position:relative;height:455px;direction:ltr}
+.integ .band{position:absolute;left:100px;top:24px;width:1240px;height:351px;border-radius:16px;
+  background:linear-gradient(147.349deg,#015A70 22.782%,#004657 101.15%);
+  display:block;padding:0}
+.integ .abs{position:absolute}
+
+.erp-win{left:252px;top:48px;width:338px;height:254px;background:rgba(255,255,255,.90);border-radius:10px;
+  overflow:hidden;box-shadow:0 18px 40px -20px rgba(0,0,0,.45)}
+.erp-win .bar{height:26px;background:rgba(255,255,255,.28);border-bottom:1px solid rgba(255,255,255,.45);display:flex;align-items:center;
+  justify-content:space-between;padding:0 10px;direction:rtl;
+  font:400 13.3px/18px var(--head);color:var(--ink-2)}
+.erp-win .bar .dots3{display:flex;gap:4px;direction:ltr}
+.erp-win .bar .dots3 i{width:6px;height:6px;border-radius:50%;background:#C3CCD3}
+.erp-win .body{padding:0;display:flex;flex-direction:column;gap:0;direction:rtl}
+.erp-win .r{background:transparent;border-radius:0;border-bottom:1px solid rgba(255,255,255,.45);padding:9px 12px;display:flex;align-items:center;
+  justify-content:space-between;font:400 13.3px/17px var(--head);color:var(--ink-2)}
+.erp-win .r b{font:500 13.3px/17px var(--head);color:var(--ink)}
+.erp-win .sc{background:transparent;border-radius:0;border-bottom:1px solid rgba(255,255,255,.45);padding:11px 12px}
+.erp-win .sc .t{display:flex;align-items:baseline;justify-content:space-between}
+.erp-win .sc .t b{font:300 24px/1 var(--num);color:var(--ink)}
+.erp-win .rail{height:6px;border-radius:3px;margin-top:7px;
+  background:linear-gradient(90deg,#0083A1,#9CCB5A,#F2C94C);position:relative}
+.erp-win .rail i{position:absolute;left:42%;top:-3px;width:3px;height:12px;background:#283032;border-radius:2px}
+.erp-win .risk b{color:#AF2D1D}
+.erp-chip{left:56px;top:182px;width:141px;height:44px;background:#fff;border-radius:9px;
+  display:flex;flex-direction:row-reverse;align-items:center;gap:8px;padding:0 12px;direction:rtl;
+  font:500 13.3px/18px var(--head);color:var(--ink);box-shadow:0 8px 20px -10px rgba(0,0,0,.4)}
+.erp-chip i{width:22px;height:22px;border-radius:5px;background:var(--black-teal);flex:0 0 auto}
+.erp-line{left:199px;top:201px;width:70px;height:6px;
+  background:linear-gradient(90deg,var(--teal-2),rgba(92,205,231,.2))}
+.erp-auto{left:233px;top:110px;width:137px;height:35px;background:var(--teal-2);border-radius:5px;
+  display:flex;align-items:center;justify-content:center;direction:rtl;
+  font:500 13.3px/18px var(--head);color:#08232c}
+.erp-refresh{left:571px;top:251px;width:54px;height:54px;background:var(--black-teal);
+  border-radius:12px;display:grid;place-items:center}
+.erp-refresh i{width:24px;height:24px;background:#fff;
+  
+  -webkit-mask:url(fig/bico/refresh.svg) center/contain no-repeat;
+          mask:url(fig/bico/refresh.svg) center/contain no-repeat}
+
+.integ-copy{left:744px;top:48px;width:440px;height:255px;direction:rtl;text-align:start}
+.integ-copy .eb{justify-content:flex-start;color:var(--teal-2);height:21px}
+.integ-copy .eb i{background:var(--teal-2)}
+.integ-copy h2{font:400 34px/42px var(--head);color:#fff;margin-top:16px;height:84px}
+.integ-copy p{font:400 16px/25px var(--head);color:rgba(255,255,255,.72);margin-top:16px}
+
+.integ-copy .btnw{margin-top:24px;display:flex;justify-content:flex-start}
+.todo{padding-block:var(--sec-pad)}
+.todo .slot{border-radius:12px;padding:56px 44px;text-align:center;
+  background:rgba(175,45,29,.05);box-shadow:inset 0 0 0 1px rgba(175,45,29,.26)}
+.todo .slot b{display:block;font:500 20px/28px var(--head);color:#AF2D1D}
+.todo .slot span{display:block;font:400 15px/22px var(--head);color:var(--ink-2);margin-top:8px}
+.todo .slot code{font:400 13.3px var(--num);background:#fff;padding:2px 7px;border-radius:5px}
+</style>
+<link rel="stylesheet" href="menu.css?v=1791052042">
+<link rel="stylesheet" href="menu-motion.css?v=1791051341">
+<link rel="stylesheet" href="ind-mobile.css?v=1790790769">
+<link rel="stylesheet" href="home-sections-mobile.css?v=1791052281">
+<link rel="stylesheet" href="micro-pages.css?v=1790679321">
+<link rel="stylesheet" href="tile-arrow.css?v=1790861149">
+<link rel="stylesheet" href="entrance-pages.css?v=1790685785">
+<link rel="stylesheet" href="eyebrow-dots.css?v=1790791514">
+<link rel="stylesheet" href="type-h12.css?v=1790843452">
+<link rel="stylesheet" href="type-mobile.css?v=1791050677">
+<link rel="stylesheet" href="no-review-notes.css?v=1790850214">
+<link rel="stylesheet" href="ind-hero-motion.css">
+</head>
+<body>
+
+<div data-home="hdr"></div>
+
+<div data-home="crumb"><script type="application/json">{"items": [{"t": "ראשי", "href": "#"}, {"t": "תעשיות", "href": "#"}, {"t": "יבוא ויצוא"}]}</script></div>
+
+
+<section class="ihero-sec">
+  <div class="ihero">
+    <div class="dotbg"></div><div class="scrim-a"></div><div class="scrim-b"></div>
+    <div class="mock">
+      <div class="slab"></div>
+      <div class="shot"><img src="fig/ind-hero-ship.jpg" alt=""></div>
+      <div class="mark"><i></i></div>
+      <div class="statuspill"><div class="in"><span class="lbl">שינוי במצב הלקוח</span></div></div>
+      <div class="tagpill">השוואה בין ספקים</div>
+      
+<div class="mockcards ifacts">
+  <div class="mockcard"><div class="in">
+    <span class="lbl">דירוג מדינה</span>
+    <span class="fig">72<i class="trend up" aria-hidden="true"></i></span>
+  </div></div>
+  <div class="mockcard"><div class="in">
+    <span class="lbl">הזדמנויות צמיחה</span>
+    <span class="fig">18<i class="trend down" aria-hidden="true"></i></span>
+  </div></div>
+  <div class="mockcard"><div class="in">
+    <span class="lbl">תעודת אמינות</span>
+    <span class="fig">בתוקף</span>
+  </div></div>
+</div>
+    </div>
+    <div class="icopy">
+      <div class="stack">
+        
+<div class="eb"><i></i>יבוא יצוא</div>
+        <h1>מידע עסקי שמניע סחר גלובלי</h1>
+        <p>בדקו ספקים ולקוחות בחו״ל לפני שאתם מעבירים כסף או שולחים סחורה. חשוב לוודא את אמינותם ואת תקינות העסקה כדי למנוע הונאות ובעיות עתידיות. בצעו בדיקות רקע, קראו חוות דעת ובקשו המלצות כדי להבטיח שיתוף פעולה בטוח ומוצלח.</p>
+      </div>
+      <div class="btns">
+        <a class="dnb-btn dnb-btn--ghost" href="#"><span class="dnb-btn__badge"><img src="fig/btn-arrow.svg" alt=""></span><span class="dnb-btn__label">צפו בדוח לדוגמה</span></a>
+        <a class="dnb-btn dnb-btn--dark" href="#"><span class="dnb-btn__badge"><img src="fig/btn-arrow.svg" alt=""></span><span class="dnb-btn__label">דברו עם מומחה</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div data-home="trust"></div>
+
+
+
+
+<section class="chal">
+  <div class="band">
+    <div class="head">
+      <div class="eb"><i></i>האתגר<i></i></div>
+      <h2>להחליט מהר, בלי לוותר על בדיקה</h2>
+    </div>
+    <div class="row">
+      <a class="c" href="#">
+        <span class="tile"><i style="-webkit-mask-image:url(fig/bico/gauge.svg);mask-image:url(fig/bico/gauge.svg)"></i></span>
+        <span style="width:100%;text-align:start">
+          <span class="lbl">האתגר</span>
+          <h3>זמני תגובה קצרים</h3>
+          <p>לקוחות עסקיים מצפים לתשובה על בקשת אשראי תוך ימים, ולפעמים תוך שעות.</p>
+        </span>
+        <span class="foot"><span class="go"><i></i></span>
+          <span class="plabel"><span class="lbl">משפחת הפתרונות</span><b>ניהול סיכוני אשראי עסקי</b></span></span>
+      </a>
+      <a class="c" href="#">
+        <span class="tile"><i style="-webkit-mask-image:url(fig/bico/globe.svg);mask-image:url(fig/bico/globe.svg)"></i></span>
+        <span style="width:100%;text-align:start">
+          <span class="lbl">האתגר</span>
+          <h3>רגולציה שמתהדקת</h3>
+          <p>דרישות KYC ומניעת הלבנת הון מחייבות להכיר כל לקוח עסקי לעומק.</p>
+        </span>
+        <span class="foot"><span class="go"><i></i></span>
+          <span class="plabel"><span class="lbl">משפחת הפתרונות</span><b>ניהול סיכוני צד שלישי</b></span></span>
+      </a>
+      <a class="c" href="#">
+        <span class="tile"><i style="-webkit-mask-image:url(fig/bico/search.svg);mask-image:url(fig/bico/search.svg)"></i></span>
+        <span style="width:100%;text-align:start">
+          <span class="lbl">האתגר</span>
+          <h3>תיק שמשתנה כל הזמן</h3>
+          <p>לקוח שהיה יציב בחיתום יכול להידרדר תוך חודשים. צריך לדעת על זה ראשונים.</p>
+        </span>
+        <span class="foot"><span class="go"><i></i></span>
+          <span class="plabel"><span class="lbl">משפחת הפתרונות</span><b>ניהול סיכוני אשראי עסקי</b></span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<section class="products">
+  <div class="wrap">
+  <div class="head">
+    <div class="eb"><i></i>הפתרונות<i></i></div>
+    <h2>הפתרונות לחיתום, אשראי וניטור</h2>
+  </div>
+
+  <div class="prow">
+    <div class="pmock"><span class="patch"></span>
+      <span class="badge"><i style="-webkit-mask-image:url(fig/dotted/dot-check.svg);mask-image:url(fig/dotted/dot-check.svg)"></i></span>
+      <div class="card">
+        <div class="ctop"><span class="chip">עודכן היום</span>
+          <span style="display:flex;align-items:center;gap:12px"><span class="nm"><b>חברה לדוגמה בע״מ</b><span>דוח אשראי עסקי</span></span><span class="ic"></span></span></div>
+        <div class="r"><em>תקין</em><span>פרטים רשמיים</span></div>
+        <div class="r"><em>2 בעלי שליטה</em><span>בעלויות</span></div>
+        <div class="r" style="display:block"><span style="display:flex;justify-content:space-between"><b style="font:500 13.3px/17px var(--head)">82</b><span>התנהגות תשלומים</span></span><span class="rail"><span></span></span></div>
+        <div class="r"><em style="color:var(--teal);font-weight:500">0</em><span>אירועים משפטיים</span></div>
+      </div>
+      <span class="pill"><i></i>הדוח מוכן</span>
+    </div>
+    <div class="pcopy"><span class="tag">משפחת פתרונות</span><h3>דוח אשראי עסקי</h3>
+      <p>תמונה מלאה על העסק לפני החלטת חיתום.</p>
+      <a class="dnb-btn dnb-btn--dark" href="#"><span class="dnb-btn__badge"><img src="fig/btn-arrow.svg" alt=""></span><span class="dnb-btn__label">לעמוד הפתרון</span></a></div>
+  </div>
+
+  <div class="prow">
+    <div class="pmock"><span class="patch"></span>
+      <span class="badge"><i style="-webkit-mask-image:url(fig/bico/gauge.svg);mask-image:url(fig/bico/gauge.svg)"></i></span>
+      <div class="card">
+        <div class="ctop"><span></span>
+          <span style="display:flex;align-items:center;gap:12px"><span class="nm"><b>חברה לדוגמה בע״מ</b><span>דירוג והמלצת אשראי</span></span><span class="ic"></span></span></div>
+        <div class="r" style="display:block"><span style="display:flex;justify-content:space-between;align-items:baseline"><em>דירוג סיכון</em><b style="font:400 24px/30px var(--head);color:var(--teal)">נמוך</b></span><span class="rail"><span style="margin-inline-start:22%"></span></span></div>
+        <div class="r"><b style="font:500 20px/26px var(--head);color:var(--ink)">250,000₪</b><span>המלצת אשראי</span></div>
+      </div>
+      <span class="pill"><i></i>המלצת אשראי מוכנה</span>
+    </div>
+    <div class="pcopy"><span class="tag">משפחת פתרונות</span><h3>דירוג והמלצת אשראי</h3>
+      <p>דירוג סיכון והמלצה על מסגרת, להחלטה מהירה.</p>
+      <a class="dnb-btn dnb-btn--dark" href="#"><span class="dnb-btn__badge"><img src="fig/btn-arrow.svg" alt=""></span><span class="dnb-btn__label">לעמוד הפתרון</span></a></div>
+  </div>
+
+  <div class="prow">
+    <div class="pmock"><span class="patch"></span>
+      <span class="badge"><i style="-webkit-mask-image:url(fig/dotted/dot-alert-triangle.svg);mask-image:url(fig/dotted/dot-alert-triangle.svg)"></i></span>
+      <div class="card">
+        <div class="ctop"><span class="chip">4 חדשות</span><b style="font:500 15px/21px var(--head)">התראות אחרונות</b></div>
+        <div class="r" style="background:#FCE2DF"><em>היום</em><span>● הסיכון עלה · חברה ג׳ בע״מ</span></div>
+        <div class="r"><em>אתמול</em><span>● שינוי בעלות · חברה ב׳ בע״מ</span></div>
+        <div class="r"><em>השבוע</em><span>● עדכון דירוג · חברה ד׳ בע״מ</span></div>
+        <div class="r"><em>השבוע</em><span>● עדכון כתובת · חברה א׳ בע״מ</span></div>
+      </div>
+      <span class="pill"><i></i>ניטור פעיל</span>
+    </div>
+    <div class="pcopy"><span class="tag">משפחת פתרונות</span><h3>ניטור והתראות</h3>
+      <p>התראה על כל שינוי מהותי אצל לקוחות בתיק.</p>
+      <a class="dnb-btn dnb-btn--dark" href="#"><span class="dnb-btn__badge"><img src="fig/btn-arrow.svg" alt=""></span><span class="dnb-btn__label">לעמוד הפתרון</span></a></div>
+  </div>
+
+  <div class="prow">
+    <div class="pmock"><span class="patch"></span>
+      <span class="badge"><i style="-webkit-mask-image:url(fig/dotted/dot-building.svg);mask-image:url(fig/dotted/dot-building.svg)"></i></span>
+      <div class="card" style="top:74px">
+        <div class="ctop"><span></span>
+          <span style="display:flex;align-items:center;gap:12px"><span class="nm"><b>חברה לדוגמה בע״מ</b><span>ח.פ. 51-0000000</span></span><span class="ic"></span></span></div>
+        <div style="display:flex;gap:8px;margin-top:6px">
+          <div class="r" style="flex:1;justify-content:center">חברת החזקות ג׳</div>
+          <div class="r" style="flex:1;justify-content:center">בעל מניות ב׳</div>
+          <div class="r" style="flex:1;justify-content:center">בעל מניות א׳</div>
+        </div>
+      </div>
+      <span class="pill"><i></i>מבנה אחזקות מלא</span>
+    </div>
+    <div class="pcopy"><span class="tag">משפחת פתרונות</span><h3>נתוני חברות ובעלויות</h3>
+      <p>בעלי שליטה ומבנה אחזקות, לבדיקות KYC.</p>
+      <a class="dnb-btn dnb-btn--dark" href="#"><span class="dnb-btn__badge"><img src="fig/btn-arrow.svg" alt=""></span><span class="dnb-btn__label">לעמוד הפתרון</span></a></div>
+  </div>
+  
+</div></section>
+
+
+
+
+<section class="proof"><div class="wrap">
+  <div class="in">
+    <div>
+      
+<div class="eb" style="justify-content:flex-start"><i></i>לקוחות מספרים</div><h2>העסקים שצומחים הכי מהר עובדים עם D&amp;B</h2>
+      <p class="lede">אלפי חברות בישראל משתמשות בנתוני D&amp;B כדי להחליט מול מי לעבוד.</p>
+      <div class="btnw"><a class="dnb-btn dnb-btn--lite" href="#"><span class="dnb-btn__badge"><img src="fig/btn-arrow-dark.svg" alt=""></span><span class="dnb-btn__label">דברו איתנו</span></a></div>
+    </div>
+    <div class="quote1">
+      <img class="qm" src="fig/t2-quote.svg" alt="">
+      <blockquote>לפני שאנחנו סוגרים עסקה עם ספק חדש בחו״ל, אנחנו בודקים אותו ב-D&amp;B. זה הפך לחלק מהתהליך, ולא למשהו שעושים רק כשיש חשש.</blockquote>
+      <div class="base">
+        <div class="fig"><b>5x</b><span>נפח בדיקות</span></div>
+        <div class="who">
+          <div>
+            <div class="n">אבי כהן</div>
+            <div class="r">סמנכ״ל כספים</div>
+          </div>
+          <img class="av" src="fig/avatar.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<div data-home="ctaw" data-h2="לפני שאתם שולחים סחורה — בדקו עם מי אתם עובדים"></div>
+
+
+<div data-sec="marks"></div>
+<div data-home="guides"></div>
+<div data-home="faq"></div>
+<script src="home-sections.js?v=1791048978"></script>
+<script src="content/faq.js?v=1788190793"></script>
+<script src="content/cta-chips.js?v=1789645921"></script>
+<script src="menu-panels.js?v=1790789982"></script>
+<script src="menu.js?v=1791051400"></script>
+<script src="nav-wire.js?v=1791052132"></script>
+<script src="ind-prod-media.js?v=1790866562"></script>
+<script src="micro/micro.js?v=1787833609"></script>
+<script src="tile-arrow.js?v=1790861149"></script>
+<script src="sec-integ.js?v=1790751187"></script>
+<script src="entrance-pages.js?v=1790685922"></script>
+<script src="sec-marks.js?v=1790791008"></script>
+<script src="eyebrow-dots.js?v=1790791514"></script>
+</body>
+</html>

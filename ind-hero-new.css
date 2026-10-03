@@ -1,0 +1,99 @@
+
+body{margin:0;background:#FCFDFE}
+*{box-sizing:border-box}
+h1,h2,h3,h4,p,figure,blockquote,ul{margin:0}
+a{color:inherit;text-decoration:none}
+
+.ind-hero a:hover,.ihm-root a:hover{color:#0083A1}
+.ind-hero a:focus-visible,.ind-hero button:focus-visible,.ind-hero input:focus-visible,
+.ihm-root a:focus-visible,.ihm-root button:focus-visible,.ihm-root input:focus-visible{
+  outline:2px solid #5CCDE7;outline-offset:3px}
+.dnb-btn{transition:filter 160ms cubic-bezier(.4,0,.6,1)}
+.dnb-btn:hover{filter:brightness(.97)}
+.dnb-btn:active{filter:brightness(.94)}
+.dnb-badge{transition:transform 180ms cubic-bezier(.4,0,.6,1)}
+.dnb-btn:hover .dnb-badge{transform:translateX(-1px)}
+.dnb-card{transition:box-shadow 140ms cubic-bezier(.4,0,.6,1)}
+.dnb-card:hover{box-shadow:inset 0 0 0 .957px rgba(33,33,33,.1),0 2px 8px -4px rgba(11,46,56,.1)!important}
+.dnb-tile{transition:box-shadow 200ms cubic-bezier(.4,0,.6,1)}
+.dnb-tile circle{transition:fill 200ms cubic-bezier(.4,0,.6,1)}
+.dnb-card:hover .dnb-tile,.dnb-acc:hover .dnb-tile{box-shadow:inset 0 0 0 1px rgba(0,131,161,.34)!important}
+.dnb-card:hover .dnb-tile circle,.dnb-acc:hover .dnb-tile circle{fill:#0083A1}
+.dnb-nav:hover{color:#0083A1!important}
+.dnb-crumb:hover{color:#0083A1!important}
+.dnb-flink:hover{color:#CFE0EA!important}
+.dnb-input-dark::placeholder{color:#8FA2AF}
+.dnb-chip{-webkit-backdrop-filter:blur(1.722px);backdrop-filter:blur(1.722px)}
+.dnb-patch{background-image:radial-gradient(circle at center,rgba(11,22,32,.105) 1.1px,rgba(11,22,32,0) 1.6px),radial-gradient(circle at center,rgba(11,22,32,.105) 1.5px,rgba(11,22,32,0) 2px);background-size:18.2px 18.2px,36.4px 36.4px;background-position:0 0,-9.1px -9.1px;-webkit-mask-image:radial-gradient(closest-side,#000 25%,rgba(0,0,0,0) 100%);mask-image:radial-gradient(closest-side,#000 25%,rgba(0,0,0,0) 100%)}
+.dnb-patch-dark{background-image:radial-gradient(circle at center,rgba(255,255,255,.28) 1.1px,rgba(255,255,255,0) 1.6px);background-size:16px 16px;-webkit-mask-image:radial-gradient(closest-side,#000 20%,rgba(0,0,0,0) 100%);mask-image:radial-gradient(closest-side,#000 20%,rgba(0,0,0,0) 100%)}
+.dnb-dots-promo{background-image:radial-gradient(ellipse 560px 200px at 50% 50%,#071620 0%,#071620 50%,rgba(7,22,32,0) 100%),radial-gradient(circle at center,rgba(255,255,255,.5) 1.1px,rgba(255,255,255,0) 1.6px);background-size:100% 100%,32px 32px;background-repeat:no-repeat,repeat}
+.dnb-dots-testimonials{background-image:linear-gradient(to bottom,#FCFCFC 0px,#FCFCFC 200px,rgba(252,252,252,0) 320px),radial-gradient(circle at center,#B8C2CA 1.1px,rgba(184,194,202,0) 1.6px),radial-gradient(circle at center,#B8C2CA 1.5px,rgba(184,194,202,0) 2px);background-size:100% 100%,56.5px 56.5px,113px 113px;background-position:0 0,0 0,-28.25px -28.25px;background-repeat:no-repeat,repeat,repeat}
+.dnb-flowline{background-image:radial-gradient(circle at center,#5CCDE7 1.2px,rgba(92,205,231,0) 1.7px);background-size:8px 4px;background-repeat:repeat-x;background-position:center}
+.ph{position:absolute;left:0;top:0;right:0;bottom:0;background-size:11px 11px}
+.ph-c{background-image:radial-gradient(circle at center,#D8E0E5 1.1px,rgba(216,224,229,0) 1.6px);-webkit-mask-image:linear-gradient(150deg,rgba(0,0,0,0) 12%,#000 28%,#000 72%,rgba(0,0,0,0) 88%);mask-image:linear-gradient(150deg,rgba(0,0,0,0) 12%,#000 28%,#000 72%,rgba(0,0,0,0) 88%)}
+.ph-b{background-image:radial-gradient(circle at center,#D8E0E5 1.8px,rgba(216,224,229,0) 2.3px);-webkit-mask-image:linear-gradient(150deg,rgba(0,0,0,0) 26%,#000 38%,#000 62%,rgba(0,0,0,0) 74%);mask-image:linear-gradient(150deg,rgba(0,0,0,0) 26%,#000 38%,#000 62%,rgba(0,0,0,0) 74%)}
+.ph-a{background-image:radial-gradient(circle at center,#D8E0E5 2.6px,rgba(216,224,229,0) 3.1px);-webkit-mask-image:linear-gradient(150deg,rgba(0,0,0,0) 38%,#000 46%,#000 54%,rgba(0,0,0,0) 62%);mask-image:linear-gradient(150deg,rgba(0,0,0,0) 38%,#000 46%,#000 54%,rgba(0,0,0,0) 62%)}
+.ph-flip{transform:scaleX(-1)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+.ih-pin,.ih-card{transition:none}@keyframes ih-in{from{opacity:0;transform:translateY(6px)}}@media (prefers-reduced-motion:no-preference){.ih-card{animation:ih-in .5s cubic-bezier(.22,1,.36,1) both}.ih-card:nth-of-type(2n){animation-delay:.12s}}
+
+
+.ind-hero{width:100% !important;max-width:1440px !important;margin-inline:auto !important}
+
+.ind-hero.w600{height:auto !important;min-height:520px}
+
+
+.ind-hero img{max-width:none}
+
+
+.ind-hero{background-color:#FCFDFE !important}
+.ind-hero > span[aria-hidden="true"]:first-of-type{display:none}
+.ind-hero .dnb-btn{flex-direction:row-reverse}
+
+
+@media (max-width: 767.98px){
+  .ind-hero{
+    display:flex !important; flex-direction:column !important;
+    align-items:stretch !important;
+    width:100% !important; max-width:100% !important;
+    height:auto !important; min-height:0 !important;
+    padding:28px 20px 32px !important; gap:20px !important;
+    overflow:hidden !important;
+  }
+  
+  .ind-hero > span[aria-hidden="true"],
+  .ind-hero > div:not(:last-of-type){ display:none !important; }
+
+  
+  .ind-hero > div:last-of-type{
+    position:static !important; inset:auto !important;
+    width:100% !important; max-width:100% !important;
+    display:flex !important; flex-direction:column !important;
+    align-items:flex-end !important; gap:16px !important;
+    text-align:right !important;
+  }
+  .ind-hero > div:last-of-type > *{
+    position:static !important; inset:auto !important;
+    width:100% !important; max-width:100% !important;
+  }
+  .ind-hero h1{ font-size:34px !important; line-height:37.4px !important; text-align:right !important; }
+  .ind-hero p { text-align:right !important; white-space:normal !important; }
+  .ind-hero .dnb-btn{ align-self:flex-end !important; width:auto !important; }
+
+  
+  .ind-hero::after{
+    content:"דימוי הירו למובייל — ממתין לקובץ";
+    display:flex; align-items:center; justify-content:center;
+    width:100%; aspect-ratio:3 / 2; margin-top:4px;
+    border:1px dashed rgba(0,131,161,.45); border-radius:14px;
+    background-color:#F3F8FA;
+    background-image:radial-gradient(circle at center,rgba(11,22,32,.105) 1.1px,rgba(11,22,32,0) 1.6px);
+    background-size:18.2px 18.2px;
+    font:500 14px/1.4 Heebo,sans-serif; color:#0083A1; text-align:center;
+    direction:rtl;
+  }
+}
+
+
+.ihm-root img{max-width:none}
+.ihm-root > section > span[style*="radial-gradient"]{display:none !important}

@@ -1,0 +1,89 @@
+
+.solcards{position:relative;direction:rtl;padding:80px 100px;background:#FCFDFE}
+.solcards .scwrap{max-width:1240px;margin-inline:auto}
+
+.solcards .schead{display:flex;flex-direction:column;align-items:center;gap:17.5px;
+  text-align:center;margin-bottom:56px}
+.solcards .schead .eb{display:flex;align-items:center;justify-content:center;gap:8px;
+  font:500 14px/21px "Heebo",sans-serif;letter-spacing:1px;color:#0083A1}
+.solcards .schead .eb i{width:6px;height:6px;border-radius:999px;background:#0083A1;flex:0 0 auto}
+.solcards .schead h2{margin:0;font:400 56px/62px "Heebo",sans-serif;color:#000;text-wrap:balance}
+
+.solcards .scgrid{display:grid;grid-template-columns:repeat(3,minmax(0,400px));
+  gap:20px;justify-content:center}
+.solcards.one .scgrid{grid-template-columns:minmax(0,400px)}
+
+.solcards .sccard{position:relative;display:flex;flex-direction:column;
+  border-radius:12px;overflow:hidden;padding-bottom:32px;box-sizing:border-box;
+  background-image:linear-gradient(180deg,#F6F8FA 0%,#F3F5F7 100%);
+  box-shadow:inset 0 0 0 .957px rgba(33,33,33,.1)}
+
+
+.solcards .scart{height:240px;display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+.solcards .scmockw{position:relative;width:240px}
+.solcards .scmock{position:relative;display:flex;flex-direction:column;gap:3.2px;
+  padding:4px;border-radius:10px;background:rgba(255,255,255,.45);
+  -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);
+  box-shadow:0 0 0 .5px rgba(33,33,33,.05), inset 0 0 0 1px rgba(255,255,255,.95)}
+.solcards .scrow{background:#E8ECEF;border-radius:3px;padding:8.8px 12.8px 9.6px;
+  display:flex;flex-direction:column;gap:6.4px}
+.solcards .scrow .lbl{font:400 9.6px/12.8px "Heebo",sans-serif;color:#5E5E86;text-align:right}
+.solcards .scrow .fig{font:300 20.8px/24px "Heebo",sans-serif;color:#5E5E86;text-align:right}
+.solcards .scbar{position:relative;height:9.6px;border-radius:4px;
+  background-image:linear-gradient(90deg,#259BB3 0%,#92CE8F 30%,#F0C355 56%,#F0C355 100%)}
+.solcards .scbar i{position:absolute;top:-2.4px;width:2px;height:14.4px;background:#888}
+
+.solcards .scseg{display:flex;direction:ltr;gap:1.6px;height:9.6px;border-radius:4px;overflow:hidden}
+.solcards .scseg span{height:100%}
+.solcards .sclegend{display:flex;direction:ltr;gap:11.2px;justify-content:flex-start;
+  padding-left:43.73px;font:400 8.8px/11.2px "Heebo",sans-serif;color:#5E5E86}
+.solcards .sclegend span{display:flex;align-items:center;gap:4px}
+.solcards .sclegend i{width:5.6px;height:5.6px;border-radius:2px;flex:0 0 auto}
+.solcards .scpill{position:absolute;left:-27.2px;top:-8.8px;height:28px;
+  display:flex;align-items:center;padding:5.6px 12.8px 6.4px;border-radius:4px;
+  background:#5CCDE7;font:400 11.2px/16px "Heebo",sans-serif;color:#2F2F2F;white-space:nowrap}
+.solcards .sctile{position:absolute;right:-40px;bottom:-14.6px;width:43.2px;height:43.2px;
+  border-radius:5px;background:#071620;display:flex;align-items:center;justify-content:center}
+.solcards .sctile i{width:25.6px;height:25.6px;background:#fff;display:block;
+  
+  -webkit-mask:url(fig/dotted/dot-check.svg) center/contain no-repeat;
+  mask:url(fig/dotted/dot-check.svg) center/contain no-repeat}
+
+
+
+.solcards .scbody{position:relative;flex:1 1 auto;min-height:220px;
+  padding:8px 32px 0;box-sizing:border-box;text-align:right;
+  display:flex;flex-direction:column;align-items:stretch}
+.solcards .scbody .eb2{font:500 14px/21px "Heebo",sans-serif;letter-spacing:1px;color:#0083A1}
+.solcards .scbody h3{margin:12px 0 0;font:400 26px/34px "Heebo",sans-serif;color:#000}
+.solcards .scbody p{margin:11px 0 0;font:400 16px/20.8px "Heebo",sans-serif;color:#64727C}
+.solcards .scbtnw{margin-top:auto;padding-top:12px;display:flex;justify-content:flex-start}
+
+
+.solcards .slot{color:#AF2D1D!important;opacity:.72}
+
+
+.solcards .dnb-btn[aria-disabled="true"]{
+  opacity:1!important;filter:none!important;cursor:default;
+  background-image:linear-gradient(180deg,rgba(255,255,255,.12) 0%,rgba(255,255,255,0) 100%),
+                   linear-gradient(90deg,#1F1F29 0%,#1F1F29 100%)!important;
+  box-shadow:inset 0 0 0 1px #282834!important}
+.solcards .dnb-btn[aria-disabled="true"] .dnb-btn__label{color:#fff!important;opacity:1!important}
+.solcards .dnb-btn[aria-disabled="true"] .dnb-btn__badge{background:#9EEDFA!important}
+
+@media (max-width:1100px){
+  .solcards{padding:64px 40px}
+  .solcards .scgrid{grid-template-columns:repeat(2,minmax(0,400px))}
+}
+@media (max-width:767.98px){
+  .solcards{padding:64px 20px}
+  .solcards .schead{margin-bottom:32px}
+  .solcards .schead h2{font-size:28px;line-height:36px}
+  .solcards .scgrid,.solcards.one .scgrid{grid-template-columns:minmax(0,1fr);gap:16px}
+  .solcards .sccard{max-width:none}
+  .solcards .scbody h3{font-size:24px;line-height:30px}
+}
+
+
+.solcards .sc-note{margin:-36px 0 32px;text-align:center;
+  font:400 13.3px/19.91px "Heebo",sans-serif;color:#64727C}
