@@ -1,0 +1,252 @@
+<!DOCTYPE html><html lang="he" dir="rtl" data-motion="on"><head>
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>עמוד פתרון — בורר המוצרים במובייל · חמש אפשרויות</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500&display=swap">
+<link rel="stylesheet" href="ds/tokens.css?v=1790843651">
+<link rel="stylesheet" href="ds/components.css?v=1790843651">
+
+<style>
+:root{
+  --head:"Heebo",sans-serif;
+  --ink:#26333d; --ink-2:#51606b; --ink-3:#64727c;
+  --teal:#0083a1; --teal-1:#5ccde7; --teal-2:#9eedfa; --teal-lite:#d0f0f7;
+  --dark:#071620; --paper:#fcfdfe; --s-1:#f8fafc; --s-3:#f3f5f7;
+  --hair:rgba(33,33,33,.1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#eef1f4;font-family:var(--head);color:var(--ink)}
+a{text-decoration:none;color:inherit}
+h1,h2,h3,h4{font-weight:inherit}
+
+
+.top{position:sticky;top:0;z-index:20;background:var(--dark);color:#fff;
+  padding:16px 20px;display:flex;flex-wrap:wrap;align-items:baseline;gap:10px}
+.top h1{font-size:18px;font-weight:500}
+.top p{font-size:13px;color:#9fb0bd;max-width:70ch;line-height:1.5}
+.board{display:flex;gap:22px;padding:24px 20px 60px;overflow-x:auto;align-items:flex-start}
+.plate{flex:0 0 auto;width:390px}
+.plate>.cap{background:#fff;border-radius:12px 12px 0 0;padding:14px 16px;box-shadow:inset 0 0 0 1px var(--hair)}
+.plate>.cap b{display:block;font-size:15px;font-weight:500;margin-bottom:4px}
+.plate>.cap .pr{font-size:12.5px;line-height:1.5;color:var(--teal)}
+.plate>.cap .co{font-size:12.5px;line-height:1.5;color:var(--ink-3);margin-top:6px}
+.phone{width:390px;background:var(--paper);border-radius:0 0 12px 12px;overflow:hidden;
+  box-shadow:inset 0 0 0 1px var(--hair)}
+
+
+.sec{padding:40px 20px 48px}
+.eb{display:flex;align-items:center;gap:8px;font-size:14px;line-height:21px;font-weight:500;
+  letter-spacing:1px;color:var(--teal)}
+.eb i{width:4px;height:4px;border-radius:2px;background:var(--teal);flex:0 0 auto}
+.h2{font-size:28px;line-height:36px;font-weight:400;margin-top:10px}
+.sub{font-size:16px;line-height:21px;color:var(--ink-2);margin-top:12px}
+.mock{height:150px;border-radius:12px;margin-top:16px;
+  background:linear-gradient(148deg,#e6f6fb 0%,#cfeef7 100%);
+  box-shadow:inset 0 0 0 .957px rgba(33,33,33,.08);position:relative;overflow:hidden}
+.mock::after{content:"";position:absolute;inset:0;
+  background-image:radial-gradient(circle at center,rgba(11,22,32,.105) 1.1px,rgba(11,22,32,0) 1.6px);
+  background-size:18.2px 18.2px}
+.mock b{position:absolute;inset-inline-end:16px;top:14px;font-size:12px;font-weight:500;
+  color:var(--ink-3);z-index:1}
+.pt{font-size:20px;line-height:28px;font-weight:500;margin-top:18px}
+.pd{font-size:16px;line-height:21px;color:var(--ink-2);margin-top:8px}
+.bl{margin-top:14px;display:flex;flex-direction:column;gap:9px}
+.bl span{display:flex;align-items:center;gap:10px;font-size:15px;line-height:21px;color:var(--ink-2)}
+.bl i{width:18px;height:18px;border-radius:50%;background:var(--teal-lite);flex:0 0 auto;
+  display:grid;place-items:center}
+.bl i::after{content:"";width:8px;height:8px;border-radius:50%;background:var(--teal)}
+
+
+.o1 .segw{margin-top:20px;overflow-x:auto;scrollbar-width:none}
+.o1 .segw::-webkit-scrollbar{display:none}
+.o1 .seg{display:inline-flex;gap:4px;padding:4px;border-radius:999px;background:var(--s-3);
+  box-shadow:inset 0 0 0 1px var(--hair)}
+.o1 .seg button{flex:0 0 auto;border:0;cursor:pointer;background:transparent;border-radius:999px;
+  padding:9px 16px;font:500 14px/20px var(--head);color:var(--ink-2);white-space:nowrap}
+.o1 .seg button[aria-selected=true]{background:var(--teal);color:#fff}
+
+
+.o2 .acc{margin-top:18px;border-top:1px solid var(--hair)}
+.o2 .row{border-bottom:1px solid var(--hair)}
+.o2 .row>button{width:100%;border:0;background:transparent;cursor:pointer;
+  display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 0;
+  font:500 18px/24px var(--head);color:var(--ink);text-align:start}
+.o2 .row>button .pm{width:22px;height:22px;flex:0 0 auto;position:relative}
+.o2 .row>button .pm::before,.o2 .row>button .pm::after{content:"";position:absolute;
+  background:var(--teal);inset-inline-start:2px;top:10px;width:18px;height:2px;border-radius:2px;
+  transition:transform .22s cubic-bezier(.19,1,.22,1)}
+.o2 .row>button .pm::after{transform:rotate(90deg)}
+.o2 .row[open] .pm::after{transform:rotate(0)}
+.o2 .body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .26s cubic-bezier(.19,1,.22,1)}
+.o2 .row[open] .body{grid-template-rows:1fr}
+.o2 .body>div{overflow:hidden}
+.o2 .body .in{padding-bottom:22px}
+
+
+.o3 .rail{margin:18px -20px 0;padding:0 20px;display:flex;gap:14px;overflow-x:auto;
+  scroll-snap-type:x mandatory;scrollbar-width:none}
+.o3 .rail::-webkit-scrollbar{display:none}
+.o3 .card{flex:0 0 302px;scroll-snap-align:center;background:#fff;border-radius:16px;padding:16px;
+  box-shadow:inset 0 0 0 1px var(--hair)}
+.o3 .card .mock{margin-top:0}
+.o3 .dots{display:flex;gap:7px;justify-content:center;margin-top:18px}
+.o3 .dots i{width:7px;height:7px;border-radius:50%;background:#c3ced6}
+.o3 .dots i.on{background:var(--teal);width:20px;border-radius:99px}
+
+
+.o4 .stack{margin-top:18px;display:flex;flex-direction:column;gap:14px}
+.o4 .blk{background:#fff;border-radius:16px;padding:16px 16px 20px;box-shadow:inset 0 0 0 1px var(--hair)}
+.o4 .blk .mock{margin-top:0;height:126px}
+.o4 .n{font:500 13.3px/19px var(--head);letter-spacing:1px;color:var(--teal);margin-top:14px}
+
+
+.o5 .scroll{height:470px;overflow-y:auto;position:relative}
+.o5 .stick{position:sticky;top:0;z-index:5;background:var(--paper);
+  padding:10px 0 12px;box-shadow:0 1px 0 var(--hair)}
+.o5 .seg{display:flex;gap:4px;padding:4px;border-radius:999px;background:var(--s-3);
+  box-shadow:inset 0 0 0 1px var(--hair)}
+.o5 .seg button{flex:1 1 0;min-width:0;border:0;cursor:pointer;background:transparent;
+  border-radius:999px;padding:9px 6px;font:500 13px/18px var(--head);color:var(--ink-2);
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.o5 .seg button[aria-selected=true]{background:var(--teal);color:#fff}
+.o5 .anchor{scroll-margin-top:62px}
+.o5 h3.pt{margin-top:26px}
+</style>
+<link rel="stylesheet" href="no-review-notes.css?v=1790850214">
+</head><body>
+
+<div class="top">
+  <h1>עמוד פתרון · בורר המוצרים במובייל — חמש אפשרויות</h1>
+  <p>הטאבים האנכיים של הדסקטופ מתקפלים ב-390 לרשימת פילים, שנקראת כשלושה קישורים ולא כפקד.
+     כל אפשרות כאן היא <b>עיקרון ארגון אחר</b>, לא ריווח אחר. התוכן בכל חמש הוא התוכן האמיתי של העמוד.</p>
+</div>
+
+<div class="board" id="board"></div>
+
+<script>
+
+const P = [
+  {t:'מערכת ניהול סיכונים',
+   d:'כל המידע על הלקוחות והספקים שלכם בישראל בממשק אחד: מעקבים עם התראות על שינויים, מודיעין עסקי, עץ בעלויות ובדיקות מהירות עם <span dir="ltr">Safe Check</span> ו-<span dir="ltr">Check It</span>.',
+   b:['מעקבים והתרעות','מודיעין עסקי ועץ בעלויות','בדיקות <span dir="ltr">Safe Check</span> ו-<span dir="ltr">Check It</span>']},
+  {t:'Finance Analytics',
+   d:'מערכת המספקת מידע עסקי מקיף, התראות על שינויי מצב פיננסי של לקוחות וספקים בכל העולם, עם אנליטיקה פיננסית שמעניקה תובנות והמאפשרת לנהל סיכונים בצורה יעילה.',
+   b:['התראות על שינויי מצב פיננסי','כיסוי גלובלי','אנליטיקה פיננסית']},
+  {t:'דוחות פיננסיים',
+   d:'דוחות מעמיקים על כל עסק, לפי רמת הפירוט שאתם צריכים: דוח מידע עסקי, דוח חברה מורחב, דוח חקירה, חוות דעת אשראי ודוח הצלבות.',
+   b:['דוח מידע עסקי','דוח חברה מורחב','חוות דעת אשראי']}
+];
+
+const OPT = [
+  {n:1, name:'פקד מקוטע (Segmented)',
+   pr:'העיקרון: פקד אחד, פאנל אחד. הבחירה היא מתג אופקי מעל התוכן, והפאנל מתחלף תחתיו.',
+   co:'המחיר: שלושה שמות ארוכים לא נכנסים ל-390 — המתג נגלל אופקית, וזה אומר ששם שלישי יכול להישאר מחוץ למסך עד שגוללים.'},
+  {n:2, name:'אקורדיון',
+   pr:'העיקרון: הרשימה היא התוכן. אין פאנל בכלל — כל מוצר נפתח במקומו.',
+   co:'המחיר: אי אפשר להשוות שניים זה לצד זה, והעמוד מתארך בכל פתיחה. מצד שני זו התבנית שכבר קיימת בעמוד (שאלות נפוצות), ולכן היא לא מוסיפה שפה חדשה.'},
+  {n:3, name:'רכבת החלקה (Snap)',
+   pr:'העיקרון: להחליק, לא ללחוץ. שלושת המוצרים הם כרטיסים ברכבת עם נקודות התקדמות.',
+   co:'המחיר: אין דרך לקפוץ ישר למוצר השלישי, ומי שלא מחליק רואה רק את הראשון. הנקודות הן הרמז היחיד שיש עוד.'},
+  {n:4, name:'הכל פתוח',
+   pr:'העיקרון: לוותר על הפקד. שלושה מוצרים הם מעט מספיק כדי פשוט להציג את כולם.',
+   co:'המחיר: הסקשן הוא הארוך בעמוד. בתמורה — אפס אינטראקציה, אפס מצב נסתר, והכי קרוב לאיך שהעמוד נקרא בסריקה.'},
+  {n:5, name:'מתג דביק',
+   pr:'העיקרון: הפקד הולך עם הקורא. המתג נדבק לראש המסך והתוכן נגלל תחתיו.',
+   co:'המחיר: המתג תופס 46px מהמסך לכל אורך הסקשן, והשמות חייבים להתקצר כדי להיכנס לשלוש עמודות שוות.'}
+];
+
+const mock = t => `<div class="mock"><b>${t}</b></div>`;
+const bullets = b => `<div class="bl">${b.map(x=>`<span><i></i>${x}</span>`).join('')}</div>`;
+const head = () => `<div class="eb"><i></i>הפתרון</div>
+  <div class="h2">פתרונות המידע העסקי שלנו</div>
+  <p class="sub">מעניקים לכם את המענה המדויק והמקיף בהתאם למטרות, לצרכים ולסקטור שבו אתם פועלים.</p>`;
+
+function panel(p){
+  return `${mock(p.t)}<h3 class="pt">${p.t}</h3><p class="pd">${p.d}</p>${bullets(p.b)}`;
+}
+
+function build(o){
+  let inner = '';
+  if (o.n === 1) {
+    inner = `<div class="sec o1">${head()}
+      <div class="segw"><div class="seg" role="tablist">
+        ${P.map((p,i)=>`<button role="tab" aria-selected="${i===0}" data-i="${i}">${p.t}</button>`).join('')}
+      </div></div>
+      <div class="pane">${panel(P[0])}</div></div>`;
+  } else if (o.n === 2) {
+    inner = `<div class="sec o2">${head()}
+      <div class="acc">${P.map((p,i)=>`
+        <div class="row"${i===0?' open':''}><button type="button">${p.t}<span class="pm"></span></button>
+          <div class="body"><div><div class="in">${panel(p)}</div></div></div></div>`).join('')}
+      </div></div>`;
+  } else if (o.n === 3) {
+    inner = `<div class="sec o3">${head()}
+      <div class="rail">${P.map(p=>`<div class="card">${panel(p)}</div>`).join('')}</div>
+      <div class="dots">${P.map((_,i)=>`<i class="${i?'':'on'}"></i>`).join('')}</div></div>`;
+  } else if (o.n === 4) {
+    inner = `<div class="sec o4">${head()}
+      <div class="stack">${P.map((p,i)=>`<div class="blk">${mock(p.t)}
+        <div class="n">מוצר ${i+1} מתוך ${P.length}</div>
+        <h3 class="pt" style="margin-top:6px">${p.t}</h3>
+        <p class="pd">${p.d}</p>${bullets(p.b)}</div>`).join('')}</div></div>`;
+  } else {
+    inner = `<div class="sec o5" style="padding-bottom:20px">${head()}
+      <div class="scroll"><div class="stick"><div class="seg" role="tablist">
+        ${P.map((p,i)=>`<button role="tab" aria-selected="${i===0}" data-i="${i}">${p.t}</button>`).join('')}
+      </div></div>
+      ${P.map((p,i)=>`<div class="anchor" id="a${o.n}-${i}">${panel(p)}</div>`).join('')}
+      </div></div>`;
+  }
+  return `<div class="plate" data-opt="${o.n}">
+      <div class="cap"><b>${o.n} · ${o.name}</b>
+        <div class="pr">${o.pr}</div><div class="co">${o.co}</div></div>
+      <div class="phone">${inner}</div>
+    </div>`;
+}
+
+document.getElementById('board').innerHTML = OPT.map(build).join('');
+
+
+document.querySelectorAll('.plate[data-opt="1"] .seg button').forEach(b => {
+  b.addEventListener('click', () => {
+    const seg = b.closest('.seg');
+    seg.querySelectorAll('button').forEach(x => x.setAttribute('aria-selected', x === b));
+    seg.closest('.sec').querySelector('.pane').innerHTML = panel(P[+b.dataset.i]);
+  });
+});
+document.querySelectorAll('.plate[data-opt="2"] .row > button').forEach(b => {
+  b.addEventListener('click', () => {
+    const row = b.parentElement, was = row.hasAttribute('open');
+    row.closest('.acc').querySelectorAll('.row').forEach(r => r.removeAttribute('open'));
+    if (!was) row.setAttribute('open', '');
+  });
+});
+(function () {
+  const rail = document.querySelector('.plate[data-opt="3"] .rail');
+  const dots = document.querySelectorAll('.plate[data-opt="3"] .dots i');
+  if (!rail) return;
+  rail.addEventListener('scroll', () => {
+    const i = Math.round(rail.scrollLeft / -316) * -1 || Math.round(Math.abs(rail.scrollLeft) / 316);
+    dots.forEach((d, k) => d.classList.toggle('on', k === Math.min(i, dots.length - 1)));
+  }, {passive: true});
+})();
+(function () {
+  const plate = document.querySelector('.plate[data-opt="5"]');
+  if (!plate) return;
+  const scroll = plate.querySelector('.scroll');
+  plate.querySelectorAll('.seg button').forEach(b => {
+    b.addEventListener('click', () => {
+      plate.querySelectorAll('.seg button').forEach(x => x.setAttribute('aria-selected', x === b));
+      const t = plate.querySelectorAll('.anchor')[+b.dataset.i];
+      scroll.scrollTo({top: t.offsetTop - 56, behavior: 'smooth'});
+    });
+  });
+  scroll.addEventListener('scroll', () => {
+    const tops = [...plate.querySelectorAll('.anchor')].map(a => a.offsetTop - 70);
+    let i = 0; tops.forEach((t, k) => { if (scroll.scrollTop >= t) i = k; });
+    plate.querySelectorAll('.seg button').forEach((x, k) => x.setAttribute('aria-selected', k === i));
+  }, {passive: true});
+})();
+</script>
+</body></html>

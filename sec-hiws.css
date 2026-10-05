@@ -1,0 +1,111 @@
+
+.hiws-sec{position:relative;direction:rtl;background:#F3F5F7;padding:80px 0;
+  font-family:"Heebo",sans-serif}
+.hiws-sec *{box-sizing:border-box}
+
+.hiws-sec h2,.hiws-sec h3{margin-block:0;font-weight:inherit}
+.hiws-sec p{margin-block:0}
+.hiws-wrap{max-width:1440px;margin-inline:auto;padding-inline:100px}
+
+
+.hiws-head{display:flex;flex-direction:column;align-items:center;text-align:center}
+.hiws-eyebrow{display:flex;align-items:center;gap:8px;
+  font:500 14px/21px "Heebo",sans-serif;letter-spacing:1px;color:#0083A1}
+
+.hiws-dot{width:6px;height:6px;border-radius:3px;background:#0083A1;flex:0 0 auto}
+.hiws-sec .hiws-h2{margin-top:15.5px;font:400 56px/61.6px "Heebo",sans-serif;color:#000}
+
+
+.hiws-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:42px;
+  margin-top:56px}
+.hiws-step{min-width:0}
+.hiws-panel{position:relative;height:326px;border-radius:12px;background:#FCFDFE;
+  box-shadow:inset 0 0 0 .957px rgba(33,33,33,.06);
+  display:flex;align-items:center;justify-content:center;overflow:hidden}
+
+.hiws-grid{position:absolute;inset:0;border-radius:12px;pointer-events:none;
+  background-image:radial-gradient(circle at center,rgba(11,22,32,.105) 1.1px,rgba(11,22,32,0) 1.6px);
+  background-size:18.2px 18.2px;
+  -webkit-mask-image:radial-gradient(closest-side,#000 25%,rgba(0,0,0,0) 100%);
+          mask-image:radial-gradient(closest-side,#000 25%,rgba(0,0,0,0) 100%)}
+.hiws-glass{position:relative;width:272px;padding:5px;border-radius:10px;
+  background:rgba(255,255,255,.45);
+  -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.95),0 0 0 .5px rgba(33,33,33,.05)}
+.hiws-card{width:262px;background:#fff;border-radius:6px;padding:20px;
+  display:flex;flex-direction:column;gap:18px;
+  box-shadow:inset 0 0 0 .957px rgba(33,33,33,.06)}
+.hiws-card.g26{gap:26px}
+
+.hiws-row{display:flex;align-items:center;gap:12px;width:100%}
+.hiws-col{display:flex;flex-direction:column;align-items:flex-start;gap:4px;min-width:0}
+.hiws-col.g35{gap:3.5px}
+.hiws-name{font:500 17px/23px "Heebo",sans-serif;color:#000;text-align:right;white-space:nowrap}
+.hiws-sub{font:400 14px/20px "Heebo",sans-serif;color:#51606B;white-space:nowrap}
+.hiws-chip{display:inline-flex;align-items:center;height:24px;padding:3.5px 10px 4.5px;
+  border-radius:999px;background:rgba(0,131,161,.1);
+  font:500 13px/16px "Heebo",sans-serif;color:#0083A1;white-space:nowrap}
+.hiws-av{width:44px;height:44px;flex:0 0 auto;border-radius:22px;background:#0083A1;
+  display:flex;align-items:center;justify-content:center;
+  font:500 15px/15px "Heebo",sans-serif;color:#fff}
+.hiws-av img{width:22px;height:22px;display:block}
+.hiws-btn{display:flex;align-items:center;justify-content:center;width:100%;height:44px;
+  border-radius:8px;box-shadow:inset 0 0 0 1.5px #0083A1;
+  font:500 15px/20px "Heebo",sans-serif;color:#0083A1}
+
+.hiws-score{display:flex;align-items:center;justify-content:space-between;width:100%;
+  padding:10px 12px;border-radius:8px;background:#F3F5F7}
+.hiws-score .nums{display:flex;align-items:center;gap:8px;
+  font:500 17px/23px "Heebo",sans-serif;color:#51606B;direction:ltr}
+.hiws-score .drop{color:#AF2D1D}
+
+.hiws-toggle{position:relative;width:46px;height:26px;flex:0 0 auto;
+  border-radius:999px;background:rgba(0,131,161,.35)}
+.hiws-knob{position:absolute;left:2px;top:2px;width:22px;height:22px;
+  border-radius:11px;background:#0083A1}
+
+.hiws-sec .hiws-title{margin-top:30px;font:500 24px/31.2px "Heebo",sans-serif;color:#000;text-align:right}
+.hiws-sec .hiws-body{margin-top:21px;font:400 20px/32px "Heebo",sans-serif;color:#51606B;text-align:right}
+
+
+@media (max-width:767.98px){
+  .hiws-sec{padding:64px 0}
+  .hiws-wrap{padding-inline:20px}
+  .hiws-sec .hiws-h2{font-size:28px;line-height:36px;margin-top:12px}
+  .hiws-steps{grid-template-columns:minmax(0,1fr);gap:40px;margin-top:32px}
+  .hiws-panel{height:260px}
+  .hiws-sec .hiws-title{margin-top:20px;font-size:24px;line-height:30px}
+  .hiws-sec .hiws-body{margin-top:12px;font-size:16px;line-height:24px}
+}
+
+
+.hiws-sec:not([data-hiws="on"]){display:none}
+html[data-hiws="off"] .hiws-sec{display:none}
+.hiws-sec .hiws-pending{margin:0 0 8px;font:400 13.3px/19.91px "Heebo",sans-serif;
+  color:#AF2D1D;text-align:center}
+
+
+.hiws-step .hiws-title{margin-block-end:0}
+.hiws-step .hiws-body{margin-block-start:15px}
+
+
+
+
+
+
+.hiws-sec .hiws-steps{position:relative}
+.hiws-sec .hiws-panel{z-index:1;
+  background:linear-gradient(to left,#D4F3FA 0%,#B3ECF9 100%);
+  box-shadow:inset 0 0 0 .957px rgba(33,33,33,.06)}
+
+.hiws-sec .hiws-grid{background-image:radial-gradient(circle at center,rgba(255,255,255,.95) 1.25px,rgba(255,255,255,0) 1.7px)!important;
+  background-size:14px 14px!important;background-position:center!important;
+  -webkit-mask-image:radial-gradient(ellipse 88% 92% at 50% 50%,#000 55%,rgba(0,0,0,0) 100%)!important;
+          mask-image:radial-gradient(ellipse 88% 92% at 50% 50%,#000 55%,rgba(0,0,0,0) 100%)!important}
+
+
+.hiws-sec .hiws-glass{z-index:1}
+
+@media (max-width:767.98px){
+}
+

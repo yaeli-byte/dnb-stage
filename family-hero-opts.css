@@ -1,0 +1,96 @@
+
+
+
+.fh{position:relative; overflow:hidden; background-color:#FCFDFE; color:#000000}
+.fh__bg{position:absolute; inset:0; z-index:0; pointer-events:none; background-image:var(--fh-gradient)}
+.fh__inner{position:relative; z-index:1; box-sizing:border-box; max-width:1440px; margin-inline:auto}
+.fh__copy{display:flex; flex-direction:column; gap:24px}
+.fh__text{display:flex; flex-direction:column; gap:17.6px}
+.fh__eyebrow{margin:0; display:flex; align-items:center; gap:10px; font-size:15px; line-height:22px; font-weight:500; letter-spacing:1px; color:#0083A1}
+.fh__eyebrow::before,.fh__eyebrow::after{content:""; width:5px; height:5px; border-radius:999px; background-color:currentColor}
+.fh__title{margin:0; font-size:48px; line-height:54px; font-weight:400; color:#000000; text-wrap:balance}
+.fh__lede{margin:0; font-size:20px; line-height:27.2px; color:#51606B; text-wrap:pretty}
+.fh__nowrap{white-space:nowrap}
+@media (max-width:767.98px){
+  .fh__inner{padding:32px 20px 40px !important; gap:28px !important}
+  .fh__title{font-size:34px; line-height:37.4px}
+  .fh__lede{font-size:17px; line-height:24px}
+}
+.fh .hv-a{opacity:1}
+.fh .hv-roll{transform:translateY(-50%)}
+.fh .hv-mark{left:74%}
+.fh .hv-bar,.fh .hv-alert{opacity:1}
+.fh .hv-ring{opacity:0}
+@keyframes hv-in{
+  from{opacity:0;transform:translateY(10px)}
+  to{opacity:1;transform:none}
+}
+@keyframes hv-pop{
+  from{opacity:0;transform:translateY(14px) scale(.96)}
+  to{opacity:1;transform:none}
+}
+@keyframes hv-tag{
+  0%{opacity:0;transform:translateX(-14px)}
+  100%{opacity:1;transform:none}
+}
+@keyframes hv-roll{
+  0%,6%{transform:translateY(0)}
+  18%,94%{transform:translateY(-50%)}
+  100%{transform:translateY(0)}
+}
+@keyframes hv-mark{
+  0%,6%{left:38%}
+  18%,94%{left:74%}
+  100%{left:38%}
+}
+@keyframes hv-bar{
+  0%,6%{opacity:0}
+  18%,94%{opacity:1}
+  100%{opacity:0}
+}
+@keyframes hv-alert{
+  0%,8%{opacity:0}
+  20%,92%{opacity:1}
+  100%{opacity:0}
+}
+@keyframes hv-ring{
+  0%,10%{opacity:0;transform:scale(.7)}
+  22%{opacity:.5;transform:scale(1.25)}
+  40%,100%{opacity:0;transform:scale(1.5)}
+}
+.fh-motion .fh__visual:not([data-anim="in"]) .hv-a{opacity:0}
+.fh-motion .fh__visual:not([data-anim="in"]) .hv-roll{transform:translateY(0)}
+.fh-motion .fh__visual:not([data-anim="in"]) .hv-mark{left:38%}
+.fh-motion .fh__visual:not([data-anim="in"]) .hv-bar,.fh-motion .fh__visual:not([data-anim="in"]) .hv-alert{opacity:0}
+.fh-motion .fh__visual[data-anim="in"] .hv-a{animation:hv-in .52s cubic-bezier(.22,1,.36,1) both}
+.fh-motion .fh__visual[data-anim="in"] .hv-a.hv-p{animation-name:hv-pop}
+.fh-motion .fh__visual[data-anim="in"] .hv-a.hv-t{animation-name:hv-tag}
+.fh-motion .fh__visual[data-anim="in"] .hv-roll{animation:hv-roll 7s cubic-bezier(.65,0,.35,1) 1.9s infinite both}
+.fh-motion .fh__visual[data-anim="in"] .hv-mark{animation:hv-mark 7s cubic-bezier(.65,0,.35,1) 1.9s infinite both}
+.fh-motion .fh__visual[data-anim="in"] .hv-bar{animation:hv-bar 7s cubic-bezier(.65,0,.35,1) 1.9s infinite both}
+.fh-motion .fh__visual[data-anim="in"] .hv-alert{animation:hv-alert 7s cubic-bezier(.4,0,.6,1) 1.9s infinite both}
+.fh-motion .fh__visual[data-anim="in"] .hv-ring{animation:hv-ring 7s cubic-bezier(.22,1,.36,1) 1.9s infinite both}
+
+
+ .fh--o6 .fh__dots{position:absolute; display:block; width:2560px; height:948px; left:50%; bottom:0; transform:translateX(-50%)}
+ .fh--o6 .fh__stage{position:relative; width:100%; max-width:940px; aspect-ratio:940 / 486}
+ .fh--o6 .fh__visual{position:absolute; top:0; right:0; width:940px; height:486px; transform:scale(var(--k,1)); transform-origin:top right}
+ @media (max-width:1100px){
+  .fh--centred.fh--o6 .fh__inner{padding:48px 40px 56px}
+}
+ .fh--centred.fh--o6 .fh__inner{display:flex; flex-direction:column; align-items:center; gap:44px; padding:56px 100px 64px}
+ .fh--centred.fh--o6 .fh__copy{align-items:center; text-align:center}
+ .fh--centred.fh--o6 .fh__text{align-items:center}
+ .fh--centred.fh--o6 .fh__title{max-width:820px}
+ .fh--centred.fh--o6 .fh__lede{max-width:760px; text-wrap:balance}
+
+
+
+
+.fh--m .fh__inner{padding:32px 20px 40px !important;gap:28px !important}
+.fh--m .fh__title{font-size:34px !important;line-height:37.4px !important}
+.fh--m .fh__lede{font-size:17px !important;line-height:24px !important}
+
+.fh--m.fh--side .fh__inner{grid-template-columns:minmax(0,1fr) !important;gap:28px !important}
+.fh--m .fh__stage{justify-self:center !important;width:100% !important}
+.fh--m .fh__visual{max-width:100% !important}

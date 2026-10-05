@@ -1,0 +1,27 @@
+
+
+h1:not([data-h-keep]):not(.marks-h2),
+h2:not([data-h-keep]):not(.marks-h2){
+  font-size:48px !important;
+  line-height:54px !important;
+  font-weight:400 !important;
+}
+
+
+
+h2.ns-h2:not([data-h-keep]):not(.marks-h2),
+h2.en:not([data-h-keep]):not(.marks-h2),
+#ns-prod-sec > h2.ns-h2,
+.g-head > h2.en{
+  font-size:48px !important;
+  line-height:54px !important;
+  font-weight:400 !important;
+}
+
+
+html body #guides .g-head h2:not([data-h-keep]):not(.marks-h2),
+html body #guides .g-head h2.en{
+  font-size:48px !important;
+  line-height:54px !important;
+  font-weight:400 !important;
+}

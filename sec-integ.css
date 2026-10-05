@@ -1,0 +1,12 @@
+
+@media (max-width:767.98px){
+  .integ-sec{padding:64px 20px!important}
+  .integ-sec > div{flex-direction:column!important;align-items:stretch!important;
+    gap:28px!important;padding:24px 20px 28px!important}
+  .integ-sec > div > div:first-child{width:100%!important;flex:0 0 auto!important}
+  .integ-sec h2{font-size:28px!important;line-height:36px!important}
+  .integ-sec p{font-size:16px!important;line-height:24px!important}
+  .integ-sec ul{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
+  .integ-sec li{height:72px!important}
+  .integ-sec li span{white-space:normal!important}
+}

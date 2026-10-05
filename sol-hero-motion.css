@@ -1,0 +1,18 @@
+
+@media (prefers-reduced-motion:no-preference){
+  html[data-motion="on"] #ns-hero-sec .ns-hero-media svg path[fill-opacity]{
+    animation:nsDotBreath 5.2s cubic-bezier(.45,0,.55,1) infinite both;
+    animation-delay:calc(var(--i,0) * 26ms);
+  }
+  html[data-motion="on"] #ns-hero-sec .ns-hero-media .ns-float{
+    animation:nsFloat 9s cubic-bezier(.45,0,.55,1) infinite both;
+  }
+}
+@keyframes nsDotBreath{
+  0%,100%{fill-opacity:.4}
+  50%    {fill-opacity:.72}
+}
+@keyframes nsFloat{
+  0%,100%{transform:translateY(0)}
+  50%    {transform:translateY(-3px)}
+}

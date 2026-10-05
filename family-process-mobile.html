@@ -1,0 +1,215 @@
+<!DOCTYPE html><html lang="he" dir="rtl" data-motion="on"><head>
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>עמוד משפחה — ״איך זה עובד״ כתהליך אחד במובייל · חמש אפשרויות</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500&display=swap">
+<link rel="stylesheet" href="ds/tokens.css?v=1790843651">
+<link rel="stylesheet" href="ds/components.css?v=1790843651">
+
+<style>
+:root{
+  --head:"Heebo",sans-serif;
+  --ink:#26333d; --ink-2:#51606b; --ink-3:#64727c;
+  --teal:#0083a1; --teal-1:#5ccde7; --teal-2:#9eedfa; --teal-lite:#d0f0f7;
+  --dark:#071620; --paper:#fcfdfe; --s-1:#f8fafc; --s-3:#f3f5f7;
+  --hair:rgba(33,33,33,.1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#eef1f4;font-family:var(--head);color:var(--ink)}
+a{text-decoration:none;color:inherit}
+h1,h2,h3,h4{font-weight:inherit}
+
+.top{position:sticky;top:0;z-index:20;background:var(--dark);color:#fff;
+  padding:16px 20px;display:flex;flex-wrap:wrap;align-items:baseline;gap:10px}
+.top h1{font-size:18px;font-weight:500}
+.top p{font-size:13px;color:#9fb0bd;max-width:76ch;line-height:1.5}
+.board{display:flex;gap:22px;padding:24px 20px 60px;overflow-x:auto;align-items:flex-start}
+.plate{flex:0 0 auto;width:390px}
+.plate>.cap{background:#fff;border-radius:12px 12px 0 0;padding:14px 16px;box-shadow:inset 0 0 0 1px var(--hair)}
+.plate>.cap b{display:block;font-size:15px;font-weight:500;margin-bottom:4px}
+.plate>.cap .pr{font-size:12.5px;line-height:1.5;color:var(--teal)}
+.plate>.cap .co{font-size:12.5px;line-height:1.5;color:var(--ink-3);margin-top:6px}
+.phone{width:390px;background:var(--s-3);border-radius:0 0 12px 12px;overflow:hidden;
+  box-shadow:inset 0 0 0 1px var(--hair)}
+
+.sec{padding:40px 20px 48px}
+.eb{display:flex;align-items:center;justify-content:center;gap:8px;font-size:14px;line-height:21px;
+  font-weight:500;letter-spacing:1px;color:var(--teal)}
+.eb i{width:4px;height:4px;border-radius:2px;background:var(--teal);flex:0 0 auto}
+.h2{font-size:28px;line-height:36px;font-weight:400;margin-top:10px;text-align:center}
+.mock{border-radius:12px;position:relative;overflow:hidden;background:#fff;
+  box-shadow:inset 0 0 0 .957px rgba(33,33,33,.08);height:150px}
+.mock::after{content:"";position:absolute;inset:0;
+  background-image:radial-gradient(circle at center,rgba(11,22,32,.105) 1.1px,rgba(11,22,32,0) 1.6px);
+  background-size:18.2px 18.2px}
+.mock .chip{position:absolute;inset-inline-start:14px;top:14px;z-index:1;
+  background:var(--teal-2);color:#04202a;border-radius:6px;padding:5px 10px;
+  font:500 12px/16px var(--head)}
+.mock .fig{position:absolute;inset-inline-end:16px;bottom:14px;z-index:1;
+  font:300 34px/1 var(--head);color:var(--teal)}
+.lbl{font:500 13.3px/19px var(--head);letter-spacing:1px;color:var(--teal)}
+.st{font-size:24px;line-height:30px;font-weight:500;margin-top:4px}
+.sd{font-size:16px;line-height:21px;color:var(--ink-2);margin-top:8px}
+
+
+.o1 .rail{margin-top:24px;position:relative;padding-inline-start:0;padding-inline-end:34px}
+.o1 .rail::before{content:"";position:absolute;inset-inline-end:11px;top:8px;bottom:8px;width:2px;
+  background:repeating-linear-gradient(to bottom,var(--teal-1) 0 4px,transparent 4px 9px)}
+.o1 .step{position:relative;padding-bottom:28px}
+.o1 .step:last-child{padding-bottom:0}
+.o1 .node{position:absolute;inset-inline-end:-34px;top:2px;width:24px;height:24px;border-radius:50%;
+  background:var(--teal);color:#fff;display:grid;place-items:center;
+  font:500 13px/1 var(--head);box-shadow:0 0 0 4px rgba(92,205,231,.22)}
+.o1 .mock{height:132px;margin-top:12px}
+
+
+.o2 .card{margin-top:22px;background:#fff;border-radius:16px;padding:16px 16px 8px;
+  box-shadow:inset 0 0 0 1px var(--hair)}
+.o2 .card .mock{height:140px;background:var(--s-1)}
+.o2 .row{display:flex;gap:14px;padding:18px 0;border-top:1px solid var(--hair)}
+.o2 .row:first-of-type{border-top:0;margin-top:6px}
+.o2 .num{width:26px;height:26px;flex:0 0 auto;border-radius:50%;background:var(--teal-lite);
+  color:var(--teal);display:grid;place-items:center;font:500 13px/1 var(--head)}
+.o2 .st{font-size:20px;line-height:26px;margin-top:0}
+.o2 .sd{font-size:15px;line-height:20px;margin-top:5px}
+
+
+.o3 .count{margin-top:22px;display:flex;align-items:center;gap:10px}
+.o3 .count b{font:500 13.3px/19px var(--head);letter-spacing:1px;color:var(--teal)}
+.o3 .bar{flex:1 1 auto;height:3px;border-radius:2px;background:#dbe3e9;position:relative}
+.o3 .bar i{position:absolute;inset-block:0;inset-inline-start:0;width:33.33%;border-radius:2px;
+  background:var(--teal);transition:width .28s cubic-bezier(.19,1,.22,1)}
+.o3 .track{margin:16px -20px 0;padding:0 20px;display:flex;gap:14px;overflow-x:auto;
+  scroll-snap-type:x mandatory;scrollbar-width:none}
+.o3 .track::-webkit-scrollbar{display:none}
+.o3 .slide{flex:0 0 302px;scroll-snap-align:center;background:#fff;border-radius:16px;padding:16px;
+  box-shadow:inset 0 0 0 1px var(--hair)}
+.o3 .slide .mock{height:130px;background:var(--s-1)}
+
+
+.o4 .stack{margin-top:24px;position:relative}
+.o4 .card{background:#fff;border-radius:16px;padding:16px;box-shadow:inset 0 0 0 1px var(--hair),
+  0 -10px 24px -18px rgba(11,46,56,.5);position:relative}
+.o4 .card+.card{margin-top:-18px}
+.o4 .card:nth-child(1){z-index:3}.o4 .card:nth-child(2){z-index:2}.o4 .card:nth-child(3){z-index:1}
+.o4 .card .mock{height:120px;background:var(--s-1)}
+.o4 .hdr{display:flex;align-items:baseline;gap:10px}
+
+
+.o5 .flow{margin-top:24px;display:flex;flex-direction:column;align-items:stretch}
+.o5 .card{background:#fff;border-radius:16px;padding:16px;box-shadow:inset 0 0 0 1px var(--hair)}
+.o5 .card .mock{height:126px;background:var(--s-1)}
+.o5 .join{height:48px;display:grid;place-items:center;position:relative}
+.o5 .join::before{content:"";position:absolute;top:4px;bottom:4px;width:2px;
+  background:repeating-linear-gradient(to bottom,var(--teal-1) 0 3px,transparent 3px 8px)}
+.o5 .join i{position:relative;width:26px;height:26px;border-radius:50%;background:var(--paper);
+  box-shadow:0 0 0 1px var(--hair);display:grid;place-items:center}
+.o5 .join i::after{content:"";width:12px;height:12px;background:var(--teal);
+  -webkit-mask:url(fig/arrow-dots.svg) center/contain no-repeat;
+          mask:url(fig/arrow-dots.svg) center/contain no-repeat;transform:rotate(225deg)}
+</style>
+<link rel="stylesheet" href="no-review-notes.css?v=1790850214">
+</head><body>
+
+<div class="top">
+  <h1>עמוד משפחה · ״איך זה עובד״ כתהליך אחד במובייל — חמש אפשרויות</h1>
+  <p>בדסקטופ הרצף נובע מהשורה עצמה: שלוש עמודות זו לצד זו. ב-390 הן נערמות, וכל שלב הופך
+     לבלוק נפרד. בכל אפשרות כאן <b>משהו אחר נושא את הרציפות</b> — הקו, הכרטיס, המונה, החפיפה או המחבר.
+     התוכן הוא התוכן האמיתי של העמוד.</p>
+</div>
+
+<div class="board" id="board"></div>
+
+<script>
+
+const S = [
+  {n:1, t:'בודקים',  d:'מושכים דוח אשראי עסקי על לקוח או ספק, ורואים בעלויות, התנהגות תשלומים ואירועים משפטיים.',
+   chip:'דוח אשראי', fig:'78'},
+  {n:2, t:'מחליטים', d:'מקבלים דירוג סיכון והמלצת אשראי, וקובעים תנאי תשלום ומסגרת בביטחון.',
+   chip:'סיכון נמוך', fig:'₪250,000'},
+  {n:3, t:'מנטרים',  d:'מגדירים ניטור על תיק הלקוחות, ומקבלים התראה על כל שינוי מהותי.',
+   chip:'התראה חדשה', fig:'41'}
+];
+
+const OPT = [
+  {n:1, name:'ציר אחד',
+   pr:'הרציפות: קו מקווקו אחד שעובר דרך שלושת השלבים, עם צומת ממוספר לכל אחד. אין רגע שבו הקו נגמר.',
+   co:'המחיר: 34px מרוחב המסך הולכים לציר, כלומר התוכן צר יותר. זה גם הכי קרוב לשפה של האתר — הקו המקווקו והצומת הזוהר הם הרכיבים שכבר קיימים.'},
+  {n:2, name:'כרטיס אחד',
+   pr:'הרציפות: אובייקט אחד. מוק אחד בראש הכרטיס, ושלושת השלבים הם שורות ממוספרות בתוכו.',
+   co:'המחיר: מוק אחד במקום שלושה — מוותרים על ההדגמה הוויזואלית של כל שלב. הכי קומפקטי מבין החמש.'},
+  {n:3, name:'מונה ורכבת',
+   pr:'הרציפות: המונה. ״שלב 1 מתוך 3״ ופס התקדמות מעל רכבת החלקה — הקורא תמיד יודע איפה הוא בתוך הרצף.',
+   co:'המחיר: רואים שלב אחד בכל רגע, ומי שלא מחליק לא יראה את השניים האחרים. הפס הוא הרמז היחיד.'},
+  {n:4, name:'חפיפה',
+   pr:'הרציפות: החפיפה. כל כרטיס נכנס 18px מתחת לקודם, כך שאף כרטיס לא נגמר לפני שהבא מתחיל.',
+   co:'המחיר: צל עדין בין הכרטיסים, וזה החריג היחיד לתקציב הצללים — בלעדיו החפיפה לא נקראת. צריך אישור שלך על החריגה.'},
+  {n:5, name:'מחבר מקווקו',
+   pr:'הרציפות: המחבר. הכרטיסים נשארים בדיוק כמו שהם, ובין כל שניים נכנס קו מקווקו עם חץ הנקודות של המערכת.',
+   co:'המחיר: הכי זול לביצוע — רכיב אחד חדש ואפס שינוי בכרטיס עצמו. גם הכי שקט, ולכן אולי לא מספיק כדי לשנות את הקריאה.'}
+];
+
+const mock = (s, h) => `<div class="mock"${h?` style="height:${h}px"`:''}>
+    <span class="chip">${s.chip}</span><span class="fig">${s.fig}</span></div>`;
+const head = () => `<div class="eb"><i></i>איך זה עובד<i></i></div>
+  <div class="h2">מבדיקה ראשונה לניטור קבוע</div>`;
+
+function build(o){
+  let inner = '';
+  if (o.n === 1) {
+    inner = `<div class="sec o1">${head()}<div class="rail">
+      ${S.map(s=>`<div class="step"><span class="node">${s.n}</span>
+        <div class="lbl">שלב ${s.n}</div><h3 class="st">${s.t}</h3><p class="sd">${s.d}</p>
+        ${mock(s,132)}</div>`).join('')}
+    </div></div>`;
+  } else if (o.n === 2) {
+    inner = `<div class="sec o2">${head()}<div class="card">${mock(S[0],140)}
+      ${S.map(s=>`<div class="row"><span class="num">${s.n}</span>
+        <div><h3 class="st">${s.t}</h3><p class="sd">${s.d}</p></div></div>`).join('')}
+    </div></div>`;
+  } else if (o.n === 3) {
+    inner = `<div class="sec o3">${head()}
+      <div class="count"><b>שלב <span class="cur">1</span> מתוך ${S.length}</b><span class="bar"><i></i></span></div>
+      <div class="track">${S.map(s=>`<div class="slide">${mock(s,130)}
+        <div class="lbl" style="margin-top:14px">שלב ${s.n}</div>
+        <h3 class="st">${s.t}</h3><p class="sd">${s.d}</p></div>`).join('')}</div>
+    </div>`;
+  } else if (o.n === 4) {
+    inner = `<div class="sec o4">${head()}<div class="stack">
+      ${S.map(s=>`<div class="card">${mock(s,120)}
+        <div class="hdr" style="margin-top:14px"><span class="lbl">שלב ${s.n}</span>
+          <h3 class="st">${s.t}</h3></div><p class="sd">${s.d}</p></div>`).join('')}
+    </div></div>`;
+  } else {
+    inner = `<div class="sec o5">${head()}<div class="flow">
+      ${S.map((s,i)=>`<div class="card">${mock(s,126)}
+        <div class="lbl" style="margin-top:14px">שלב ${s.n}</div>
+        <h3 class="st">${s.t}</h3><p class="sd">${s.d}</p></div>
+        ${i<S.length-1?'<div class="join"><i></i></div>':''}`).join('')}
+    </div></div>`;
+  }
+  return `<div class="plate" data-opt="${o.n}">
+      <div class="cap"><b>${o.n} · ${o.name}</b>
+        <div class="pr">${o.pr}</div><div class="co">${o.co}</div></div>
+      <div class="phone">${inner}</div>
+    </div>`;
+}
+
+document.getElementById('board').innerHTML = OPT.map(build).join('');
+
+
+(function () {
+  const plate = document.querySelector('.plate[data-opt="3"]');
+  if (!plate) return;
+  const track = plate.querySelector('.track');
+  const cur = plate.querySelector('.cur');
+  const bar = plate.querySelector('.bar i');
+  track.addEventListener('scroll', () => {
+    const i = Math.min(S.length - 1, Math.round(Math.abs(track.scrollLeft) / 316));
+    cur.textContent = i + 1;
+    bar.style.width = ((i + 1) / S.length * 100).toFixed(2) + '%';
+  }, {passive: true});
+})();
+</script>
+</body></html>

@@ -1,0 +1,165 @@
+
+
+
+@media (max-width: 767.98px) {
+  
+  html body h1:not([data-h-keep]):not(.marks-h2):not(.more__title),
+  html body h1.ns-h1, html body h1.en,
+  html body .fh__title            { font-size: 34px !important; line-height: 37.4px !important; }
+
+
+  
+  html body h2:not([data-h-keep]):not(.marks-h2):not(.more__title),
+  html body h2.ns-h2:not([data-h-keep]):not(.marks-h2):not(.more__title),
+  html body h2.en:not([data-h-keep]):not(.marks-h2):not(.more__title),
+  html body #ns-prod-sec > h2.ns-h2,
+  html body #statsw #stats .content h2,
+  html body .ns-h2               { font-size: 28px !important; line-height: 36px !important; font-weight: 400 !important; }
+
+  
+  html body #guides .g-head h2:not([data-h-keep]):not(.marks-h2):not(.more__title),
+  html body #guides .g-head h2.en,
+  html body #guides .gh-tx h2    { font-size: 28px !important; line-height: 36px !important; font-weight: 400 !important; }
+
+
+
+  html body h3                    { font-size: 24px !important; line-height: 30px !important; }
+  html body h4                    { font-size: 20px !important; line-height: 28px !important; }
+
+  
+  html body .wrap,
+  html body .ns-sec > .wrap,
+  html body .swrap,
+  html body .crumb-c              { padding-inline: 20px !important; }
+  html body section > .wrap       { padding-block: 64px !important; }
+  html body #tst .row            { width: 100% !important; max-width: none !important; }
+  html body #fb .dotp,
+  html body #fb .plate           { max-width: 100% !important; }
+
+
+  
+  html body h1, html body h2, html body h3, html body h4,
+  html body p                     { white-space: normal !important;
+                                   max-width: 100% !important;
+                                   overflow-wrap: break-word; }
+
+
+  
+  html body .ns-prod-copy,
+  html body .ns-prod-txt,
+  html body .ns-hero-copy,
+  html body .ns-sec .wrap > div   { width: 100% !important; max-width: 100% !important; }
+  html body .ns-prod-media,
+  html body .ns-hero-media        { max-width: 100% !important; }
+
+
+
+  
+  html body #fb .fbtop,
+  html body #fb .cols              { flex-direction: column !important;
+                                    align-items: stretch !important; gap: 24px !important; }
+  html body #fb .brand,
+  html body #fb .brand.nlx,
+  html body #fb .fbside            { width: 100% !important; max-width: 100% !important;
+                                    flex: 0 0 auto !important; }
+
+  html body #fb .legal,
+  html body #fb .bottom .legal     { position: static !important; inset: auto !important;
+                                    width: 100% !important; display: flex !important;
+                                    flex-wrap: wrap !important; gap: 8px 16px !important; }
+
+
+  
+  html body .ns-hero-media,
+  html body .ns-prod-media,
+  html body .sh-ui,
+  html body .ihero .mockcards,
+  html body .mockcards.ifacts     { zoom: .55; }
+
+  
+  html body .dnb-btn,
+  html body a.dnb-btn,
+  html body .btn, html body .btn-all
+                                 { height: 48px !important; }
+}
+
+
+  
+  html[data-m] body h1:not([data-h-keep]):not(.marks-h2):not(.more__title),
+  html[data-m] body h1.ns-h1, html[data-m] body h1.en,
+  html[data-m] body .fh__title            { font-size: 34px !important; line-height: 37.4px !important; }
+
+    
+html[data-m] body h2:not([data-h-keep]):not(.marks-h2):not(.more__title),
+  html[data-m] body h2.ns-h2:not([data-h-keep]):not(.marks-h2):not(.more__title),
+  html[data-m] body h2.en:not([data-h-keep]):not(.marks-h2):not(.more__title),
+  html[data-m] body #ns-prod-sec > h2.ns-h2,
+  html[data-m] body #statsw #stats .content h2,
+  html[data-m] body .ns-h2               { font-size: 28px !important; line-height: 36px !important; font-weight: 400 !important; }
+
+
+    
+html[data-m] body #guides .g-head h2:not([data-h-keep]):not(.marks-h2):not(.more__title),
+  html[data-m] body #guides .g-head h2.en,
+  html[data-m] body #guides .gh-tx h2    { font-size: 28px !important; line-height: 36px !important; font-weight: 400 !important; }
+
+  html[data-m] body h3                    { font-size: 24px !important; line-height: 30px !important; }
+  html[data-m] body h4                    { font-size: 20px !important; line-height: 28px !important; }
+
+  
+  html[data-m] body .wrap,
+  html[data-m] body .ns-sec > .wrap,
+  html[data-m] body .swrap,
+  html[data-m] body .crumb-c              { padding-inline: 20px !important; }
+  html[data-m] body section > .wrap       { padding-block: 64px !important; }
+  html[data-m] body #tst .row            { width: 100% !important; max-width: none !important; }
+  html[data-m] body #fb .dotp,
+  html[data-m] body #fb .plate           { max-width: 100% !important; }
+
+
+  
+  html[data-m] body h1, html[data-m] body h2, html[data-m] body h3, html[data-m] body h4,
+  html[data-m] body p                     { white-space: normal !important;
+                                   max-width: 100% !important;
+                                   overflow-wrap: break-word; }
+
+
+  
+  html[data-m] body .ns-prod-copy,
+  html[data-m] body .ns-prod-txt,
+  html[data-m] body .ns-hero-copy,
+  html[data-m] body .ns-sec .wrap > div   { width: 100% !important; max-width: 100% !important; }
+  html[data-m] body .ns-prod-media,
+  html[data-m] body .ns-hero-media        { max-width: 100% !important; }
+
+
+
+  
+  html[data-m] body #fb .fbtop,
+  html[data-m] body #fb .cols              { flex-direction: column !important;
+                                    align-items: stretch !important; gap: 24px !important; }
+  html[data-m] body #fb .brand,
+  html[data-m] body #fb .brand.nlx,
+  html[data-m] body #fb .fbside            { width: 100% !important; max-width: 100% !important;
+                                    flex: 0 0 auto !important; }
+
+  html[data-m] body #fb .legal,
+  html[data-m] body #fb .bottom .legal     { position: static !important; inset: auto !important;
+                                    width: 100% !important; display: flex !important;
+                                    flex-wrap: wrap !important; gap: 8px 16px !important; }
+
+
+  
+  html[data-m] body .ns-hero-media,
+  html[data-m] body .ns-prod-media,
+  html[data-m] body .sh-ui,
+  html[data-m] body .ihero .mockcards,
+  html[data-m] body .mockcards.ifacts     { zoom: .55; }
+
+  
+  html[data-m] body .dnb-btn,
+  html[data-m] body a.dnb-btn,
+  html[data-m] body .btn, html[data-m] body .btn-all
+                                 { height: 48px !important; }
+
+

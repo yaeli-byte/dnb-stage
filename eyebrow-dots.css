@@ -1,0 +1,7 @@
+
+[data-eb-dots]::before,[data-eb-dots]::after{content:none!important}
+[data-eb-dots]{display:flex;align-items:center;gap:8px}
+[data-eb-dots] .eb-dot{width:5px;height:5px;flex:0 0 auto;border-radius:999px;
+  background:currentColor}
+
+.benefits [data-eb-dots]{gap:10px}

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" data-motion="on">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>D&B — יבוא ויצוא (אפשרות א׳)</title>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500&family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="sec-marks.css?v=1790856074">
+<link rel="stylesheet" href="ind-prod-media.css?v=1790866668">
+<link rel="stylesheet" href="sec-data.css?v=1790745411">
+<link rel="stylesheet" href="sec-integ.css?v=1790751187">
+<link rel="stylesheet" href="ds/components.css?v=1790843651">
+<link rel="stylesheet" href="ind-shared.css?v=1791107956">
+<link rel="stylesheet" href="home-sections.css?v=1791189283">
+<style>
+
+
+
+.chal{background:var(--paper);padding:24px 56px 80px}
+.chal .band{background:var(--black-teal);border-radius:16px;padding:62px 48px;
+  display:flex;flex-direction:column;gap:48px}
+.chal .head{display:flex;flex-direction:column;gap:15.5px;align-items:center}
+.chal h2{font:400 56px/61.6px var(--head);color:#fff;text-align:center}
+.chal .row{display:flex;gap:20px;flex-wrap:wrap}
+.chal .c{flex:1 0 362px;min-width:362px;height:372px;background:#0F1E2D;border-radius:12px;
+  padding:28px;display:flex;flex-direction:column;gap:22px;align-items:flex-start;
+  box-shadow:inset 0 0 0 .957px rgba(33,33,33,.1);text-decoration:none}
+.chal .c .tile{width:69.12px;height:69.12px;border-radius:15.84px;background:#0A3C50;
+  display:grid;place-items:center;flex:0 0 auto}
+.chal .c .tile i{width:34.56px;height:34.56px;background:var(--teal-2);
+  -webkit-mask-size:contain;mask-size:contain;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;
+  -webkit-mask-position:center;mask-position:center}
+.chal .c .lbl{font:400 13.3px/18px var(--head);color:#9FB0BD}   
+.chal .c h3{font:400 24px/31.2px var(--head);color:#fff;letter-spacing:-.39px;margin-top:2px}
+.chal .c p{font:400 16px/20.8px var(--head);color:#9FB0BD;margin-top:9px}
+
+
+.chal .c .foot{position:relative;margin-top:auto;padding-top:18px;width:100%;display:flex;align-items:center;
+  justify-content:space-between;box-shadow:inset 0 1px 0 rgba(0,0,0,.08)}
+.chal .c .foot::before{content:"";position:absolute;inset-inline:0;top:0;height:1px;
+  background-image:repeating-linear-gradient(to right,rgba(255,255,255,.16) 0 2px,transparent 2px 6px);
+  pointer-events:none}
+.chal .c .foot .go{order:2}
+.chal .c .foot .plabel{order:1}
+.chal .c .go{width:40px;height:40px;border-radius:5.56px;background:rgba(255,255,255,.08);
+  border:1px solid rgba(60,80,100,.13);display:grid;place-items:center}
+.chal .c .go i{width:17px;height:17px;background:#fff;transform:rotate(180deg);
+  -webkit-mask:url(fig/arrow-dots.svg) center/contain no-repeat;
+          mask:url(fig/arrow-dots.svg) center/contain no-repeat}
+.chal .c .plabel{text-align:start}
+
+.chal .c .plabel b{display:block;font:500 15px/21px var(--head);color:#9FB0BD}
+.chal .c .plabel .lbl{color:var(--teal-2)}
+
+
+.proof{padding-block:var(--sec-pad)}
+.proof .in{display:grid;grid-template-columns:420px 1fr;gap:64px;align-items:center}
+.proof h2{font:400 56px/61.6px var(--head);color:var(--ink)}
+.proof .lede{font:400 16px/20.8px var(--head);color:var(--ink-2);margin-top:20px;max-width:34ch}
+.proof .btnw{margin-top:28px}
+
+
+
+
+
+.products{padding-block:var(--sec-pad)}
+
+.products .head{margin-bottom:34px;display:flex;flex-direction:column;
+  gap:15.5px;align-items:center;text-align:center}
+.products .head h2{font:400 56px/61.6px var(--head);color:var(--ink);margin-top:14px}
+.prow{display:flex;gap:48px;align-items:stretch;background:#fff;border-radius:16px;padding:16px;
+  box-shadow:inset 0 0 0 .957px rgba(33,33,33,.1);margin-bottom:20px}
+.prow:nth-child(even){flex-direction:row-reverse}
+.pmock{flex:0 0 560px;height:400px;background:var(--s-3);border-radius:12px;position:relative;overflow:hidden}
+.pmock .patch{position:absolute;inset-inline-end:-40px;top:-40px;width:340px;height:280px;
+  background-image:radial-gradient(rgba(11,22,32,.106) 1.05px,transparent 1.45px);
+  background-size:18.2px 18.2px;
+  -webkit-mask:radial-gradient(120% 120% at 100% 0,#000 42%,transparent 80%);
+          mask:radial-gradient(120% 120% at 100% 0,#000 42%,transparent 80%)}
+.pmock .badge{position:absolute;left:66px;top:30px;width:46px;height:46px;border-radius:11px;
+  background:var(--black-teal);display:grid;place-items:center;z-index:3}
+.pmock .badge i{width:20px;height:20px;background:var(--teal-2);
+  -webkit-mask-size:contain;mask-size:contain;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-position:center;mask-position:center}
+.pmock .card{position:absolute;left:100px;top:56px;width:360px;background:#fff;border-radius:14px;
+  padding:18px;display:flex;flex-direction:column;gap:10px;
+  box-shadow:inset 0 0 0 .957px rgba(33,33,33,.08)}
+.pmock .ctop{display:flex;align-items:center;justify-content:space-between}
+.pmock .ctop .nm{text-align:start}
+.pmock .ctop .nm b{display:block;font:500 15px/21px var(--head);color:var(--ink)}
+.pmock .ctop .nm span{font:400 13.3px/17px var(--head);color:#64727c}
+.pmock .ctop .ic{width:36px;height:36px;border-radius:9px;background:var(--teal);flex:0 0 auto}
+.pmock .chip{background:#BFE4EF;border-radius:999px;padding:2px 10px;
+  font:500 13.3px/17px var(--head);color:var(--teal)}
+.pmock .r{background:var(--s-3);border-radius:8px;padding:9px 12px;
+  display:flex;align-items:center;justify-content:space-between;
+  font:400 13.3px/17px var(--head);color:#283032}
+.pmock .r em{font-style:normal;color:#64727c;font-size:13.3px}
+.pmock .rail{height:8px;border-radius:4px;margin-top:9px;
+  background:linear-gradient(90deg,var(--teal),#9CCB5A,#F2C94C)}
+.pmock .rail span{display:block;width:14px;height:14px;border-radius:7px;background:#fff;
+  margin-top:-3px;margin-inline-start:70%;box-shadow:inset 0 0 0 3px #283032}
+.pmock .pill{position:absolute;inset-inline-end:51px;top:338px;height:36px;display:flex;align-items:center;
+  gap:8px;padding:0 14px;border-radius:999px;background:var(--teal);
+  font:500 13.3px/18px var(--head);color:#fff}
+.pmock .pill i{width:6px;height:6px;border-radius:50%;background:var(--teal-lite)}
+.pcopy{flex:1;min-width:0;display:flex;flex-direction:column;gap:20px;align-items:flex-start;
+  justify-content:center;padding:32px 32px 32px 8px;text-align:start}
+
+.pcopy .tag{background:none;box-shadow:none;border-radius:0;padding:0;
+  display:inline-flex;align-items:center;gap:8px;
+  font:500 14px/21px var(--head);letter-spacing:1px;color:var(--teal)}
+.pcopy .tag::before{content:"";width:4px;height:4px;border-radius:3px;
+  background:var(--teal);flex:0 0 auto}
+.pcopy h3{font:400 34px/38px var(--head);color:var(--ink)}
+.pcopy p{font:400 18px/27px var(--head);color:var(--ink-2);max-width:520px}
+
+
+
+.rel{margin-top:0;padding-top:20px}
+
+.rel .lbl{font:400 14px/19px var(--head);color:var(--ink-3);text-align:start;height:19px;margin-bottom:14px}
+.rel .pair{display:grid;grid-template-columns:610px 610px;gap:20px}
+
+
+.rel a{background:#fff;border-radius:16px;padding:24px 28px;height:142px;display:flex;align-items:flex-end;
+  justify-content:space-between;gap:20px;text-decoration:none;color:inherit;
+  box-shadow:var(--card-hair);transition:box-shadow 200ms cubic-bezier(.4,0,.2,1)}
+.rel a:hover{box-shadow:var(--card-hair),0 2px 8px -4px rgba(11,46,56,.1)}
+.rel .tx{text-align:start;order:1}
+.rel .go{order:2}
+
+.rel .tag{display:inline-flex;align-items:center;gap:8px;
+  font:500 13.3px/18px var(--head);letter-spacing:1px;color:var(--teal);
+  background:none;box-shadow:none;border-radius:0;padding:0}
+.rel .tag::before{content:"";width:4px;height:4px;border-radius:3px;
+  background:var(--teal);flex:0 0 auto}
+.rel h3{font:400 24px/31.2px var(--head);color:var(--ink);margin-top:10px}
+.rel p{font:400 14px/21px var(--head);color:var(--ink-3);margin-top:6px}
+.rel .go{width:40px;height:40px;border-radius:5.56px;background:rgba(255,255,255,.34);
+  box-shadow:inset 0 0 0 1px rgba(11,22,32,.13);display:grid;place-items:center;flex:0 0 auto}
+.rel .go i{width:17px;height:17px;background:var(--ink);transform:rotate(180deg);
+  -webkit-mask:url(fig/arrow-dots.svg) center/contain no-repeat;
+          mask:url(fig/arrow-dots.svg) center/contain no-repeat}
+
+
+.integ{position:relative;height:455px;direction:ltr}
+.integ .band{position:absolute;left:100px;top:24px;width:1240px;height:351px;border-radius:16px;
+  background:linear-gradient(147.349deg,#015A70 22.782%,#004657 101.15%);
+  display:block;padding:0}
+.integ .abs{position:absolute}
+
+.erp-win{left:252px;top:48px;width:338px;height:254px;background:rgba(255,255,255,.90);border-radius:10px;
+  overflow:hidden;box-shadow:0 18px 40px -20px rgba(0,0,0,.45)}
+.erp-win .bar{height:26px;background:rgba(255,255,255,.28);border-bottom:1px solid rgba(255,255,255,.45);display:flex;align-items:center;
+  justify-content:space-between;padding:0 10px;direction:rtl;
+  font:400 13.3px/18px var(--head);color:var(--ink-2)}
+.erp-win .bar .dots3{display:flex;gap:4px;direction:ltr}
+.erp-win .bar .dots3 i{width:6px;height:6px;border-radius:50%;background:#C3CCD3}
+.erp-win .body{padding:0;display:flex;flex-direction:column;gap:0;direction:rtl}
+.erp-win .r{background:transparent;border-radius:0;border-bottom:1px solid rgba(255,255,255,.45);padding:9px 12px;display:flex;align-items:center;
+  justify-content:space-between;font:400 13.3px/17px var(--head);color:var(--ink-2)}
+.erp-win .r b{font:500 13.3px/17px var(--head);color:var(--ink)}
+.erp-win .sc{background:transparent;border-radius:0;border-bottom:1px solid rgba(255,255,255,.45);padding:11px 12px}
+.erp-win .sc .t{display:flex;align-items:baseline;justify-content:space-between}
+.erp-win .sc .t b{font:300 24px/1 var(--num);color:var(--ink)}
+.erp-win .rail{height:6px;border-radius:3px;margin-top:7px;
+  background:linear-gradient(90deg,#0083A1,#9CCB5A,#F2C94C);position:relative}
+.erp-win .rail i{position:absolute;left:42%;top:-3px;width:3px;height:12px;background:#283032;border-radius:2px}
+.erp-win .risk b{color:#AF2D1D}
+.erp-chip{left:56px;top:182px;width:141px;height:44px;background:#fff;border-radius:9px;
+  display:flex;flex-direction:row-reverse;align-items:center;gap:8px;padding:0 12px;direction:rtl;
+  font:500 13.3px/18px var(--head);color:var(--ink);box-shadow:0 8px 20px -10px rgba(0,0,0,.4)}
+.erp-chip i{width:22px;height:22px;border-radius:5px;background:var(--black-teal);flex:0 0 auto}
+.erp-line{left:199px;top:201px;width:70px;height:6px;
+  background:linear-gradient(90deg,var(--teal-2),rgba(92,205,231,.2))}
+.erp-auto{left:233px;top:110px;width:137px;height:35px;background:var(--teal-2);border-radius:5px;
+  display:flex;align-items:center;justify-content:center;direction:rtl;
+  font:500 13.3px/18px var(--head);color:#08232c}
+.erp-refresh{left:571px;top:251px;width:54px;height:54px;background:var(--black-teal);
+  border-radius:12px;display:grid;place-items:center}
+.erp-refresh i{width:24px;height:24px;background:#fff;
+  
+  -webkit-mask:url(fig/bico/refresh.svg) center/contain no-repeat;
+          mask:url(fig/bico/refresh.svg) center/contain no-repeat}
+
+.integ-copy{left:744px;top:48px;width:440px;height:255px;direction:rtl;text-align:start}
+.integ-copy .eb{justify-content:flex-start;color:var(--teal-2);height:21px}
+.integ-copy .eb i{background:var(--teal-2)}
+.integ-copy h2{font:400 34px/42px var(--head);color:#fff;margin-top:16px;height:84px}
+.integ-copy p{font:400 16px/25px var(--head);color:rgba(255,255,255,.72);margin-top:16px}
+
+.integ-copy .btnw{margin-top:24px;display:flex;justify-content:flex-start}
+.todo{padding-block:var(--sec-pad)}
+.todo .slot{border-radius:12px;padding:56px 44px;text-align:center;
+  background:rgba(175,45,29,.05);box-shadow:inset 0 0 0 1px rgba(175,45,29,.26)}
+.todo .slot b{display:block;font:500 20px/28px var(--head);color:#AF2D1D}
+.todo .slot span{display:block;font:400 15px/22px var(--head);color:var(--ink-2);margin-top:8px}
+.todo .slot code{font:400 13.3px var(--num);background:#fff;padding:2px 7px;border-radius:5px}
+</style>
+<link rel="stylesheet" href="menu.css?v=1791200204">
+<link rel="stylesheet" href="menu-motion.css?v=1791200204">
+<link rel="stylesheet" href="ind-mobile.css?v=1790790769">
+<link rel="stylesheet" href="home-sections-mobile.css?v=1791052281">
+<link rel="stylesheet" href="micro-pages.css?v=1790679321">
+<link rel="stylesheet" href="tile-arrow.css?v=1790861149">
+<link rel="stylesheet" href="entrance-pages.css?v=1790685785">
+<link rel="stylesheet" href="eyebrow-dots.css?v=1790791514">
+<link rel="stylesheet" href="type-h12.css?v=1791107158">
+<link rel="stylesheet" href="type-mobile.css?v=1791189305">
+<link rel="stylesheet" href="no-review-notes.css?v=1790850214">
+<link rel="stylesheet" href="ind-hero-motion.css?v=1791047752">
+<link rel="stylesheet" href="ind-a2-new.css?v=1791104103">
+</head>
+<body>
+
+<div data-home="hdr"></div>
+
+<div data-home="crumb"><script type="application/json">{"items": [{"t": "ראשי", "href": "#"}, {"t": "תעשיות", "href": "#"}, {"t": "יבוא ויצוא"}]}</script></div>
+
+
+<section class="ihero-sec">
+  <div class="ihero">
+    <div class="dotbg"></div><div class="scrim-a"></div><div class="scrim-b"></div>
+    <div class="mock">
+      <div class="slab"></div>
+      <div class="shot"><img src="fig/ind-hero-ship.jpg" alt=""></div>
+      <div class="mark"><i></i></div>
+      <div class="statuspill"><div class="in"><span class="lbl">שינוי במצב הלקוח</span></div></div>
+      <div class="tagpill">השוואה בין ספקים</div>
+      
+<div class="mockcards ifacts">
+  <div class="mockcard"><div class="in">
+    <span class="lbl">דירוג מדינה</span>
+    <span class="fig">72<i class="trend up" aria-hidden="true"></i></span>
+  </div></div>
+  <div class="mockcard"><div class="in">
+    <span class="lbl">הזדמנויות צמיחה</span>
+    <span class="fig">18<i class="trend down" aria-hidden="true"></i></span>
+  </div></div>
+  <div class="mockcard"><div class="in">
+    <span class="lbl">תעודת אמינות</span>
+    <span class="fig">בתוקף</span>
+  </div></div>
+</div>
+    </div>
+    <div class="icopy">
+      <div class="stack">
+        
+<div class="eb"><i></i>יבוא יצוא</div>
+        <h1>מידע עסקי שמניע סחר גלובלי</h1>
+        <p>בדקו ספקים ולקוחות בחו״ל לפני שאתם מעבירים כסף או שולחים סחורה. חשוב לוודא את אמינותם ואת תקינות העסקה כדי למנוע הונאות ובעיות עתידיות. בצעו בדיקות רקע, קראו חוות דעת ובקשו המלצות כדי להבטיח שיתוף פעולה בטוח ומוצלח.</p>
+      </div>
+      <div class="btns">
+        
+        <a class="dnb-btn dnb-btn--dark" href="#"><span class="dnb-btn__badge"><img src="fig/btn-arrow.svg" alt=""></span><span class="dnb-btn__label">דברו עם מומחה</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div data-home="trust"></div>
+
+
+
+
+
+<section class="a2-intro" style="position:relative; width:1440px; flex-shrink:0; padding:88px 100px 96px; background-color:#FCFDFE; "><div style="display:flex; align-items:center; gap:8px; justify-content:center; font-size:14px; line-height:21px; font-weight:500; letter-spacing:1px; color:#0083A1"><i style="display:block; width:5px; height:5px; border-radius:999px; background-color:#0083A1"></i><span>על ענף היבוא והיצוא</span><i style="display:block; width:5px; height:5px; border-radius:999px; background-color:#0083A1"></i></div><h2 style="margin:14px 0 0; font-size:48px; line-height:54px; font-weight:400; color:#26333D; text-wrap:balance; text-align:center; ">הגשר בין המשק הישראלי לשווקים העולמיים</h2><div style="display:grid; grid-template-columns:repeat(3,1fr); column-gap:56px; margin-top:64px"><div style="display:flex; flex-direction:column; border-top:1px solid #E3E9F2; padding-top:28px"><span style="font-family:'Space Grotesk',sans-serif; font-weight:300; font-size:40px; line-height:1; color:#0083A1; direction:ltr; letter-spacing:-.5px">01</span><h3 style="font-size:24px; line-height:31.2px; font-weight:400; color:#26333D; text-wrap:balance; margin-top:24px">מנוע צמיחה של המשק</h3><p style="font-size:17px; line-height:26px; color:#51606B; text-wrap:pretty; margin-top:12px">ענף היבוא והיצוא הוא אחד ממנועי הצמיחה המרכזיים של המשק הישראלי. אלפי יבואנים, יצואנים, סוכני סחר, עמילי מכס ומשלחים בינלאומיים מחברים בין התעשייה המקומית לשווקים באירופה, בצפון אמריקה ובאסיה, ומנהלים מדי יום עסקאות סחר חוץ בהיקף של מיליארדי דולרים.</p></div><div style="display:flex; flex-direction:column; border-top:1px solid #E3E9F2; padding-top:28px"><span style="font-family:'Space Grotesk',sans-serif; font-weight:300; font-size:40px; line-height:1; color:#0083A1; direction:ltr; letter-spacing:-.5px">02</span><h3 style="font-size:24px; line-height:31.2px; font-weight:400; color:#26333D; text-wrap:balance; margin-top:24px">עסקאות מול שותפים רחוקים</h3><p style="font-size:17px; line-height:26px; color:#51606B; text-wrap:pretty; margin-top:12px">רוב הסחר הבינלאומי מתנהל מול חברות שאין איתן היכרות אישית: ספקים במזרח הרחוק, מפיצים באירופה ולקוחות סיטונאיים בארצות הברית. מקדמות, אשראי ספקים ותנאי תשלום נדחים הופכים כל שותף סחר חדש לחשיפה פיננסית, ומערכות משפט, תקני דיווח ושפות שונות מקשים לאמת את המידע עליו.</p></div><div style="display:flex; flex-direction:column; border-top:1px solid #E3E9F2; padding-top:28px"><span style="font-family:'Space Grotesk',sans-serif; font-weight:300; font-size:40px; line-height:1; color:#0083A1; direction:ltr; letter-spacing:-.5px">03</span><h3 style="font-size:24px; line-height:31.2px; font-weight:400; color:#26333D; text-wrap:balance; margin-top:24px">סביבה שמשתנה כל הזמן</h3><p style="font-size:17px; line-height:26px; color:#51606B; text-wrap:pretty; margin-top:12px">הענף מושפע ישירות משערי המטבע, ממכסים והסכמי סחר, מאירועים גאופוליטיים ומשיבושים בשרשרת האספקה הגלובלית ובשילוח הימי. במקביל מתהדקות דרישות הציות ומניעת הלבנת ההון, ולכן מידע עסקי אמין ועדכני על חברות בישראל ובעולם הוא תנאי בסיסי לעסק סחר יציב ורווחי.</p></div></div></section>
+
+<section class="chal">
+  <div class="band">
+    <div class="head">
+      <div class="eb"><i></i>האתגר<i></i></div>
+      <h2>להחליט מהר, בלי לוותר על בדיקה</h2>
+    </div>
+    <div class="row">
+      <a class="c" href="#">
+        <span class="tile"><i style="-webkit-mask-image:url(fig/bico/gauge.svg);mask-image:url(fig/bico/gauge.svg)"></i></span>
+        <span style="width:100%;text-align:start">
+          <span class="lbl">האתגר</span>
+          <h3>זמני תגובה קצרים</h3>
+          <p>לקוחות עסקיים מצפים לתשובה על בקשת אשראי תוך ימים, ולפעמים תוך שעות.</p>
+        </span>
+        <span class="foot"><span class="go"><i></i></span>
+          <span class="plabel"><span class="lbl">הפתרון</span><b>ניהול סיכוני אשראי עסקי</b></span></span>
+      </a>
+      <a class="c" href="#">
+        <span class="tile"><i style="-webkit-mask-image:url(fig/bico/globe.svg);mask-image:url(fig/bico/globe.svg)"></i></span>
+        <span style="width:100%;text-align:start">
+          <span class="lbl">האתגר</span>
+          <h3>רגולציה שמתהדקת</h3>
+          <p>דרישות KYC ומניעת הלבנת הון מחייבות להכיר כל לקוח עסקי לעומק.</p>
+        </span>
+        <span class="foot"><span class="go"><i></i></span>
+          <span class="plabel"><span class="lbl">הפתרון</span><b>ניהול סיכוני צד שלישי</b></span></span>
+      </a>
+      <a class="c" href="#">
+        <span class="tile"><i style="-webkit-mask-image:url(fig/bico/search.svg);mask-image:url(fig/bico/search.svg)"></i></span>
+        <span style="width:100%;text-align:start">
+          <span class="lbl">האתגר</span>
+          <h3>תיק שמשתנה כל הזמן</h3>
+          <p>לקוח שהיה יציב בחיתום יכול להידרדר תוך חודשים. צריך לדעת על זה ראשונים.</p>
+        </span>
+        <span class="foot"><span class="go"><i></i></span>
+          <span class="plabel"><span class="lbl">הפתרון</span><b>ניהול סיכוני אשראי עסקי</b></span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="a2-families" style="position:relative; width:1440px; flex-shrink:0; padding:112px 100px 104px; background-color:#FCFDFE; "><div style="display:flex; align-items:center; gap:8px; justify-content:center; font-size:14px; line-height:21px; font-weight:500; letter-spacing:1px; color:#0083A1"><i style="display:block; width:5px; height:5px; border-radius:999px; background-color:#0083A1"></i><span>הפתרונות</span><i style="display:block; width:5px; height:5px; border-radius:999px; background-color:#0083A1"></i></div><h2 style="margin:14px 0 0; font-size:48px; line-height:54px; font-weight:400; color:#26333D; text-wrap:balance; text-align:center; ">הפתרונות שלנו לאתגרים</h2><p style="margin:16px 0 0; font-size:20px; line-height:27.2px; color:#51606B; text-align:center; text-wrap:pretty; ">בחרו את הפתרונות שמתאימים לאתגרים שלכם.</p><div style="margin-top:48px"><div style="margin-top:0px"><div style="display:grid; grid-template-columns:1fr 560px; padding:16px; background-color:#FFFFFF; border-radius:16px; box-shadow:inset 0 0 0 .957px rgba(33,33,33,.1)"><div style="display:flex; flex-direction:column; align-items:flex-start; justify-content:center; padding:32px 48px"><div style="display:flex; align-items:center; gap:8px; font-size:14px; line-height:21px; font-weight:500; letter-spacing:1px; color:#0083A1"><i style="display:block; width:5px; height:5px; border-radius:999px; background-color:#0083A1"></i><span>משפחת פתרונות</span></div><h2 style="margin:14px 0 0; font-size:40px; line-height:48px; font-weight:400; color:#26333D; text-wrap:balance; margin-top:12px">ניהול סיכוני צד שלישי</h2><p style="font-size:18px; line-height:27px; color:#51606B; text-wrap:pretty; margin-top:14px; max-width:520px">בדיקת רקע לספקים ולשותפים בחו״ל לפני שהכסף יוצא: קיום ופעילות, יציבות פיננסית והיסטוריית אספקה. לצד זה מקבלים עץ בעלויות, זיהוי נהנים סופיים ובדיקות ציות מול רשימות סנקציות, עם תיעוד מלא לכל בדיקה.</p><div style="margin-top:24px"><a class="dnb-btn" href="#" style="display:inline-flex; align-items:center; flex:0 0 auto; box-sizing:border-box; direction:ltr; height:43.67px; min-height:43.67px; padding:0 15.04px 0 7.86px; gap:8.19px; border:0; border-radius:11px; text-decoration:none; cursor:pointer; background-image:linear-gradient(90deg,rgba(255,255,255,0) 0%,rgba(255,255,255,.12) 100%),linear-gradient(90deg,#1F1F29 0%,#1F1F29 100%); box-shadow:inset 0 0 0 1px #282834"><span class="dnb-btn__badge" style="flex:0 0 auto; display:flex; align-items:center; justify-content:center; width:22.8px; height:27.08px; border-radius:8.55px; background-color:#9EEDFA"><img src="data:image/svg+xml,%3Csvg%20preserveAspectRatio=%22none%22%20overflow=%22visible%22%20style=%22display:%20block;%22%20width=%228%22%20height=%2212.5%22%20viewBox=%220%200%208%2012.5%22%20fill=%22none%22%20xmlns=%22http://www.w3.org/2000/svg%22%3E%20%3Cg%20id=%22Frame%22%3E%20%3Cpath%20id=%22Vector%22%20d=%22M1.56747%206.82952C2.10093%206.82952%202.53338%206.39707%202.53338%205.86361C2.53338%205.33016%202.10093%204.89771%201.56747%204.89771C1.03401%204.89771%200.601562%205.33016%200.601562%205.86361C0.601562%206.39707%201.03401%206.82952%201.56747%206.82952Z%22%20fill=%22%2335353E%22/%3E%20%3Cpath%20id=%22Vector_2%22%20d=%22M3.97763%204.54534C4.51108%204.54534%204.94354%204.11289%204.94354%203.57943C4.94354%203.04598%204.51108%202.61353%203.97763%202.61353C3.44417%202.61353%203.01172%203.04598%203.01172%203.57943C3.01172%204.11289%203.44417%204.54534%203.97763%204.54534Z%22%20fill=%22%2335353E%22/%3E%20%3Cpath%20id=%22Vector_3%22%20d=%22M6.19247%202.32952C6.72593%202.32952%207.15838%201.89707%207.15838%201.36361C7.15838%200.830157%206.72593%200.397705%206.19247%200.397705C5.65901%200.397705%205.22656%200.830157%205.22656%201.36361C5.22656%201.89707%205.65901%202.32952%206.19247%202.32952Z%22%20fill=%22%2335353E%22/%3E%20%3Cpath%20id=%22Vector_4%22%20d=%22M3.97763%209.10223C4.51108%209.10223%204.94354%208.66978%204.94354%208.13632C4.94354%207.60286%204.51108%207.17041%203.97763%207.17041C3.44417%207.17041%203.01172%207.60286%203.01172%208.13632C3.01172%208.66978%203.44417%209.10223%203.97763%209.10223Z%22%20fill=%22%2335353E%22/%3E%20%3Cpath%20id=%22Vector_5%22%20d=%22M6.19247%2011.3183C6.72593%2011.3183%207.15838%2010.8858%207.15838%2010.3524C7.15838%209.81893%206.72593%209.38647%206.19247%209.38647C5.65901%209.38647%205.22656%209.81893%205.22656%2010.3524C5.22656%2010.8858%205.65901%2011.3183%206.19247%2011.3183Z%22%20fill=%22%2335353E%22/%3E%20%3C/g%3E%20%3C/svg%3E" alt="" style="width:8px; height:12.5px; display:block"></span><span class="dnb-btn__label" style="white-space:nowrap; direction:rtl; unicode-bidi:isolate; font-family:'Heebo',sans-serif; font-weight:500; font-size:13.3px; line-height:19.91px; letter-spacing:-.1px; color:#FFFFFF">לעמוד משפחת הפתרונות</span></a></div></div><div style="position:relative; width:560px; height:400px; flex-shrink:0; border-radius:12px; overflow:hidden; background-image:linear-gradient(180deg,#B2EDFD 0%,#C8EEF9 55%,#D7F4F8 100%); display:flex; align-items:center; justify-content:center"><div style="transform:translateX(-8px)"><div style="position:relative; width:290px"><div style="display:flex; flex-direction:column; gap:4px; padding:5px; border-radius:10px; background-color:rgba(255,255,255,.45); box-shadow:inset 0 0 0 1px rgba(255,255,255,.95), 0 0 0 .5px rgba(33,33,33,.05); -webkit-backdrop-filter:blur(12px); backdrop-filter:blur(12px)"><div style="display:flex; flex-direction:column; padding:12px 16px 14px; border-radius:3px; background-color:#E8ECEF; "><span style="font-size:12px; line-height:16px; color:#5E5E86; white-space:nowrap">בדיקת רקע לספק</span><span style="font-size:26px; line-height:30px; font-weight:300; color:#5E5E86; white-space:nowrap">חברה א׳ בע״מ</span></div><div style="display:flex; gap:4px"><div style="display:flex; flex-direction:column; padding:10px 14px 12px; border-radius:3px; background-color:#E8ECEF; flex:1; min-width:0"><span style="font-size:12px; line-height:16px; color:#5E5E86; white-space:nowrap">רשימות סנקציות</span><span style="font-size:22px; line-height:26px; font-weight:300; color:#5E5E86; white-space:nowrap">לא נמצא</span></div><div style="display:flex; flex-direction:column; padding:10px 14px 12px; border-radius:3px; background-color:#E8ECEF; flex:1; min-width:0"><span style="font-size:12px; line-height:16px; color:#5E5E86; white-space:nowrap">נהנה סופי</span><span style="font-size:22px; line-height:26px; font-weight:300; color:#5E5E86; white-space:nowrap">אומת</span></div></div></div><span style="position:absolute; left:-30px; top:-14px; height:30px; display:flex; align-items:center; padding:0 14px; border-radius:4px; background-color:#5CCDE7; color:#26333D; font-size:13px; line-height:18px; white-space:nowrap">עץ בעלויות</span><span style="position:absolute; right:-40px; bottom:-20px; width:52px; height:52px; border-radius:6px; background-color:#071620; display:flex; align-items:center; justify-content:center"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true" style="display:block; flex-shrink:0"><path d="M12 1.20h0M14.34 2.55h0M14.34 5.25h0M12 6.60h0M9.66 5.25h0M9.66 2.55h0M12 9.60h0M3.50 12.60h0M6.33 12.60h0M9.17 12.60h0M12 12.60h0M14.83 12.60h0M17.67 12.60h0M20.50 12.60h0M3.50 15.60h0M5.84 16.95h0M5.84 19.65h0M3.50 21h0M1.16 19.65h0M1.16 16.95h0M12 15.60h0M14.34 16.95h0M14.34 19.65h0M12 21h0M9.66 19.65h0M9.66 16.95h0M20.50 15.60h0M22.84 16.95h0M22.84 19.65h0M20.50 21h0M18.16 19.65h0M18.16 16.95h0" fill="none" stroke="#FFFFFF" stroke-width="1.84" stroke-linecap="round"></path></svg></span></div></div></div></div></div><div style="margin-top:20px"><div style="display:grid; grid-template-columns:560px 1fr; padding:16px; background-color:#FFFFFF; border-radius:16px; box-shadow:inset 0 0 0 .957px rgba(33,33,33,.1)"><div style="position:relative; width:560px; height:400px; flex-shrink:0; border-radius:12px; overflow:hidden; background-image:linear-gradient(180deg,#B2EDFD 0%,#C8EEF9 55%,#D7F4F8 100%); display:flex; align-items:center; justify-content:center"><div style="transform:translateX(-8px)"><div style="position:relative; width:290px"><div style="display:flex; flex-direction:column; gap:4px; padding:5px; border-radius:10px; background-color:rgba(255,255,255,.45); box-shadow:inset 0 0 0 1px rgba(255,255,255,.95), 0 0 0 .5px rgba(33,33,33,.05); -webkit-backdrop-filter:blur(12px); backdrop-filter:blur(12px)"><div style="display:flex; flex-direction:column; padding:12px 16px 14px; border-radius:3px; background-color:#E8ECEF; "><span style="font-size:12px; line-height:16px; color:#5E5E86; white-space:nowrap">דירוג סיכון · חברה ב׳ בע״מ</span><span style="font-size:26px; line-height:30px; font-weight:300; color:#5E5E86; white-space:nowrap">78</span><span style="position:relative; display:block; direction:ltr; height:12px; margin-top:10px; border-radius:4px; background-image:linear-gradient(90deg,#259BB3 0%,#92CE8F 30%,#F0C355 56%,#F0C355 100%)"><i style="position:absolute; left:22%; top:-3px; width:2px; height:18px; background-color:#888888"></i></span></div><div style="display:flex; gap:4px"><div style="display:flex; flex-direction:column; padding:10px 14px 12px; border-radius:3px; background-color:#E8ECEF; flex:1; min-width:0"><span style="font-size:12px; line-height:16px; color:#5E5E86; white-space:nowrap">מסגרת אשראי</span><span style="font-size:22px; line-height:26px; font-weight:300; color:#5E5E86; white-space:nowrap">₪400K</span></div><div style="display:flex; flex-direction:column; padding:10px 14px 12px; border-radius:3px; background-color:#E8ECEF; flex:1; min-width:0"><span style="font-size:12px; line-height:16px; color:#5E5E86; white-space:nowrap">תנאי תשלום</span><span style="font-size:22px; line-height:26px; font-weight:300; color:#5E5E86; white-space:nowrap">שוטף 60</span></div></div></div><span style="position:absolute; left:-30px; top:-14px; height:30px; display:flex; align-items:center; padding:0 14px; border-radius:4px; background-color:#5CCDE7; color:#26333D; font-size:13px; line-height:18px; white-space:nowrap">התראה על שינוי</span><span style="position:absolute; right:-40px; bottom:-20px; width:52px; height:52px; border-radius:6px; background-color:#071620; display:flex; align-items:center; justify-content:center"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true" style="display:block; flex-shrink:0"><path d="M5.20 12.40h0M8.04 12.72h0M8.20 15.63h0M8.20 18.57h0M8.04 21.48h0M5.20 21.80h0M2.36 21.48h0M2.20 18.57h0M2.20 15.63h0M2.36 12.72h0M12 5.20h0M14.93 5.68h0M15 8.80h0M15 11.93h0M15 15.07h0M15 18.20h0M14.93 21.32h0M12 21.80h0M9 8.80h0M9.07 5.68h0M18.80 9h0M21.68 9.38h0M21.80 12.38h0M21.80 15.40h0M21.80 18.42h0M21.68 21.42h0M18.80 21.80h0" fill="none" stroke="#FFFFFF" stroke-width="1.84" stroke-linecap="round"></path></svg></span></div></div></div><div style="display:flex; flex-direction:column; align-items:flex-start; justify-content:center; padding:32px 48px"><div style="display:flex; align-items:center; gap:8px; font-size:14px; line-height:21px; font-weight:500; letter-spacing:1px; color:#0083A1"><i style="display:block; width:5px; height:5px; border-radius:999px; background-color:#0083A1"></i><span>משפחת פתרונות</span></div><h2 style="margin:14px 0 0; font-size:40px; line-height:48px; font-weight:400; color:#26333D; text-wrap:balance; margin-top:12px">ניהול סיכוני אשראי עסקי</h2><p style="font-size:18px; line-height:27px; color:#51606B; text-wrap:pretty; margin-top:14px; max-width:520px">דירוג סיכון והמלצה על מסגרת אשראי ותנאי תשלום לכל לקוח, עוד לפני שהמשלוח יוצא. אחרי שהעסקה נסגרת, ניטור רציף של תיק הלקוחות שולח התראה על כל שינוי במצבם, בישראל ובחו״ל, כדי שתוכלו לעדכן תנאים לפני שהחוב נתקע.</p><div style="margin-top:24px"><a class="dnb-btn" href="#" style="display:inline-flex; align-items:center; flex:0 0 auto; box-sizing:border-box; direction:ltr; height:43.67px; min-height:43.67px; padding:0 15.04px 0 7.86px; gap:8.19px; border:0; border-radius:11px; text-decoration:none; cursor:pointer; background-image:linear-gradient(90deg,rgba(255,255,255,0) 0%,rgba(255,255,255,.12) 100%),linear-gradient(90deg,#1F1F29 0%,#1F1F29 100%); box-shadow:inset 0 0 0 1px #282834"><span class="dnb-btn__badge" style="flex:0 0 auto; display:flex; align-items:center; justify-content:center; width:22.8px; height:27.08px; border-radius:8.55px; background-color:#9EEDFA"><img src="data:image/svg+xml,%3Csvg%20preserveAspectRatio=%22none%22%20overflow=%22visible%22%20style=%22display:%20block;%22%20width=%228%22%20height=%2212.5%22%20viewBox=%220%200%208%2012.5%22%20fill=%22none%22%20xmlns=%22http://www.w3.org/2000/svg%22%3E%20%3Cg%20id=%22Frame%22%3E%20%3Cpath%20id=%22Vector%22%20d=%22M1.56747%206.82952C2.10093%206.82952%202.53338%206.39707%202.53338%205.86361C2.53338%205.33016%202.10093%204.89771%201.56747%204.89771C1.03401%204.89771%200.601562%205.33016%200.601562%205.86361C0.601562%206.39707%201.03401%206.82952%201.56747%206.82952Z%22%20fill=%22%2335353E%22/%3E%20%3Cpath%20id=%22Vector_2%22%20d=%22M3.97763%204.54534C4.51108%204.54534%204.94354%204.11289%204.94354%203.57943C4.94354%203.04598%204.51108%202.61353%203.97763%202.61353C3.44417%202.61353%203.01172%203.04598%203.01172%203.57943C3.01172%204.11289%203.44417%204.54534%203.97763%204.54534Z%22%20fill=%22%2335353E%22/%3E%20%3Cpath%20id=%22Vector_3%22%20d=%22M6.19247%202.32952C6.72593%202.32952%207.15838%201.89707%207.15838%201.36361C7.15838%200.830157%206.72593%200.397705%206.19247%200.397705C5.65901%200.397705%205.22656%200.830157%205.22656%201.36361C5.22656%201.89707%205.65901%202.32952%206.19247%202.32952Z%22%20fill=%22%2335353E%22/%3E%20%3Cpath%20id=%22Vector_4%22%20d=%22M3.97763%209.10223C4.51108%209.10223%204.94354%208.66978%204.94354%208.13632C4.94354%207.60286%204.51108%207.17041%203.97763%207.17041C3.44417%207.17041%203.01172%207.60286%203.01172%208.13632C3.01172%208.66978%203.44417%209.10223%203.97763%209.10223Z%22%20fill=%22%2335353E%22/%3E%20%3Cpath%20id=%22Vector_5%22%20d=%22M6.19247%2011.3183C6.72593%2011.3183%207.15838%2010.8858%207.15838%2010.3524C7.15838%209.81893%206.72593%209.38647%206.19247%209.38647C5.65901%209.38647%205.22656%209.81893%205.22656%2010.3524C5.22656%2010.8858%205.65901%2011.3183%206.19247%2011.3183Z%22%20fill=%22%2335353E%22/%3E%20%3C/g%3E%20%3C/svg%3E" alt="" style="width:8px; height:12.5px; display:block"></span><span class="dnb-btn__label" style="white-space:nowrap; direction:rtl; unicode-bidi:isolate; font-family:'Heebo',sans-serif; font-weight:500; font-size:13.3px; line-height:19.91px; letter-spacing:-.1px; color:#FFFFFF">לעמוד משפחת הפתרונות</span></a></div></div></div></div><div style="margin-top:20px"><div style="display:grid; grid-template-columns:1fr 560px; padding:16px; background-color:#FFFFFF; border-radius:16px; box-shadow:inset 0 0 0 .957px rgba(33,33,33,.1)"><div style="display:flex; flex-direction:column; align-items:flex-start; justify-content:center; padding:32px 48px"><div style="display:flex; align-items:center; gap:8px; font-size:14px; line-height:21px; font-weight:500; letter-spacing:1px; color:#0083A1"><i style="display:block; width:5px; height:5px; border-radius:999px; background-color:#0083A1"></i><span>משפחת פתרונות</span></div><h2 style="margin:14px 0 0; font-size:40px; line-height:48px; font-weight:400; color:#26333D; text-wrap:balance; margin-top:12px">אשראי צרכני</h2><p style="font-size:18px; line-height:27px; color:#51606B; text-wrap:pretty; margin-top:14px; max-width:520px">בדיקות אשראי לאנשים פרטיים: בעלי שליטה, ערבים אישיים ועוסקים יחידים. כך מעריכים את הסיכון גם כשהלקוח הוא עסק קטן, ומחליטים על מסגרת, ביטחונות ותנאי תשלום על בסיס תמונה מלאה של מי שעומד מאחורי העסקה.</p><div style="margin-top:24px"><a class="dnb-btn" href="#" style="display:inline-flex; align-items:center; flex:0 0 auto; box-sizing:border-box; direction:ltr; height:43.67px; min-height:43.67px; padding:0 15.04px 0 7.86px; gap:8.19px; border:0; border-radius:11px; text-decoration:none; cursor:pointer; background-image:linear-gradient(90deg,rgba(255,255,255,0) 0%,rgba(255,255,255,.12) 100%),linear-gradient(90deg,#1F1F29 0%,#1F1F29 100%); box-shadow:inset 0 0 0 1px #282834"><span class="dnb-btn__badge" style="flex:0 0 auto; display:flex; align-items:center; justify-content:center; width:22.8px; height:27.08px; border-radius:8.55px; background-color:#9EEDFA"><img src="data:image/svg+xml,%3Csvg%20preserveAspectRatio=%22none%22%20overflow=%22visible%22%20style=%22display:%20block;%22%20width=%228%22%20height=%2212.5%22%20viewBox=%220%200%208%2012.5%22%20fill=%22none%22%20xmlns=%22http://www.w3.org/2000/svg%22%3E%20%3Cg%20id=%22Frame%22%3E%20%3Cpath%20id=%22Vector%22%20d=%22M1.56747%206.82952C2.10093%206.82952%202.53338%206.39707%202.53338%205.86361C2.53338%205.33016%202.10093%204.89771%201.56747%204.89771C1.03401%204.89771%200.601562%205.33016%200.601562%205.86361C0.601562%206.39707%201.03401%206.82952%201.56747%206.82952Z%22%20fill=%22%2335353E%22/%3E%20%3Cpath%20id=%22Vector_2%22%20d=%22M3.97763%204.54534C4.51108%204.54534%204.94354%204.11289%204.94354%203.57943C4.94354%203.04598%204.51108%202.61353%203.97763%202.61353C3.44417%202.61353%203.01172%203.04598%203.01172%203.57943C3.01172%204.11289%203.44417%204.54534%203.97763%204.54534Z%22%20fill=%22%2335353E%22/%3E%20%3Cpath%20id=%22Vector_3%22%20d=%22M6.19247%202.32952C6.72593%202.32952%207.15838%201.89707%207.15838%201.36361C7.15838%200.830157%206.72593%200.397705%206.19247%200.397705C5.65901%200.397705%205.22656%200.830157%205.22656%201.36361C5.22656%201.89707%205.65901%202.32952%206.19247%202.32952Z%22%20fill=%22%2335353E%22/%3E%20%3Cpath%20id=%22Vector_4%22%20d=%22M3.97763%209.10223C4.51108%209.10223%204.94354%208.66978%204.94354%208.13632C4.94354%207.60286%204.51108%207.17041%203.97763%207.17041C3.44417%207.17041%203.01172%207.60286%203.01172%208.13632C3.01172%208.66978%203.44417%209.10223%203.97763%209.10223Z%22%20fill=%22%2335353E%22/%3E%20%3Cpath%20id=%22Vector_5%22%20d=%22M6.19247%2011.3183C6.72593%2011.3183%207.15838%2010.8858%207.15838%2010.3524C7.15838%209.81893%206.72593%209.38647%206.19247%209.38647C5.65901%209.38647%205.22656%209.81893%205.22656%2010.3524C5.22656%2010.8858%205.65901%2011.3183%206.19247%2011.3183Z%22%20fill=%22%2335353E%22/%3E%20%3C/g%3E%20%3C/svg%3E" alt="" style="width:8px; height:12.5px; display:block"></span><span class="dnb-btn__label" style="white-space:nowrap; direction:rtl; unicode-bidi:isolate; font-family:'Heebo',sans-serif; font-weight:500; font-size:13.3px; line-height:19.91px; letter-spacing:-.1px; color:#FFFFFF">לעמוד משפחת הפתרונות</span></a></div></div><div style="position:relative; width:560px; height:400px; flex-shrink:0; border-radius:12px; overflow:hidden; background-image:linear-gradient(180deg,#B2EDFD 0%,#C8EEF9 55%,#D7F4F8 100%); display:flex; align-items:center; justify-content:center"><div style="transform:translateX(-8px)"><div style="position:relative; width:290px"><div style="display:flex; flex-direction:column; gap:4px; padding:5px; border-radius:10px; background-color:rgba(255,255,255,.45); box-shadow:inset 0 0 0 1px rgba(255,255,255,.95), 0 0 0 .5px rgba(33,33,33,.05); -webkit-backdrop-filter:blur(12px); backdrop-filter:blur(12px)"><div style="display:flex; flex-direction:column; padding:12px 16px 14px; border-radius:3px; background-color:#E8ECEF; "><span style="font-size:12px; line-height:16px; color:#5E5E86; white-space:nowrap">ערב אישי · עוסק יחיד</span><span style="font-size:26px; line-height:30px; font-weight:300; color:#E5483F; white-space:nowrap">41</span><span style="position:relative; display:block; direction:ltr; height:12px; margin-top:10px; border-radius:4px; background-image:linear-gradient(90deg,#F0C355 0%,#F0C355 50%,#F1A853 72%,#F5574D 100%)"><i style="position:absolute; left:72%; top:-3px; width:2px; height:18px; background-color:#888888"></i></span></div><div style="display:flex; gap:4px"><div style="display:flex; flex-direction:column; padding:10px 14px 12px; border-radius:3px; background-color:#E8ECEF; flex:1; min-width:0"><span style="font-size:12px; line-height:16px; color:#5E5E86; white-space:nowrap">בעלי שליטה</span><span style="font-size:22px; line-height:26px; font-weight:300; color:#5E5E86; white-space:nowrap">2</span></div><div style="display:flex; flex-direction:column; padding:10px 14px 12px; border-radius:3px; background-color:#E8ECEF; flex:1; min-width:0"><span style="font-size:12px; line-height:16px; color:#5E5E86; white-space:nowrap">ביטחונות</span><span style="font-size:22px; line-height:26px; font-weight:300; color:#5E5E86; white-space:nowrap">נדרשים</span></div></div></div><span style="position:absolute; left:-30px; top:-14px; height:30px; display:flex; align-items:center; padding:0 14px; border-radius:4px; background-color:#5CCDE7; color:#26333D; font-size:13px; line-height:18px; white-space:nowrap">בדיקת ערב</span><span style="position:absolute; right:-40px; bottom:-20px; width:52px; height:52px; border-radius:6px; background-color:#071620; display:flex; align-items:center; justify-content:center"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true" style="display:block; flex-shrink:0"><path d="M12 2.60h0M14.70 3.58h0M16.14 6.07h0M15.64 8.90h0M13.44 10.75h0M10.56 10.75h0M8.36 8.90h0M7.86 6.07h0M9.30 3.58h0M4.20 22.20h0M4.79 19.22h0M6.48 16.68h0M9.02 14.99h0M12 14.40h0M14.98 14.99h0M17.52 16.68h0M19.21 19.22h0M19.80 22.20h0" fill="none" stroke="#FFFFFF" stroke-width="1.84" stroke-linecap="round"></path></svg></span></div></div></div></div></div><div style="margin-top:20px"><div style="display:grid; grid-template-columns:560px 1fr; padding:16px; background-color:#FFFFFF; border-radius:16px; box-shadow:inset 0 0 0 .957px rgba(33,33,33,.1)"><div style="position:relative; width:560px; height:400px; flex-shrink:0; border-radius:12px; overflow:hidden; background-image:linear-gradient(180deg,#B2EDFD 0%,#C8EEF9 55%,#D7F4F8 100%); display:flex; align-items:center; justify-content:center"><div style="transform:translateX(-8px)"><div style="position:relative; width:290px"><div style="display:flex; flex-direction:column; gap:4px; padding:5px; border-radius:10px; background-color:rgba(255,255,255,.45); box-shadow:inset 0 0 0 1px rgba(255,255,255,.95), 0 0 0 .5px rgba(33,33,33,.05); -webkit-backdrop-filter:blur(12px); backdrop-filter:blur(12px)"><div style="display:flex; flex-direction:column; padding:12px 16px 14px; border-radius:3px; background-color:#E8ECEF; "><span style="font-size:12px; line-height:16px; color:#5E5E86; white-space:nowrap">רשימת יעד · מפיצים</span><span style="font-size:26px; line-height:30px; font-weight:300; color:#5E5E86; white-space:nowrap">128 חברות</span></div><div style="display:flex; flex-direction:column; padding:12px 16px 14px; border-radius:3px; background-color:#E8ECEF; "><span style="font-size:12px; line-height:16px; color:#5E5E86; white-space:nowrap">פילוח לפי אזור</span><span style="display:flex; gap:2px; height:12px; margin-top:10px; border-radius:4px; overflow:hidden"><span style="height:100%; width:44%; background-color:#259BB3"></span><span style="height:100%; width:34%; background-color:#92CE8F"></span><span style="height:100%; width:22%; background-color:#F0C355"></span></span><span style="display:flex; gap:12px; margin-top:9px; font-size:11px; line-height:14px; color:#5E5E86"><span style="display:flex; align-items:center; gap:5px; white-space:nowrap"><i style="width:7px; height:7px; border-radius:2px; background-color:#259BB3"></i>אירופה 44%</span><span style="display:flex; align-items:center; gap:5px; white-space:nowrap"><i style="width:7px; height:7px; border-radius:2px; background-color:#92CE8F"></i>צפון אמריקה 34%</span><span style="display:flex; align-items:center; gap:5px; white-space:nowrap"><i style="width:7px; height:7px; border-radius:2px; background-color:#F0C355"></i>אסיה 22%</span></span></div></div><span style="position:absolute; left:-30px; top:-14px; height:30px; display:flex; align-items:center; padding:0 14px; border-radius:4px; background-color:#5CCDE7; color:#26333D; font-size:13px; line-height:18px; white-space:nowrap">שוק יעד חדש</span><span style="position:absolute; right:-40px; bottom:-20px; width:52px; height:52px; border-radius:6px; background-color:#071620; display:flex; align-items:center; justify-content:center"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true" style="display:block; flex-shrink:0"><path d="M12 2.40h0M14.97 2.87h0M17.64 4.23h0M19.77 6.36h0M21.13 9.03h0M21.60 12h0M21.13 14.97h0M19.77 17.64h0M17.64 19.77h0M14.97 21.13h0M12 21.60h0M9.03 21.13h0M6.36 19.77h0M4.23 17.64h0M2.87 14.97h0M2.40 12h0M2.87 9.03h0M4.23 6.36h0M6.36 4.23h0M9.03 2.87h0M12 6.80h0M15.06 7.79h0M16.95 10.39h0M16.95 13.61h0M15.06 16.21h0M12 17.20h0M8.94 16.21h0M7.05 13.61h0M7.05 10.39h0M8.94 7.79h0M12 12h0" fill="none" stroke="#FFFFFF" stroke-width="1.84" stroke-linecap="round"></path></svg></span></div></div></div><div style="display:flex; flex-direction:column; align-items:flex-start; justify-content:center; padding:32px 48px"><div style="display:flex; align-items:center; gap:8px; font-size:14px; line-height:21px; font-weight:500; letter-spacing:1px; color:#0083A1"><i style="display:block; width:5px; height:5px; border-radius:999px; background-color:#0083A1"></i><span>משפחת פתרונות</span></div><h2 style="margin:14px 0 0; font-size:40px; line-height:48px; font-weight:400; color:#26333D; text-wrap:balance; margin-top:12px">צמיחה עסקית</h2><p style="font-size:18px; line-height:27px; color:#51606B; text-wrap:pretty; margin-top:14px; max-width:520px">איתור ופילוח חברות לפי מדינה, ענף, גודל והיקף פעילות, עם פרטי מקבלי ההחלטות שאיתם מתחילים שיחה. כך בונים רשימת יעד ממוקדת לשוק חדש, מזהים מפיצים ושותפים פוטנציאליים, ומגיעים ללקוחות הנכונים מהר יותר.</p><div style="margin-top:24px"><a class="dnb-btn" href="#" style="display:inline-flex; align-items:center; flex:0 0 auto; box-sizing:border-box; direction:ltr; height:43.67px; min-height:43.67px; padding:0 15.04px 0 7.86px; gap:8.19px; border:0; border-radius:11px; text-decoration:none; cursor:pointer; background-image:linear-gradient(90deg,rgba(255,255,255,0) 0%,rgba(255,255,255,.12) 100%),linear-gradient(90deg,#1F1F29 0%,#1F1F29 100%); box-shadow:inset 0 0 0 1px #282834"><span class="dnb-btn__badge" style="flex:0 0 auto; display:flex; align-items:center; justify-content:center; width:22.8px; height:27.08px; border-radius:8.55px; background-color:#9EEDFA"><img src="data:image/svg+xml,%3Csvg%20preserveAspectRatio=%22none%22%20overflow=%22visible%22%20style=%22display:%20block;%22%20width=%228%22%20height=%2212.5%22%20viewBox=%220%200%208%2012.5%22%20fill=%22none%22%20xmlns=%22http://www.w3.org/2000/svg%22%3E%20%3Cg%20id=%22Frame%22%3E%20%3Cpath%20id=%22Vector%22%20d=%22M1.56747%206.82952C2.10093%206.82952%202.53338%206.39707%202.53338%205.86361C2.53338%205.33016%202.10093%204.89771%201.56747%204.89771C1.03401%204.89771%200.601562%205.33016%200.601562%205.86361C0.601562%206.39707%201.03401%206.82952%201.56747%206.82952Z%22%20fill=%22%2335353E%22/%3E%20%3Cpath%20id=%22Vector_2%22%20d=%22M3.97763%204.54534C4.51108%204.54534%204.94354%204.11289%204.94354%203.57943C4.94354%203.04598%204.51108%202.61353%203.97763%202.61353C3.44417%202.61353%203.01172%203.04598%203.01172%203.57943C3.01172%204.11289%203.44417%204.54534%203.97763%204.54534Z%22%20fill=%22%2335353E%22/%3E%20%3Cpath%20id=%22Vector_3%22%20d=%22M6.19247%202.32952C6.72593%202.32952%207.15838%201.89707%207.15838%201.36361C7.15838%200.830157%206.72593%200.397705%206.19247%200.397705C5.65901%200.397705%205.22656%200.830157%205.22656%201.36361C5.22656%201.89707%205.65901%202.32952%206.19247%202.32952Z%22%20fill=%22%2335353E%22/%3E%20%3Cpath%20id=%22Vector_4%22%20d=%22M3.97763%209.10223C4.51108%209.10223%204.94354%208.66978%204.94354%208.13632C4.94354%207.60286%204.51108%207.17041%203.97763%207.17041C3.44417%207.17041%203.01172%207.60286%203.01172%208.13632C3.01172%208.66978%203.44417%209.10223%203.97763%209.10223Z%22%20fill=%22%2335353E%22/%3E%20%3Cpath%20id=%22Vector_5%22%20d=%22M6.19247%2011.3183C6.72593%2011.3183%207.15838%2010.8858%207.15838%2010.3524C7.15838%209.81893%206.72593%209.38647%206.19247%209.38647C5.65901%209.38647%205.22656%209.81893%205.22656%2010.3524C5.22656%2010.8858%205.65901%2011.3183%206.19247%2011.3183Z%22%20fill=%22%2335353E%22/%3E%20%3C/g%3E%20%3C/svg%3E" alt="" style="width:8px; height:12.5px; display:block"></span><span class="dnb-btn__label" style="white-space:nowrap; direction:rtl; unicode-bidi:isolate; font-family:'Heebo',sans-serif; font-weight:500; font-size:13.3px; line-height:19.91px; letter-spacing:-.1px; color:#FFFFFF">לעמוד משפחת הפתרונות</span></a></div></div></div></div></div></section>
+
+
+
+
+
+<section class="proof"><div class="wrap">
+  <div class="in">
+    <div>
+      
+<div class="eb" style="justify-content:flex-start"><i></i>לקוחות מספרים</div><h2>העסקים שצומחים הכי מהר עובדים עם D&amp;B</h2>
+      <p class="lede">אלפי חברות בישראל משתמשות בנתוני D&amp;B כדי להחליט מול מי לעבוד.</p>
+      <div class="btnw"><a class="dnb-btn dnb-btn--lite" href="#"><span class="dnb-btn__badge"><img src="fig/btn-arrow-dark.svg" alt=""></span><span class="dnb-btn__label">דברו איתנו</span></a></div>
+    </div>
+    <div class="quote1">
+      <img class="qm" src="fig/t2-quote.svg" alt="">
+      <blockquote>לפני שאנחנו סוגרים עסקה עם ספק חדש בחו״ל, אנחנו בודקים אותו ב-D&amp;B. זה הפך לחלק מהתהליך, ולא למשהו שעושים רק כשיש חשש.</blockquote>
+      <div class="base">
+        <div class="fig"><b>5x</b><span>נפח בדיקות</span></div>
+        <div class="who">
+          <div>
+            <div class="n">אבי כהן</div>
+            <div class="r">סמנכ״ל כספים</div>
+          </div>
+          <img class="av" src="fig/avatar.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<div data-home="ctaw" data-h2="לפני שאתם שולחים סחורה — בדקו עם מי אתם עובדים"></div>
+
+
+<div data-sec="marks"></div>
+<div data-home="guides"></div>
+<div data-home="faq"></div>
+<script src="home-sections.js?v=1791106622"></script>
+<script src="content/faq.js?v=1788190793"></script>
+<script src="content/cta-chips.js?v=1789645921"></script>
+<script src="menu-panels.js?v=1790789982"></script>
+<script src="menu.js?v=1791200223"></script>
+<script src="nav-wire.js?v=1791189451"></script>
+<script src="ind-prod-media.js?v=1790866562"></script>
+<script src="micro/micro.js?v=1787833609"></script>
+<script src="tile-arrow.js?v=1790861149"></script>
+<script src="sec-integ.js?v=1790751187"></script>
+<script src="entrance-pages.js?v=1790685922"></script>
+<script src="sec-marks.js?v=1790791008"></script>
+<script src="eyebrow-dots.js?v=1790791514"></script>
+<script src="ind-a2-new.js?v=1791109132"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+
+.abtsec{padding:80px 0;background:#FCFDFE}
+.abtsec *{box-sizing:border-box;margin:0;padding:0}
+.abtsec .abt__in{max-width:1440px;margin-inline:auto;padding-inline:100px;
+  display:flex;flex-direction:column;gap:56px}
+
+
+.abtsec .abt__head{display:flex;flex-direction:column;align-items:center;
+  gap:12px;text-align:center}
+.abtsec .abt__eb{display:flex;align-items:center;gap:8px;
+  font:500 14px/21px "Heebo",sans-serif;letter-spacing:1px;color:#0083A1}
+.abtsec .abt__eb i{width:4px;height:4px;border-radius:50%;background:currentColor;
+  flex:0 0 auto}
+.abtsec .abt__lede{font:400 20px/27.2px "Heebo",sans-serif;color:#51606B;
+  max-width:760px;text-wrap:pretty}
+
+
+.abtsec .abt__list{list-style:none;display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.abtsec .abt__row{display:flex;flex-direction:column;align-items:flex-start;
+  padding:28px;border-radius:12px;background:transparent;
+  box-shadow:inset 0 0 0 .957px rgba(33,33,33,.1)}
+.abtsec .abt__ico{width:54px;height:54px;flex:0 0 auto;border-radius:5px;
+  background:#071620;display:flex;align-items:center;justify-content:center}
+.abtsec .abt__ico::before{content:"";width:28px;height:28px;background:#FCFDFE;
+  -webkit-mask:var(--abt-ico) center/contain no-repeat;
+          mask:var(--abt-ico) center/contain no-repeat}
+.abtsec .abt__ico:not([style*="--abt-ico"])::before{display:none}
+.abtsec .abt__tx{min-width:0;display:flex;flex-direction:column}
+.abtsec .abt__tx b{font:400 24px/31.2px "Heebo",sans-serif;color:#26333D;
+  margin-top:28px;text-wrap:balance}
+.abtsec .abt__tx span{font:400 16px/20.8px "Heebo",sans-serif;color:#64727C;
+  margin-top:10px;text-wrap:pretty}
+
+@media (max-width:1100px){
+  .abtsec .abt__in{padding-inline:40px}
+  .abtsec .abt__list{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:600px){
+  .abtsec .abt__in{padding-inline:20px;gap:32px}
+  .abtsec .abt__list{grid-template-columns:minmax(0,1fr)}
+}
+
+html[data-m] .abtsec .abt__in{padding-inline:20px;gap:32px}
+html[data-m] .abtsec .abt__list{grid-template-columns:minmax(0,1fr)}
