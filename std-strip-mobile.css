@@ -1,0 +1,13 @@
+
+@media (max-width:767.98px){
+  .std-sec{padding:64px 0}
+  .std-row{flex-wrap:wrap;justify-content:center;column-gap:10px;row-gap:18px;margin:28px 0 0;padding:0 20px}
+  .std-item{flex:0 0 76px;width:76px}
+  .std-tile{padding:8px}
+  .std-name{margin-top:8px;font-size:11px;line-height:14px}
+}
+html[data-m] .std-sec{padding:64px 0}
+html[data-m] .std-row{flex-wrap:wrap;justify-content:center;column-gap:10px;row-gap:18px;margin:28px 0 0;padding:0 20px}
+html[data-m] .std-item{flex:0 0 76px;width:76px}
+html[data-m] .std-tile{padding:8px}
+html[data-m] .std-name{margin-top:8px;font-size:11px;line-height:14px}

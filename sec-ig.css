@@ -1,0 +1,73 @@
+
+.ig{
+  --ig-tile:99px; --ig-gap:12px; --ig-logo:40px; --ig-label:12px; --ig-label-gap:8px; --ig-stagger:24px;
+  position:relative; overflow:hidden; box-sizing:border-box;
+  padding:96px 144px; background-color:#F3F5F7;
+  font-family:'Heebo',sans-serif; direction:rtl;
+}
+.ig[data-mode="m"]{ --ig-tile:78px; --ig-gap:10px; --ig-logo:32px; --ig-label:11px; --ig-label-gap:6px; --ig-stagger:9px; padding:64px 20px; }
+
+
+.ig__dots{
+  position:absolute; inset:0; pointer-events:none;
+  background-image:radial-gradient(circle at center,rgba(11,22,32,.34) .9px,rgba(0,0,0,0) 1.25px); background-size:16px 16px;
+  -webkit-mask-image:radial-gradient(52% 90% at 32% 52%,#000 0%,rgba(0,0,0,.8) 38%,rgba(0,0,0,.3) 66%,rgba(0,0,0,0) 92%);
+          mask-image:radial-gradient(52% 90% at 32% 52%,#000 0%,rgba(0,0,0,.8) 38%,rgba(0,0,0,.3) 66%,rgba(0,0,0,0) 92%);
+}
+.ig[data-mode="m"] .ig__dots{
+  -webkit-mask-image:radial-gradient(80% 55% at 50% 78%,#000 0%,rgba(0,0,0,.8) 38%,rgba(0,0,0,.3) 66%,rgba(0,0,0,0) 92%);
+          mask-image:radial-gradient(80% 55% at 50% 78%,#000 0%,rgba(0,0,0,.8) 38%,rgba(0,0,0,.3) 66%,rgba(0,0,0,0) 92%);
+}
+
+.ig__in{ position:relative; display:grid; grid-template-columns:440px minmax(0,1fr); gap:72px; align-items:center; }
+.ig[data-mode="m"] .ig__in{ display:flex; flex-direction:column; align-items:stretch; gap:32px; }
+
+
+.ig__head{ display:flex; flex-direction:column; align-items:flex-start; gap:16px; }
+.ig[data-mode="m"] .ig__head{ gap:12px; }
+.ig__eb{ display:flex; align-items:center; gap:8px; margin:0; font-size:14px; line-height:21px; font-weight:500; letter-spacing:1px; color:#0083A1; }
+.ig__eb::before{ content:""; display:block; width:5px; height:5px; flex-shrink:0; border-radius:50%; background-color:#0083A1; }
+.ig__h2{ margin:0; font-size:44px; line-height:50px; font-weight:400; letter-spacing:-.4px; color:#000; text-wrap:balance; }
+.ig__lede{ margin:0; max-width:440px; font-size:18px; line-height:26px; color:#51606B; }
+.ig[data-mode="m"] .ig__h2{ font-size:28px; line-height:36px; }
+.ig[data-mode="m"] .ig__lede{ font-size:16px; line-height:22px; }
+
+
+.ig__tile{
+  flex-shrink:0; box-sizing:border-box; width:var(--ig-tile); height:var(--ig-tile); margin:0;
+  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:var(--ig-label-gap);
+  border-radius:12px; background-color:#FFFFFF; box-shadow:inset 0 0 0 .957px rgba(33,33,33,.1);
+  list-style:none;
+}
+.ig__logo{ display:block; width:var(--ig-logo); height:var(--ig-logo); object-fit:contain; }
+.ig__name{ direction:ltr; white-space:nowrap;
+  font-size:var(--ig-label); line-height:15px; font-weight:500; color:#26333D; text-align:center; }
+
+
+.ig__static{ display:flex; flex-direction:column; gap:var(--ig-gap); margin:0; padding:0; }
+.ig__row{ display:flex; justify-content:center; gap:var(--ig-gap); margin:0; padding:0; }
+
+.ig__static.is-even .ig__row:first-child{ translate:calc(var(--ig-stagger) * -1) 0; }
+.ig__static.is-even .ig__row:last-child{ translate:var(--ig-stagger) 0; }
+
+
+.ig__drift{ position:relative; overflow:hidden; display:flex; flex-direction:column; gap:var(--ig-gap); padding:8px 0; direction:ltr;
+  -webkit-mask-image:linear-gradient(90deg,rgba(0,0,0,0),#000 14%,#000 86%,rgba(0,0,0,0));
+          mask-image:linear-gradient(90deg,rgba(0,0,0,0),#000 14%,#000 86%,rgba(0,0,0,0)); }
+.ig[data-mode="m"] .ig__drift{ margin:0 -20px; }               
+.ig__track{ display:flex; gap:var(--ig-gap); width:max-content; margin:0; padding:0; }
+.ig__track--r{ margin-left:calc((var(--ig-tile) + var(--ig-gap)) / -2); }
+@keyframes igL{ from{transform:translateX(0)} to{transform:translateX(-50%)} }
+@keyframes igR{ from{transform:translateX(-50%)} to{transform:translateX(0)} }
+.ig__track--l{ animation:igL 40s linear infinite; }
+.ig__track--r{ animation:igR 46s linear infinite; }
+.ig__drift:hover .ig__track{ animation-play-state:paused; }
+
+@media (prefers-reduced-motion:reduce){
+  .ig__track{ animation:none!important; }
+}
+
+
+html body .ig .ig__h2{font-size:44px!important;line-height:50px!important;font-weight:400!important;letter-spacing:-.4px!important}
+html body .ig[data-mode="m"] .ig__h2{font-size:28px!important;line-height:36px!important}
+.ig .ig__eb::before{flex-shrink:0}

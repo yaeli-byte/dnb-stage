@@ -1,0 +1,8 @@
+
+.dnb-invented,
+.bnote,
+.hiws-pending,
+.wip-mark{display:none !important}
+
+
+.case .flag,.tasks .flag{display:none !important}

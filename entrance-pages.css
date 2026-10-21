@@ -1,0 +1,41 @@
+
+:root{
+  --enter-dur:.55s;
+  --enter-ease:cubic-bezier(.19,1,.22,1);
+  --enter-lift:24px;
+}
+.pen{opacity:0;translate:0 var(--enter-lift);
+  transition:opacity var(--enter-dur) var(--enter-ease),
+             translate var(--enter-dur) var(--enter-ease);
+  will-change:opacity,translate}
+.pen.pin{opacity:1;translate:none}
+
+
+.asset-in .zs,
+.asset-in [class*="hiw-glass"] > *,
+.asset-in .t-feature .tool-scene > *{
+  opacity:0;translate:0 8px;
+  transition:opacity .42s var(--enter-ease), translate .42s var(--enter-ease)}
+.asset-in.asset-go .zs,
+.asset-in.asset-go [class*="hiw-glass"] > *,
+.asset-in.asset-go .t-feature .tool-scene > *{opacity:1;translate:none}
+
+
+.asset-in .rail-fill{transform:scaleX(0);transform-origin:right center;
+  transition:transform .6s var(--enter-ease)}
+.asset-in.asset-go .rail-fill{transform:scaleX(1)}
+
+
+html[data-motion="on"] .mockcard .dots,
+html[data-motion="on"] .t-card .hiw-dots{
+  animation:dotBreath 2.2s cubic-bezier(.4,0,.2,1) infinite}
+@keyframes dotBreath{0%,100%{opacity:1}50%{opacity:.45}}
+
+@media (prefers-reduced-motion:reduce){
+  .pen{opacity:1!important;translate:none!important;transition:none!important}
+  .asset-in .zs,.asset-in [class*="hiw-glass"] > *,
+  .asset-in .t-feature .tool-scene > *{opacity:1!important;translate:none!important}
+  .asset-in .rail-fill{transform:none!important}
+  html[data-motion="on"] .mockcard .dots,
+  html[data-motion="on"] .t-card .hiw-dots{animation:none!important}
+}

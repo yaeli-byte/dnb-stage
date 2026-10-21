@@ -1,0 +1,36 @@
+
+
+:root{
+  --enter-dur:.55s;
+  --enter-ease:cubic-bezier(.19,1,.22,1);
+  --enter-lift:24px;
+}
+
+
+#frame .en{opacity:0;translate:0 var(--enter-lift);
+  transition:opacity var(--enter-dur) var(--enter-ease),
+             translate var(--enter-dur) var(--enter-ease);
+  will-change:opacity,translate}
+
+
+#frame .en.in{opacity:1;translate:none}
+
+
+html[data-motion="on"] #c-third .dotrect,
+html[data-motion="on"] #c-data .plate,
+html[data-motion="on"] #c-consumer .plate,
+html[data-motion="on"] #ind .dots{
+  animation:dotBreath 2.2s cubic-bezier(.4,0,.2,1) infinite}
+@keyframes dotBreath{0%,100%{opacity:1}50%{opacity:.45}}
+
+html[data-motion="on"] #ind .dots{animation-name:dotBreathInd}
+@keyframes dotBreathInd{0%,100%{opacity:.75}50%{opacity:.34}}
+
+
+@media (prefers-reduced-motion:reduce){
+  #frame .en{opacity:1!important;translate:none!important;transition:none!important}
+  html[data-motion="on"] #c-third .dotrect,
+  html[data-motion="on"] #c-data .plate,
+  html[data-motion="on"] #c-consumer .plate,
+  html[data-motion="on"] #ind .dots{animation:none!important}
+}

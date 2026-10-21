@@ -1,0 +1,66 @@
+
+@media (prefers-reduced-motion:no-preference){
+
+  
+  .ihero .shot,
+  .ind-hero .ih-globe,
+  .ihm-root .ih-globe{
+    animation:ihm-photo .62s cubic-bezier(.19,1,.22,1) both;
+  }
+  
+  .ihero .slab{animation:ihm-photo .62s cubic-bezier(.19,1,.22,1) .06s both}
+
+  
+  .ihero .mark,
+  .ihero .statuspill,
+  .ihero .tagpill,
+  .ihero .mockcard,
+  .ind-hero .ih-card,
+  .ind-hero .ih-pin,
+  .ihm-root .ih-card,
+  .ihm-root .ih-pin{
+    animation:ihm-el .46s cubic-bezier(.22,1,.36,1) both;
+  }
+  .ihero .mark                      {animation-delay:.34s}
+  .ihero .statuspill                {animation-delay:.43s}
+  .ihero .tagpill                   {animation-delay:.52s}
+  .ihero .mockcard:nth-child(1)     {animation-delay:.61s}
+  .ihero .mockcard:nth-child(2)     {animation-delay:.70s}
+  .ihero .mockcard:nth-child(3)     {animation-delay:.79s}
+  .ind-hero .ih-pin:nth-of-type(1),
+  .ihm-root .ih-pin:nth-of-type(1)  {animation-delay:.34s}
+  .ind-hero .ih-pin:nth-of-type(2),
+  .ihm-root .ih-pin:nth-of-type(2)  {animation-delay:.43s}
+  .ind-hero .ih-pin:nth-of-type(3),
+  .ihm-root .ih-pin:nth-of-type(3)  {animation-delay:.52s}
+  .ind-hero .ih-card:nth-of-type(1),
+  .ihm-root .ih-card:nth-of-type(1) {animation-delay:.52s}
+  .ind-hero .ih-card:nth-of-type(2),
+  .ihm-root .ih-card:nth-of-type(2) {animation-delay:.64s}
+  .ind-hero .ih-card:nth-of-type(3),
+  .ihm-root .ih-card:nth-of-type(3) {animation-delay:.76s}
+
+  
+  .ihero .mockcard .fig{
+    animation:ihm-data .52s cubic-bezier(.19,1,.22,1) both;
+  }
+  .ihero .mockcard:nth-child(1) .fig{animation-delay:1.15s}
+  .ihero .mockcard:nth-child(2) .fig{animation-delay:1.33s}
+  .ihero .mockcard:nth-child(3) .fig{animation-delay:1.51s}
+  
+  .ihero .mockcard .fig .trend{
+    animation:ihm-trend .4s cubic-bezier(.22,1,.36,1) both;
+    animation-delay:inherit;
+  }
+
+  
+  @keyframes ihm-photo{from{opacity:0;scale:1.04}to{opacity:1;scale:1}}
+  @keyframes ihm-el   {from{opacity:0;translate:0 10px;scale:.96}to{opacity:1;translate:0 0;scale:1}}
+  
+  @keyframes ihm-data {
+    0%  {opacity:0;translate:0 14px}
+    55% {opacity:1;translate:0 -3px}
+    100%{opacity:1;translate:0 0}
+  }
+  @keyframes ihm-trend{from{opacity:0;translate:0 4px}to{opacity:1;translate:0 0}}
+}
