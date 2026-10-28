@@ -1,0 +1,11 @@
+
+.sg-tile{position:relative;display:block!important;width:40px!important;height:40px!important;flex:0 0 40px!important;
+  border-radius:5.556px!important;overflow:hidden!important;--gsq-ink:#333;
+  background:rgba(255,255,255,.34)!important;box-shadow:inset 0 0 0 1px rgba(11,22,32,.13)!important;
+  transition:background .34s cubic-bezier(.2,0,0,1),box-shadow .34s cubic-bezier(.2,0,0,1)}
+.sg-tile > i{display:none}
+:is(a,button,.dnb-card):hover .sg-tile{--gsq-ink:#0083A1;background:rgba(0,131,161,.07)!important;box-shadow:inset 0 0 0 1px rgba(0,131,161,.34)!important}
+.sg-tile--dark{--gsq-ink:#BFE4EF;background:rgba(255,255,255,.10)!important;box-shadow:inset 0 0 0 1px rgba(255,255,255,.24)!important}
+:is(a,button,.dnb-card):hover .sg-tile--dark{--gsq-ink:#5CCDE7;background:rgba(92,205,231,.17)!important;box-shadow:inset 0 0 0 1px rgba(169,243,255,.42)!important}
+.sg-tile.sg-abs{position:absolute!important}
+@media (prefers-reduced-motion:reduce){.sg-tile{transition:none}}

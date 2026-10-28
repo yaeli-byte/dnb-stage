@@ -1,0 +1,21 @@
+
+:where(.pg-article){margin:0;background:#FCFDFE}
+:where(.pg-article) *{box-sizing:border-box}
+:where(.pg-article) h1,:where(.pg-article) h2,:where(.pg-article) h3,:where(.pg-article) h4,:where(.pg-article) p,:where(.pg-article) figure,:where(.pg-article) blockquote,:where(.pg-article) ul{margin:0}
+:where(.pg-article) a{color:inherit;text-decoration:none}
+:where(.pg-article) a:hover{color:#0083A1}
+:where(.pg-article) .dnb-card{transition:box-shadow 140ms cubic-bezier(.4,0,.6,1)}
+:where(.pg-article) .dnb-card:hover{box-shadow:inset 0 0 0 .957px rgba(33,33,33,.1),0 2px 8px -4px rgba(11,46,56,.1)!important}
+:where(.pg-article) .dnb-chip{-webkit-backdrop-filter:blur(1.722px);backdrop-filter:blur(1.722px)}
+:where(.pg-article) .dnb-dots-promo{background-image:radial-gradient(ellipse 560px 200px at 50% 50%,#071620 0%,#071620 50%,rgba(7,22,32,0) 100%),radial-gradient(circle at center,rgba(255,255,255,.5) 1.1px,rgba(255,255,255,0) 1.6px);background-size:100% 100%,32px 32px;background-repeat:no-repeat,repeat}
+@media (prefers-reduced-motion:reduce){:where(.pg-article) *{transition:none!important}}
+:where(.pg-article) .m-swipe{scrollbar-width:none;-webkit-overflow-scrolling:touch}
+:where(.pg-article) .m-swipe::-webkit-scrollbar{display:none}
+:where(.pg-article) [style*="blur(12px)"] [style*="background-color: rgb(232, 236, 239)"]:not([style*="box-shadow"]),:where(.pg-article) [style*="blur(12px)"] [style*="background-color: rgb(241, 243, 245)"]:not([style*="box-shadow"]){box-shadow:inset 0 0 0 1px rgba(255,255,255,.95)}
+:where(.pg-article) .gb-ph{background:url("fig/cd/article/59bf8c41d7bb.png") center/cover no-repeat}
+:where(.pg-article) .art-toc summary{list-style:none;cursor:pointer}
+:where(.pg-article) .art-toc summary::-webkit-details-marker{display:none}
+:where(.pg-article) .art-toc[open] .art-chev{transform:rotate(180deg)}
+:where(.pg-article) .art-chev{transition:transform .2s cubic-bezier(.2,0,0,1)}
+:where(.pg-article) .m-swipe{scrollbar-width:none}
+:where(.pg-article),:where(.pg-article){margin:0;padding:0}

@@ -1,0 +1,159 @@
+
+:root{
+  --menu-hover:140ms; --menu-panel-in:280ms; --menu-panel-out:160ms;
+  --menu-scrim-in:240ms; --menu-scrim-out:200ms; --menu-content-in:240ms;
+  --menu-stagger:28ms; --menu-switch-out:120ms; --menu-height:260ms;
+  --m-press:100ms; --m-sheet-in:200ms; --m-sheet-out:180ms; --m-row-in:260ms;
+  --m-stagger:30ms; --m-morph:280ms; --m-push:340ms; --m-pop:300ms;
+
+  --ease-std:cubic-bezier(0.4,0,0.6,1);
+  --ease-out:cubic-bezier(0.22,1,0.36,1);
+  --ease-in:cubic-bezier(0.4,0,1,1);
+  --ease-move:cubic-bezier(0.65,0,0.35,1);
+  --ease-push:cubic-bezier(0.32,0.72,0,1);
+}
+
+
+#header .menuw{position:absolute;inset-inline:0;top:100%;z-index:60}
+.menu{
+  position:absolute;inset-inline:24px;inset-block-start:0;z-index:30;
+  opacity:0;translate:0 -8px;visibility:hidden;
+  transition:opacity var(--menu-panel-out) var(--ease-in),
+             translate var(--menu-panel-out) var(--ease-in),
+             visibility 0s linear var(--menu-panel-out);
+  will-change:auto}
+html.menu-open .menu{
+  opacity:1;translate:none;visibility:visible;
+  transition:opacity var(--menu-panel-in) var(--ease-out),
+             translate var(--menu-panel-in) var(--ease-out),
+             visibility 0s;
+  will-change:opacity,translate}
+
+html.menu-closing .menu{translate:0 -4px}
+
+
+.menu-scrim{position:fixed;inset:0;z-index:55;background:rgba(3,12,20,.42);
+  opacity:0;transition:opacity var(--menu-scrim-out) var(--ease-in)}
+
+html.menu-open .menu-scrim{inset-block-start:var(--menu-top,0px)}
+html.menu-open .menu-scrim{opacity:1;
+  transition:opacity var(--menu-scrim-in) var(--ease-out)}
+
+
+
+.menu .mblk{opacity:0;translate:0 6px}
+html.menu-open .menu .mblk{
+  opacity:1;translate:none;
+  transition:opacity var(--menu-content-in) var(--ease-out) var(--blk-d,0ms),
+             translate var(--menu-content-in) var(--ease-out) var(--blk-d,0ms) !important}
+
+
+.menu .mbody{position:relative}
+.menu.switching .mbody{transition:height var(--menu-height) var(--ease-move)}
+.menu .mpane{position:relative;inset-inline:0;top:0}
+.menu .mpane.out{position:absolute;opacity:1;translate:0;
+  transition:opacity var(--menu-switch-out) var(--ease-in),
+             translate var(--menu-switch-out) var(--ease-in)}
+.menu .mpane.out.go{opacity:0;translate:var(--out-x,16px) 0}
+.menu .mpane.in{opacity:0;translate:var(--in-x,-16px) 0}
+.menu .mpane.in.go{opacity:1;translate:none;
+  transition:opacity var(--menu-content-in) var(--ease-out) 80ms,
+             translate var(--menu-content-in) var(--ease-out) 80ms}
+
+.menu.switching .mblk{opacity:1;translate:none;transition:none !important}
+
+
+#header .mainnav a{position:relative;cursor:pointer;
+  transition:color var(--menu-hover) var(--ease-std)}
+#header .mainnav a .cv,#header .mainnav a > img{
+  transition:filter var(--menu-hover) var(--ease-std);transform:none!important}
+
+#header .mainnav a .mdot{
+  position:absolute;left:calc(100% + 7px);right:auto;top:50%;
+  width:6px;height:6px;margin-top:-3px;border-radius:50%;background:#000;
+  opacity:0;scale:.5;pointer-events:none;
+  transition:opacity var(--menu-hover) var(--ease-std),
+             scale var(--menu-hover) var(--ease-std),
+             background var(--menu-hover) var(--ease-std)}
+#header .mainnav a:hover{color:#000}
+#header .mainnav a:hover .mdot{opacity:1;scale:1}
+#header .mainnav a.open{color:#0083a1;background:none;border:0}
+#header .mainnav a.open .mdot{opacity:1;scale:1;background:#0083a1}
+
+
+.menu .mrow,.menu .mcol a,.menu .fam{
+  transition:background var(--menu-hover) var(--ease-std),
+             color var(--menu-hover) var(--ease-std)}
+.menu .mrow:hover{background:#f3f5f7}
+.menu .fam:hover{color:#015a70}
+
+
+.msheet{position:fixed;inset:64px 0 0;z-index:70;background:#fff;
+  opacity:0;visibility:hidden;overflow:hidden;
+  transition:opacity var(--m-sheet-out) var(--ease-in),
+             visibility 0s linear var(--m-sheet-out)}
+html.msheet-open .msheet{opacity:1;visibility:visible;
+  transition:opacity var(--m-sheet-in) var(--ease-out),visibility 0s}
+html.msheet-open{overflow:hidden}
+.msheet .mscreen{position:absolute;inset:0;overflow-y:auto;overscroll-behavior:contain}
+.msheet .mrow-i{opacity:0;translate:0 8px}
+html.msheet-open .msheet .mrow-i{opacity:1;translate:none;
+  transition:opacity var(--m-row-in) var(--ease-out) var(--row-d,0ms),
+             translate var(--m-row-in) var(--ease-out) var(--row-d,0ms)}
+.msheet .mrow-i:active{background:#f3f5f7;transition:background var(--m-press) var(--ease-std)}
+
+
+.msheet .mscreen.s2{translate:-100% 0}
+.msheet.pushed .mscreen.s2{translate:0;
+  transition:translate var(--m-push) var(--ease-push)}
+.msheet.pushed .mscreen.s1{translate:30% 0;opacity:0;
+  transition:translate var(--m-push) var(--ease-push),
+             opacity var(--m-push) var(--ease-push)}
+.msheet.popping .mscreen.s2{translate:-100% 0;
+  transition:translate var(--m-pop) var(--ease-push)}
+.msheet.popping .mscreen.s1{translate:0;opacity:1;
+  transition:translate var(--m-pop) var(--ease-push),
+             opacity var(--m-pop) var(--ease-push)}
+
+
+.mbar .mlogo,.mbar .mclose{transition:opacity 120ms var(--ease-in)}
+.msheet-pushed .mbar .mlogo,.msheet-pushed .mbar .mclose{opacity:0;pointer-events:none}
+.mbar .mback{opacity:0;translate:-6px 0}
+.mbar .mtitle{opacity:0;translate:-12px 0;color:#0083a1}
+.msheet-pushed .mbar .mback{opacity:1;translate:none;
+  transition:opacity 200ms var(--ease-out) 100ms,translate 200ms var(--ease-out) 100ms}
+.msheet-pushed .mbar .mtitle{opacity:1;translate:none;
+  transition:opacity var(--menu-content-in) var(--ease-out) 100ms,
+             translate var(--menu-content-in) var(--ease-out) 100ms}
+
+
+.mbar .mburger{background:transparent;
+  transition:background var(--m-sheet-in) var(--ease-std)}
+html.msheet-open .mbar .mburger{background:#f3f5f7}
+
+.mbar .mburger circle{transition:transform var(--m-morph) var(--ease-move),
+                                 opacity var(--m-morph) var(--ease-move)}
+
+
+@media (prefers-reduced-motion:reduce){
+  :root{
+    --menu-panel-in:120ms; --menu-panel-out:120ms;
+    --menu-scrim-in:120ms; --menu-scrim-out:120ms;
+    --menu-content-in:120ms; --menu-stagger:0ms; --menu-switch-out:120ms;
+    --menu-height:120ms; --m-sheet-in:120ms; --m-sheet-out:120ms;
+    --m-row-in:120ms; --m-stagger:0ms; --m-morph:0ms;
+    --m-push:120ms; --m-pop:120ms;
+  }
+  .menu,.menu .mblk,.menu .mpane,.msheet .mrow-i,
+  .msheet .mscreen.s1,.msheet .mscreen.s2,
+  .mbar .mback,.mbar .mtitle{translate:none!important}
+  html.menu-open .menu,html.menu-closing .menu{translate:none!important}
+  .menu .mpane.out.go{translate:none!important}
+  .mbar .mburger circle{transition:opacity 0s!important}
+  .msheet .mscreen.s2{opacity:0;translate:none!important}
+  .msheet.pushed .mscreen.s2{opacity:1;transition:opacity 160ms var(--ease-std)}
+}
+
+
+.menu > .mbody,
+.menu > .mbody > .mpane{display:flex;align-items:stretch;width:100%;min-width:0}

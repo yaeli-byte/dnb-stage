@@ -1,0 +1,49 @@
+
+
+
+#fb{height:auto;padding-bottom:40px}
+#fb .foot{gap:36px}
+
+
+#fb .cols.r2{display:flex;gap:40px;align-items:flex-start;justify-content:center;width:100%;
+  padding-top:36px;border-top:1px solid rgba(255,255,255,.09)}
+#fb .cols.r2 .col{flex:0 0 215.2px;width:215.2px;min-width:0}
+
+#fb .cols.r2 .col h4 span{white-space:normal}
+
+
+#fb .brand .nlbox{margin-top:26px;width:100%;display:flex;flex-direction:column;align-items:flex-end}
+#fb .brand .nlbox h5{font-family:var(--atlas);font-weight:400;font-size:15px;line-height:22.5px;
+  color:#fff;text-align:right}
+#fb .brand .nlbox p{width:290px;max-width:290px;margin-top:4px;
+  font-family:var(--head);font-weight:400;font-size:13px;line-height:20px;color:#8fa2af;
+  text-align:right;white-space:normal}
+#fb .brand .nlbox .nlf{margin-top:14px;width:290px}
+
+
+#fb .nlband{width:100%;margin-top:36px;padding-top:36px;
+  border-top:1px solid rgba(255,255,255,.09);
+  display:flex;align-items:center;justify-content:space-between;gap:40px;direction:rtl}
+#fb .nlband p{flex:1 1 auto;font-family:var(--head);font-weight:400;font-size:16px;line-height:1.5;
+  color:#9fb0bd;text-align:right}
+#fb .nlband p b{font-weight:500;color:#fff}
+#fb .nlband .nlf{flex:0 0 420px;width:420px}
+
+
+#fb .nlf{position:relative;display:flex;align-items:center;direction:rtl;
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);
+  border-radius:16px;height:52px;padding:0 6px 0 6px;
+  transition:border-color .2s cubic-bezier(.19,1,.22,1),background .2s cubic-bezier(.19,1,.22,1)}
+#fb .nlf:focus-within{border-color:var(--vibrant-teal-1);background:rgba(255,255,255,.10)}
+#fb .nlf input{flex:1 1 auto;min-width:0;height:100%;background:transparent;border:0;outline:none;
+  font:400 15px/1 var(--head);color:#fff;text-align:right;padding:0 12px}
+#fb .nlf input::placeholder{color:#7d8f9c}
+#fb .nlf button{flex:0 0 auto;width:40px;height:40px;border:0;border-radius:11px;cursor:pointer;
+  background:var(--vibrant-teal-2);display:grid;place-items:center;
+  transition:translate .2s cubic-bezier(.19,1,.22,1),background .2s cubic-bezier(.19,1,.22,1)}
+#fb .nlf button:hover{background:var(--vibrant-teal-1);translate:-2px 0}
+#fb .nlf button img{width:8px;height:12.5px;transform:rotate(180deg)}
+
+@media (prefers-reduced-motion:reduce){
+  #fb .nlf,#fb .nlf button{transition:none}
+}
