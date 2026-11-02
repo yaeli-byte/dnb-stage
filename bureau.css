@@ -1,0 +1,14 @@
+
+
+
+html body{margin:0}
+
+
+@media (prefers-reduced-motion:no-preference){.pg-bureau .pblock.bu-swap .pcopy{animation:buSwap .34s cubic-bezier(.19,1,.22,1)}}
+@keyframes buSwap{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.pg-bureau [role="region"][hidden]{display:none!important}
+
+
+@media (prefers-reduced-motion:no-preference){html:has(.pg-bureau){scroll-behavior:smooth}}
+.pg-bureau #private,.pg-bureau #business{scroll-margin-top:96px}
+html[data-m] .pg-bureau #private,html[data-m] .pg-bureau #business{scroll-margin-top:72px}

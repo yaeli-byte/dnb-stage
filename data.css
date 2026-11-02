@@ -1,0 +1,23 @@
+
+
+
+html body{margin:0}
+
+
+.pg-data .dt-swipe::-webkit-scrollbar{display:none}
+
+
+
+.pg-data .vi .nc{background:#E9EEF1!important}
+.pg-data .vi .nc .t{color:#000!important}
+.pg-data .vi .nc .t svg{width:16px;height:16px}
+.pg-data .vi .nc .t svg circle{r:1.15px}
+
+.pg-data .vd11 .hv:not(.mvi) .vi,.pg-data .vd11 .hv .vi .pl{height:410px!important}
+
+.pg-data .vd11 .nsec.pl .ncard.dk > .bgl2{opacity:.7}
+.pg-data .vd11 .nsec.pl .ncard.dk > .bgl2[width="1180"]{left:calc(48.4% - 1176px)!important}
+
+.pg-data .vd11 .tl17 .n{font-weight:700!important}
+
+.pg-data span[style*="font:400 15px/20px 'Space Grotesk'"][style*="color:#0083A1"]{font-weight:700!important}

@@ -1,0 +1,37 @@
+
+@media (min-width:768px) and (max-width:1100px){
+  :root{--gt:40px}
+  
+  html body > div[style*="max-width:1440px"],html body > div[style*="max-width: 1440px"],
+  html body #d > div[style*="max-width:1440px"],html body #d > div[style*="max-width: 1440px"]{max-width:none !important}
+  html body section[style*="width:1440px"],html body section[style*="width: 1440px"],
+  html body div[style*="width:1440px"]:not([class*="dot"]){width:100% !important;max-width:none !important}
+  html body #d{width:100% !important}
+  
+  html body #ns-hero-sec,html body #ns-prod-sec,
+  html body section:not([class]),
+  html body :is(.ns-hero-sec,.ns-prod-sec,.open-roles,.bl-filter-sec,.moresec,.ig,.a2-intro,.a2-families,.chal,.ihero-sec){
+    padding-inline:var(--gt) !important;max-width:none !important}
+  html body :is(.hiws-wrap,.solsec .swrap,.abt__in,.benefits:not(.m) .wrap,.proof .wrap,.sectors .wrap,.std-sec){
+    max-width:none !important;padding-inline:var(--gt) !important}
+  
+  html body :is([style*="width:1152px"],[style*="width:1240px"],[style*="width:1264px"],[style*="width:1262px"],
+                [style*="width:1268px"],[style*="width:1224px"],[style*="width:1200px"],[style*="width:1356px"],
+                [style*="width: 1152px"],[style*="width: 1240px"]){
+    width:100% !important;max-width:100% !important;box-sizing:border-box}
+  html body :is(.ns-hero,#nsProdList,.ns-prod-blocks){max-width:none !important}
+  
+  html body .ns-hero-wrap{padding:32px var(--gt) 48px !important}
+  html body .ns-hero{flex-direction:column !important;align-items:stretch !important;gap:28px !important}
+  html body .ns-hero-copy{flex:none !important;max-width:none !important;width:100% !important}
+  html body .ns-hero-copy h1{font-size:44px !important;line-height:50px !important}
+  html body .ns-hero-media{flex:none !important;width:100% !important;max-width:none !important;height:auto !important;overflow:hidden}
+  
+  html body [style*="grid-template-columns:repeat(3"],html body [style*="grid-template-columns: repeat(3"]{
+    grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr)) !important}
+}
+
+@media (min-width:768px) and (max-width:899.98px){
+  html body [style*="grid-template-columns:1fr 560px"],html body [style*="grid-template-columns:560px 1fr"],
+  html body [style*="grid-template-columns:260px 744px"]{grid-template-columns:minmax(0,1fr) !important;row-gap:32px !important}
+}

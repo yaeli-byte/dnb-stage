@@ -1,0 +1,166 @@
+
+
+
+@media (max-width:1439.98px){
+  :root{--inset:56px}
+  .masonry{gap:20px}
+  .prow{gap:28px}
+  .pmock{flex:0 0 440px}
+  .faq .in{grid-template-columns:1fr 340px;gap:48px}
+  .data .in{grid-template-columns:1fr 420px;gap:40px}
+  .proof .in{grid-template-columns:340px 1fr;gap:40px}
+}
+
+@media (max-width:1079.98px){
+  :root{--inset:40px}
+  
+  .masonry{grid-template-columns:repeat(2,1fr)}
+  .mcol:nth-child(1),.mcol:nth-child(2),.mcol:nth-child(3){padding-top:0}
+  .tgrid{grid-template-columns:repeat(2,1fr)}
+  .ggrid{grid-template-columns:repeat(2,1fr)}
+  .clients,.case .logos,.trust .marks{grid-template-columns:repeat(3,1fr)}
+  .nrow{grid-template-columns:1fr}
+  .marks3{grid-template-columns:1fr;gap:40px}
+  
+  .ihero{height:auto;padding:48px 40px}
+  .ihero .scrim-a,.ihero .scrim-b{display:none}
+  .icopy{position:static;transform:none;width:100%;padding-top:0;align-items:flex-start}
+  .icopy p{width:100%}
+  .mock{position:relative;left:auto;top:auto;width:100%;max-width:560px;height:440px;margin:36px auto 0}
+  .case .panel{grid-template-columns:1fr;gap:28px}
+  .proof .in{grid-template-columns:1fr;gap:36px}
+  .data .in{grid-template-columns:1fr;gap:36px}
+  .faq .in{grid-template-columns:1fr;gap:32px}
+  .tst .q{flex:0 0 min(699px,86vw)}
+}
+
+@media (max-width:767.98px){
+  
+  :root{--sec-pad:64px;--inset:20px;--gap-block:32px}
+
+  h1,.icopy h1,.hero-head h1{font-size:34px !important;line-height:37.4px !important}
+  h2,.sectors .head h2,.tasks .head h2,.case .head h2,.data h2,.proof h2,
+  .guides h2,.faq h2,.promo h2,.chal h2,.products .head h2,.tst h2{
+    font-size:28px !important;line-height:36px !important}
+  h3,.scard h3,.tcard h3,.pcopy h3,.gcard h3,.marks3 h3,.chal .c h3{
+    font-size:24px !important;line-height:30px !important}
+  .hero-head p,.sectors .head p,.tasks .head p,.icopy p,.pcopy p,.data .lede{
+    font-size:16px !important;line-height:21px !important}
+  .scard .txt p,.tcard p,.gcard p,.marks3 p,.chal .c p{font-size:14px !important;line-height:18px !important}
+  blockquote{font-size:20px !important;line-height:28px !important}
+  .eb{font-size:14px !important;line-height:18px !important}
+  .ncell b,.case .stat b,.qcard .fig b{font-size:56px !important;line-height:1 !important}
+
+  
+  .masonry,.tgrid,.ggrid,.marks3{grid-template-columns:1fr;gap:16px}
+  .mcol{gap:16px}
+  .clients,.case .logos{grid-template-columns:repeat(2,1fr)}
+  .trust .marks{grid-template-columns:repeat(3,1fr);gap:16px}
+  .trust .marks img{max-height:32px}
+
+  
+  .hdr{height:64px}
+  .mainnav{display:none}
+  .hdr .logo{height:22px}
+  .crumb{height:auto;padding-block:10px}
+
+  
+  .ihero-sec{padding-inline:16px}
+  .ihero{padding:32px 20px;border-radius:12px}
+  
+  .mock{height:340px;margin-top:28px;margin-bottom:32px}
+  .ihero .mock:first-child{margin-top:0}
+  .mock .shot img{object-position:center 38%}
+  
+  .mock .slab{display:none}
+  .mock .shot{left:0;top:0;transform:none;width:100%;height:100%;border-radius:12px}
+  .mock .card,.pmock .card{left:20px;width:calc(100% - 40px)}
+  .icopy .btns{flex-wrap:wrap;gap:10px;width:100%}
+  .icopy .btns .dnb-btn{flex:1 1 auto;justify-content:center}
+
+  
+  .artframe{height:360px}
+  .h-b{grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(4,1fr);padding:20px;gap:10px}
+  .h-b .cell img{width:30px;height:30px}
+  .h-b .cell.fig b{font-size:34px}
+  .h-b .cell.fig em{font-size:12px;line-height:16px}
+  .h-a .node{width:34px;height:34px;border-radius:9px}
+  .h-a .node img{width:19px;height:19px}
+  .h-a .chip{display:none}          
+
+  
+  .prow{flex-direction:column !important;gap:20px;padding:12px}
+  .pmock{flex:0 0 auto;width:100%;height:320px}
+  .pcopy{padding:8px 8px 20px;align-items:flex-start}
+
+  
+  .chal{padding:16px 16px 64px}
+  .chal .band{padding:40px 20px;gap:32px}
+  .chal .c{flex:1 1 100%;min-width:0;height:auto;padding:22px}
+
+  
+  .nrow{gap:12px}
+  .ncell{min-height:0;padding:24px 20px}
+  .dtable{padding:4px 18px 18px}
+  .dtable td{font-size:14px;padding:14px 0}
+  .dtable td:last-child{font-size:13.3px}
+  .case .panel{padding:24px 20px}
+  .case .stat{padding:28px 20px}
+  .proof .qcard{padding:28px 22px}
+  .qcard .base{flex-direction:column;align-items:flex-start;gap:24px}
+
+  
+  .tst .rail{overflow-x:auto;scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling:touch;padding-bottom:8px}
+  .tst .q{flex:0 0 86vw;scroll-snap-align:start;padding:28px 24px}
+
+  
+  .promo .band{padding:48px 20px}
+  footer.fb{padding:48px 0 28px}
+  footer.fb .brandrow{flex-direction:column;align-items:flex-start;gap:28px}
+  footer.fb .lock{text-align:start !important}
+  footer.fb .lock img{width:220px}
+  footer.fb .soc{justify-content:flex-start !important}
+  footer.fb .cols{grid-template-columns:1fr;gap:28px}
+  footer.fb .grid3{grid-template-columns:1fr;gap:20px}
+  footer.fb .ind{columns:2}
+  footer.fb .contact{padding:44px 20px}
+  footer.fb .legal{flex-direction:column;gap:12px}
+  footer.fb .nlf{max-width:100%}
+
+  
+  .qa{min-height:0}
+  .qa button{padding:22px 18px;gap:14px;font-size:16px;line-height:24px}
+  .qa .pm{width:24px;height:24px}
+  .qa .pm i.h{top:10px;width:24px;height:3.2px}
+  .qa .pm i.v{inset-inline-start:10px;width:3.2px;height:24px}
+
+  
+  html{overflow-x:clip}
+  body{overflow-x:clip}
+}
+
+
+@media (max-width:1079.98px){
+  .tasks .panel, .tgrid, .data .in, .dtable, .case .panel, .case .stat,
+  .marks3, .marks3 .m, .integ, .integ .band, .chal .c, .qcard, .rel, .prow,
+  .pmock, .pcopy, .erp-win{height:auto !important;min-height:0 !important}
+}
+
+
+@media (max-width:1079.98px){
+  .integ{padding-inline:20px}
+  .integ .band{position:relative;left:auto;top:auto;width:100%;height:auto !important;
+    padding:32px 24px;display:flex;flex-direction:column;gap:28px}
+  .integ-copy{position:relative;left:auto;top:auto;width:100%;height:auto !important;order:1}
+  .integ .mockwrap, .integ .abs{position:relative}
+  .integ .abs{left:auto !important;top:auto !important}
+  .erp-win, .erp-chip, .erp-line, .erp-auto, .erp-refresh{position:absolute !important}
+  .integ .mockframe{position:relative;order:2;width:100%;height:302px;overflow:hidden}
+}
+
+
+@media (max-width:767.98px){
+  .tasks .head,.tasks .head .eb,.tasks .head h2,.tasks .head p{
+    width:auto!important;max-width:100%!important}
+}

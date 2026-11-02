@@ -1,0 +1,127 @@
+
+
+
+@media (prefers-reduced-motion:reduce){html[data-micro] *{transition:none!important;animation:none!important}
+
+}
+
+
+
+html[data-micro] a:focus-visible,
+html[data-micro] button:focus-visible,
+html[data-micro] input:focus-visible{outline:2px solid var(--vibrant-teal-1);outline-offset:3px;border-radius:6px}
+
+
+html[data-micro] .scard,
+html[data-micro] .g-card,
+html[data-micro] .sec-card{
+  transition:background-color .14s linear,border-color .14s linear,
+             box-shadow .22s cubic-bezier(.19,1,.22,1),translate .22s cubic-bezier(.19,1,.22,1)}
+html[data-micro] .scard:hover,
+html[data-micro] .g-card:hover,
+html[data-micro] .sec-card:hover,
+html[data-micro] .scard.__hov,
+html[data-micro] .g-card.__hov,
+html[data-micro] .sec-card.__hov{background-color:rgba(11,22,32,.022);border-color:rgba(33,33,33,.16)}
+
+html[data-micro] #c-third:hover,
+html[data-micro] #c-third.__hov{background-color:rgba(255,255,255,.03)}
+
+
+
+html[data-micro] .scard .gsq__disabled,
+html[data-micro] .g-card .gsq__disabled,
+html[data-micro] .sec-card .gsq__disabled,
+html[data-micro] .g-card .g-tag{transition:translate .2s cubic-bezier(.4,0,.6,1)}
+html[data-micro] .scard:hover .gsq__disabled,
+html[data-micro] .g-card:hover .gsq__disabled,
+html[data-micro] .sec-card:hover .gsq__disabled,
+html[data-micro] .scard.__hov .gsq__disabled,
+html[data-micro] .g-card.__hov .gsq__disabled,
+html[data-micro] .sec-card.__hov .gsq__disabled{translate:-1.5px 1.5px}
+html[data-micro] .g-card:hover .g-tag,
+html[data-micro] .g-card.__hov .g-tag{translate:-1.5px 0}
+
+html[data-micro] .scard .gsq,
+html[data-micro] .g-card .gsq,
+html[data-micro] .sec-card .gsq{transition:scale .14s cubic-bezier(.4,0,.6,1)}
+html[data-micro] .scard:active .gsq,
+html[data-micro] .g-card:active .gsq,
+html[data-micro] .sec-card:active .gsq{scale:.94}
+
+
+
+html[data-micro] .btn,
+html[data-micro] .dnb-btn,
+html[data-micro] .btn-all{transition:filter .16s linear}
+html[data-micro] .btn:hover,
+html[data-micro] .dnb-btn:hover,
+html[data-micro] .btn-all:hover,
+html[data-micro] .btn.__hov,
+html[data-micro] .dnb-btn.__hov,
+html[data-micro] .btn-all.__hov{filter:brightness(.97)}
+html[data-micro] .btn:active,
+html[data-micro] .dnb-btn:active,
+html[data-micro] .btn-all:active{filter:brightness(.94)}
+
+
+html[data-micro] .col a span,
+html[data-micro] .legal a{transition:color .16s linear}
+html[data-micro] .col a:hover span,
+html[data-micro] .legal a:hover,
+html[data-micro] .col a.__hov span,
+html[data-micro] .legal a.__hov{color:#cfe0ea}
+
+
+
+html[data-micro] .qa{transition:background-color .16s linear}
+html[data-micro] .qa:hover,
+html[data-micro] .qa.__hov{background-color:rgba(11,22,32,.02)}
+
+
+
+
+html[data-micro="2"] .scard:hover,
+html[data-micro="2"] .g-card:hover,
+html[data-micro="2"] .sec-card:hover,
+html[data-micro="2"] .scard.__hov,
+html[data-micro="2"] .g-card.__hov,
+html[data-micro="2"] .sec-card.__hov{box-shadow:0 1px 2px rgba(11,46,56,.05)}
+
+
+html[data-micro="3"] .scard:hover,
+html[data-micro="3"] .g-card:hover,
+html[data-micro="3"] .sec-card:hover,
+html[data-micro="3"] .scard.__hov,
+html[data-micro="3"] .g-card.__hov,
+html[data-micro="3"] .sec-card.__hov{box-shadow:0 2px 8px -4px rgba(11,46,56,.10)}
+
+
+html[data-micro="4"] .scard:hover,
+html[data-micro="4"] .g-card:hover,
+html[data-micro="4"] .sec-card:hover,
+html[data-micro="4"] .scard.__hov,
+html[data-micro="4"] .g-card.__hov,
+html[data-micro="4"] .sec-card.__hov{translate:0 -1px;box-shadow:0 4px 14px -8px rgba(11,46,56,.14)}
+
+
+html[data-micro="5"] .scard:hover,
+html[data-micro="5"] .g-card:hover,
+html[data-micro="5"] .sec-card:hover,
+html[data-micro="5"] .scard.__hov,
+html[data-micro="5"] .g-card.__hov,
+html[data-micro="5"] .sec-card.__hov{
+  box-shadow:0 1px 1px rgba(11,46,56,.04),0 6px 18px -10px rgba(11,46,56,.12)}
+
+
+html[data-micro="2"] #c-third:hover,
+html[data-micro="2"] #c-third.__hov{box-shadow:0 1px 2px rgba(0,0,0,.14)}
+html[data-micro="3"] #c-third:hover,
+html[data-micro="3"] #c-third.__hov{box-shadow:0 2px 8px -4px rgba(0,0,0,.26)}
+html[data-micro="4"] #c-third:hover,
+html[data-micro="4"] #c-third.__hov{box-shadow:0 4px 14px -8px rgba(0,0,0,.34)}
+html[data-micro="5"] #c-third:hover,
+html[data-micro="5"] #c-third.__hov{box-shadow:0 1px 1px rgba(0,0,0,.12),0 6px 18px -10px rgba(0,0,0,.3)}
+
+
+

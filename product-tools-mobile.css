@@ -1,0 +1,40 @@
+
+.tm-bar{display:flex;align-items:center;gap:10px;justify-content:center;flex-wrap:wrap;
+  margin:0 0 20px}
+.tm-bar .lbl{font:400 14px/21px "Heebo",sans-serif;color:#64727C}
+.tm-bar .sw{display:inline-flex;border-radius:999px;background:#F3F5F7;padding:3px;
+  box-shadow:inset 0 0 0 1px rgba(33,33,33,.08)}
+.tm-bar button{appearance:none;border:0;cursor:pointer;background:transparent;
+  border-radius:999px;padding:6px 14px;font:500 13.3px/19.91px "Heebo",sans-serif;color:#64727C}
+.tm-bar button[aria-pressed="true"]{background:#fff;color:#0B2E38;box-shadow:0 1px 2px rgba(11,46,56,.08)}
+
+
+.tm .trow{border-radius:12px;background:#F6F8FA;box-shadow:inset 0 0 0 .957px rgba(33,33,33,.1);
+  overflow:hidden;margin-bottom:12px}
+.tm .trow > button{all:unset;box-sizing:border-box;display:flex;align-items:center;gap:12px;
+  width:100%;padding:18px 20px;cursor:pointer;
+  font:400 24px/30px "Heebo",sans-serif;color:#000;text-align:start}
+.tm .trow .go{width:40px;height:40px;flex:0 0 auto;margin-inline-start:auto;border-radius:5.556px;
+  box-shadow:inset 0 0 0 1px rgba(11,22,32,.13);display:flex;align-items:center;justify-content:center}
+.tm .trow .go i{width:17px;height:17px;background:#333;transform:rotate(180deg);
+  -webkit-mask:url(fig/arrow-dots.svg) center/contain no-repeat;
+          mask:url(fig/arrow-dots.svg) center/contain no-repeat}
+.tm .trow[data-on="true"] .go{background:#0083A1;box-shadow:none}
+.tm .trow[data-on="true"] .go i{background:#fff}
+.tm .trow .body{padding:0 20px 20px}
+.tm .trow .body p{margin:0 0 12px;font:400 16px/21px "Heebo",sans-serif;color:#51606B;text-align:start}
+
+
+.tm[data-opt="open"] .trow .body{display:block}
+.tm[data-opt="open"] .trow > button{cursor:default}
+.tm[data-opt="open"] .trow .go{display:none}
+
+
+.tm[data-opt="drop"] .trow .body{display:none}
+.tm[data-opt="drop"] .trow[data-on="true"] .body{display:block}
+.tm[data-opt="drop"] .trow .go i{transform:rotate(90deg)}
+.tm[data-opt="drop"] .trow[data-on="true"] .go i{transform:rotate(-90deg)}
+
+
+.tm .trow .body [role="tabpanel"]{margin-top:4px}
+.tm .noslot{margin:0;font:400 14px/21px "Heebo",sans-serif;color:#AF2D1D;opacity:.85}

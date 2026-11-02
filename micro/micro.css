@@ -1,0 +1,101 @@
+
+
+@media (prefers-reduced-motion:reduce){
+  html[data-micro] #frame *{transition:none!important;animation:none!important}
+}
+
+
+
+
+html[data-micro] #frame a:focus-visible,
+html[data-micro] #frame button:focus-visible,
+html[data-micro] #frame input:focus-visible{outline:2px solid var(--vibrant-teal-1);outline-offset:3px;border-radius:6px}
+
+
+html[data-micro] #frame .card,
+html[data-micro] #frame .g-card{
+  transition:background-color .14s linear,border-color .14s linear,
+             box-shadow .22s cubic-bezier(.19,1,.22,1),translate .22s cubic-bezier(.19,1,.22,1)}
+html[data-micro] #frame .card:hover,
+html[data-micro] #frame .g-card:hover,
+html[data-micro] #frame .card.__hov,
+html[data-micro] #frame .g-card.__hov{background-color:rgba(11,22,32,.022);border-color:rgba(33,33,33,.16)}
+
+html[data-micro] #frame #c-third:hover,
+html[data-micro] #frame #c-third.__hov{background-color:rgba(255,255,255,.03)}
+
+
+
+html[data-micro] #frame .card .gsq__disabled,
+html[data-micro] #frame .g-card .g-tag{transition:translate .2s cubic-bezier(.4,0,.6,1)}
+html[data-micro] #frame .card:hover .gsq__disabled,
+html[data-micro] #frame .card.__hov .gsq__disabled{translate:-1.5px 1.5px}
+html[data-micro] #frame .g-card:hover .g-tag,
+html[data-micro] #frame .g-card.__hov .g-tag{translate:-1.5px 0}
+
+html[data-micro] #frame .card .gsq{transition:scale .14s cubic-bezier(.4,0,.6,1)}
+html[data-micro] #frame .card:active .gsq{scale:.94}
+
+
+
+html[data-micro] #frame .btn,
+html[data-micro] #frame .btn-all{transition:filter .16s linear}
+html[data-micro] #frame .btn:hover,
+html[data-micro] #frame .btn-all:hover,
+html[data-micro] #frame .btn.__hov,
+html[data-micro] #frame .btn-all.__hov{filter:brightness(.97)}
+html[data-micro] #frame .btn:active,
+html[data-micro] #frame .btn-all:active{filter:brightness(.94)}
+
+
+html[data-micro] #frame .col a span,
+html[data-micro] #frame .legal a{transition:color .16s linear}
+html[data-micro] #frame .col a:hover span,
+html[data-micro] #frame .legal a:hover,
+html[data-micro] #frame .col a.__hov span,
+html[data-micro] #frame .legal a.__hov{color:#cfe0ea}
+
+
+
+html[data-micro] #frame .qa{transition:background-color .16s linear}
+html[data-micro] #frame .qa:hover,
+html[data-micro] #frame .qa.__hov{background-color:rgba(11,22,32,.02)}
+
+
+
+
+html[data-micro="2"] #frame .card:hover,
+html[data-micro="2"] #frame .g-card:hover,
+html[data-micro="2"] #frame .card.__hov,
+html[data-micro="2"] #frame .g-card.__hov{box-shadow:0 1px 2px rgba(11,46,56,.05)}
+
+
+html[data-micro="3"] #frame .card:hover,
+html[data-micro="3"] #frame .g-card:hover,
+html[data-micro="3"] #frame .card.__hov,
+html[data-micro="3"] #frame .g-card.__hov{box-shadow:0 2px 8px -4px rgba(11,46,56,.10)}
+
+
+html[data-micro="4"] #frame .card:hover,
+html[data-micro="4"] #frame .g-card:hover,
+html[data-micro="4"] #frame .card.__hov,
+html[data-micro="4"] #frame .g-card.__hov{translate:0 -1px;box-shadow:0 4px 14px -8px rgba(11,46,56,.14)}
+
+
+html[data-micro="5"] #frame .card:hover,
+html[data-micro="5"] #frame .g-card:hover,
+html[data-micro="5"] #frame .card.__hov,
+html[data-micro="5"] #frame .g-card.__hov{
+  box-shadow:0 1px 1px rgba(11,46,56,.04),0 6px 18px -10px rgba(11,46,56,.12)}
+
+
+html[data-micro="2"] #frame #c-third:hover,
+html[data-micro="2"] #frame #c-third.__hov{box-shadow:0 1px 2px rgba(0,0,0,.14)}
+html[data-micro="3"] #frame #c-third:hover,
+html[data-micro="3"] #frame #c-third.__hov{box-shadow:0 2px 8px -4px rgba(0,0,0,.26)}
+html[data-micro="4"] #frame #c-third:hover,
+html[data-micro="4"] #frame #c-third.__hov{box-shadow:0 4px 14px -8px rgba(0,0,0,.34)}
+html[data-micro="5"] #frame #c-third:hover,
+html[data-micro="5"] #frame #c-third.__hov{box-shadow:0 1px 1px rgba(0,0,0,.12),0 6px 18px -10px rgba(0,0,0,.3)}
+
+
