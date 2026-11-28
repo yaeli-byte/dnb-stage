@@ -1,0 +1,30 @@
+
+:root{--gx:max(104px,calc((100% - 1312px)/2))}
+@media (min-width:1101px){
+  
+  html body > div[style*="max-width:1440px"],html body > div[style*="max-width: 1440px"],
+  html body #d > div[style*="max-width:1440px"],html body #d > div[style*="max-width: 1440px"]{max-width:none !important}
+  
+  html body div[style*="width:1440px"][style*="background-color:#FCFDFE"]{width:100% !important;background-color:transparent !important;display:flex;justify-content:center}
+  
+  html body section[style*="width:1440px"],html body section[style*="width: 1440px"]{width:100% !important;max-width:none !important}
+  
+  html body section:not([class]),
+  html body :is(.ns-hero-sec,.ns-prod-sec,.open-roles,.bl-filter-sec,.moresec,.ig,.a2-intro,.a2-families,.chal){
+    padding-inline:var(--gx) !important;max-width:none !important}
+  
+  html body :is(.ns-hero,#nsProdList,.ns-prod-blocks){max-width:none !important}
+  
+  html body .ihero-sec{padding-inline:max(42px,calc((100% - 1312px)/2)) !important;max-width:none !important}
+  
+  html body :is(.hiws-wrap,.solsec .swrap,.abt__in,.benefits:not(.m) .wrap,.proof .wrap,.sectors .wrap){
+    max-width:none !important;padding-inline:var(--gx) !important}
+}
+
+
+@media (min-width:1101px){
+  .ns-hero-sec,.ns-prod-sec,.ns-sec,section.tasks,section.unplaced,.sr-top,.sr-body,.hiw-sec{padding-inline:var(--gx)!important}
+  
+  html body #ns-hero-sec,html body #ns-prod-sec,html body #ns-benefits-sec,html body #ns-faq-sec{padding-inline:var(--gx)!important}
+}
+

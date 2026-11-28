@@ -1,0 +1,65 @@
+
+
+
+html[data-anim]:not([data-anim="0"]) #sol .en{will-change:opacity,translate,filter}
+
+
+html[data-anim="1"] #sol .en,
+html[data-anim="2"] #sol .en,
+html[data-anim="3"] #sol .en,
+html[data-anim="4"] #sol .en,
+html[data-anim="5"] #sol .en{opacity:0}
+html[data-anim] #sol .en.in{opacity:1}
+
+
+html[data-anim="1"] #sol .en{transition:opacity .24s cubic-bezier(.4,0,.2,1)}
+
+
+
+html[data-anim="2"] #sol .en{translate:0 24px;
+  transition:opacity .55s cubic-bezier(.19,1,.22,1),translate .55s cubic-bezier(.19,1,.22,1)}
+html[data-anim="2"] #sol .en.in{translate:none}
+html[data-anim="2"] #c-third .dotrect,
+html[data-anim="2"] #c-data .plate,
+html[data-anim="2"] #c-consumer .plate{animation:dotBreath 2.2s cubic-bezier(.4,0,.2,1) infinite}
+@keyframes dotBreath{0%,100%{opacity:1}50%{opacity:.45}}
+
+
+html[data-anim="3"] #sol .en{translate:0 12px;
+  transition:opacity .6s ease-out,translate .5s cubic-bezier(0,0,.5,1)}
+html[data-anim="3"] #sol .en.in{translate:none}
+html[data-anim="3"] #sol .card .en{translate:0 8px}
+html[data-anim="3"] #sol .card .en.in{translate:none}
+
+
+html[data-anim="4"] #sol .card.en{opacity:1;clip-path:inset(100% 0 0 0);
+  transition:clip-path .6s cubic-bezier(.65,0,.35,1)}
+html[data-anim="4"] #sol .card.en.in{clip-path:inset(0 0 0 0)}
+html[data-anim="4"] #sol .pv-head .en{transition:opacity .3s cubic-bezier(.65,0,.35,1)}
+
+html[data-anim="4"] #sol .card.en .s2-illo,
+html[data-anim="4"] #sol .card.en .art,
+html[data-anim="4"] #sol .card.en .mock,
+html[data-anim="4"] #sol .card.en .blocks{scale:1.04;
+  transform-origin:50% 70%;transition:scale .7s cubic-bezier(.65,0,.35,1)}
+html[data-anim="4"] #sol .card.en.in .s2-illo,
+html[data-anim="4"] #sol .card.en.in .art,
+html[data-anim="4"] #sol .card.en.in .mock,
+html[data-anim="4"] #sol .card.en.in .blocks{scale:none}
+
+
+html[data-anim="5"] #sol .en{translate:0 18px;filter:blur(8px);
+  transition:opacity .5s cubic-bezier(0,0,.2,1),
+             translate .52s cubic-bezier(.23,1,.32,1),
+             filter .52s cubic-bezier(.23,1,.32,1)}
+html[data-anim="5"] #sol .en.in{translate:none;filter:none}
+
+
+@media (prefers-reduced-motion:reduce){
+  html[data-anim] #sol .en{transition:none!important;translate:none!important;
+    filter:none!important;clip-path:none!important;opacity:1!important}
+  html[data-anim] #sol .card .s2-illo,html[data-anim] #sol .card .art,
+  html[data-anim] #sol .card .mock,html[data-anim] #sol .card .blocks{scale:none!important}
+  html[data-anim] #c-third .dotrect,html[data-anim] #c-data .plate,
+  html[data-anim] #c-consumer .plate{animation:none!important}
+}

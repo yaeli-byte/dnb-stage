@@ -1,0 +1,37 @@
+
+.std-sec{position:relative;overflow:hidden;box-sizing:border-box;padding:112px 104px;background-color:#F3F5F7;
+  direction:rtl;font-family:'Heebo',sans-serif;color:#000}
+.std-sec *{box-sizing:border-box}
+
+.std-sec::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:radial-gradient(circle at center,rgba(11,22,32,.12) .85px,rgba(0,0,0,0) 1.2px);   
+  background-size:16px 16px;
+  -webkit-mask-image:radial-gradient(85% 120% at 50% 55%,#000 0%,rgba(0,0,0,.75) 35%,rgba(0,0,0,.3) 62%,rgba(0,0,0,0) 86%);
+          mask-image:radial-gradient(85% 120% at 50% 55%,#000 0%,rgba(0,0,0,.75) 35%,rgba(0,0,0,.3) 62%,rgba(0,0,0,0) 86%)}
+.std-in{position:relative;max-width:1232px;margin:0 auto}
+.std-eb{display:flex;align-items:center;justify-content:flex-start;gap:8px;margin:0;
+  font-size:14px;line-height:21px;font-weight:500;letter-spacing:1px;color:#0083A1}
+.std-eb::before{content:"";display:block;width:5px;height:5px;flex-shrink:0;border-radius:50%;background:#0083A1}
+.std-h2{margin:12px 0 0;max-width:760px;text-align:right;font-weight:400;color:#000;text-wrap:balance}
+
+.std-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin:40px 0 0;padding:0;list-style:none}
+.std-card{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:0;padding:28px 28px 28px 24px;
+  border-radius:12px;background-color:#FFFFFF;box-shadow:inset 0 0 0 .957px rgba(33,33,33,.1)}
+.std-cb{min-width:0;text-align:right}
+.std-code{margin:0;font-size:14px;line-height:20px;font-weight:500;letter-spacing:.3px;color:#0083A1;text-align:right}
+.std-ct{margin:6px 0 0;font-size:24px;line-height:30px;font-weight:500;color:#071620}
+.std-co{margin:10px 0 0;font-size:16px;line-height:22px;color:#26333D}
+.std-cert{margin:14px 0 0;font-size:14px;line-height:20px;color:#64727C}
+
+.std-mark{display:block;flex:0 0 auto;width:79.2px;height:auto;max-height:93.6px;object-fit:contain}
+@media (max-width:1023.98px){.std-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:767.98px){.std-cards{grid-template-columns:minmax(0,1fr)}}
+
+
+
+.std-sec{padding-inline:var(--gx,104px)}
+.std-in{max-width:none}
+
+
+.std-sec{background-color:#F3F5F7}
+.std-sec.std-before-faq{padding-bottom:80px}

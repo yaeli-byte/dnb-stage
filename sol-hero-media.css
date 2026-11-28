@@ -1,0 +1,88 @@
+
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<!-- ⚠ width=device-width, NOT the export's own width=1440. These two pages have
+     NO -m twin (product-risk and the family pages do), so a 1440 viewport meta
+     is the ONLY thing a phone gets — it renders the desktop canvas zoomed out.
+     Round 9 had made sol-v2 responsive and verified it at 390; the round-18
+     rebuild from her handoff re-imported the export's meta and lost it. -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>D&amp;B - עמוד פתרון · ניהול סיכונים פיננסיים</title>
+<!--
+  D&B Israel · עמוד פתרון "ניהול סיכונים פיננסיים" · export for Claude Code (01/10)
+  Desktop design, 1440px wide, Hebrew RTL. Built from the Claude Design canvas boards SolCur-p1 + SolCur-p2 (one page here).
+
+  SECTIONS (top to bottom)
+    header · hero (ניהול סיכונים פיננסיים) · trust (logos) · יתרונות · המוצרים (3 product rows) · תקנים · לקוחות ממליצים
+    · מדריכים · CTA banner · FAQ · footer
+
+  MOTION (all CSS, plus one tiny observer script at the end of <body>)
+    • Hero, on load: copy column fades up line by line (.ns-hero-copy > *, keyframes shCopy, 0 / .07 / .14 / .21s),
+      then the watchlist table slides in from the bottom-left (.sh-ui--t, shUiT, .15s) and the detail card rises over it
+      (.sh-ui--c, shUiC, .45s). The table + card are one group (data-group="hero-ui"); the frame (.ns-hero-wrap, overflow:hidden)
+      crops the table at its edges on purpose.
+    • Products section, row 1 (#nsProdMedia1): the 3 UI pieces enter as the section scrolls in - scroll-driven
+      (animation-timeline:view(), classes .sp-k1/.sp-k2/.sp-k3, staggered animation-range). Chrome/Edge/Safari 26+;
+      other browsers show the resting state. Ancestors MUST stay overflow:clip (not hidden) or the view() timeline breaks:
+      .sol-host, #frame, #nsProdMedia1 and its inner plate.
+    • Products tabs (#nsProdTabs): click / arrow keys switch the 3 rows (hidden attr); opening a row replays its entrance.
+    • Rows 2-3 product visuals: their gauge card fades up (.asset-in -> .asset-go, opacity/translate transition), added by the
+      IntersectionObserver script at the end of the page when each visual is 25% in view.
+    • Hero frame dots + ambient loops follow .sol-host[data-motion="on"]. Everything is off under prefers-reduced-motion.
+
+  OPEN ITEMS (from the design, not bugs)
+    • Products rows 2 and 3 show a generic gauge card with a ⚠ note: no dedicated product visual yet.
+    • Header menus, FAQ accordion and the testimonial carousel come from the site's existing code (static here).
+    • Sample data only in every UI illustration.
+-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500&amp;family=Space+Grotesk:wght@300&amp;display=swap">
+<style>
+
+
+.ns-hero-media{flex:1 1 653px;max-width:653px;border-radius:16px}
+
+.ns-hero-media svg{width:100%;height:auto;display:block}
+
+  .sol-host[data-motion="on"] #ns-hero-sec .ns-hero-media svg path[fill-opacity]{
+    animation:nsDotBreath 5.2s cubic-bezier(.45,0,.55,1) infinite both;
+    animation-delay:calc(var(--i,0) * 26ms);
+  }
+
+  .sol-host[data-motion="on"] #ns-hero-sec .ns-hero-media .ns-float{
+    animation:nsFloat 9s cubic-bezier(.45,0,.55,1) infinite both;
+  }
+
+.sol-host[data-motion="on"] #ns-hero-sec .sh-ui--t{animation:shUiT .9s cubic-bezier(.22,1,.36,1) .15s both}
+
+.sol-host[data-motion="on"] #ns-hero-sec .sh-ui--c{animation:shUiC .75s cubic-bezier(.22,1,.36,1) .45s both}
+@keyframes shUiT{from{opacity:0;transform:translate(-28px,22px)}}
+@keyframes shUiC{from{opacity:0;transform:translateY(18px)}}
+
+
+.solsec .sol .sart .ns-hero-media svg path[fill-opacity]{
+    animation:nsDotBreath 5.2s cubic-bezier(.45,0,.55,1) infinite both;
+    animation-delay:calc(var(--i,0) * 26ms);
+  }
+.solsec .sol .sart .ns-hero-media .ns-float{
+    animation:nsFloat 9s cubic-bezier(.45,0,.55,1) infinite both;
+  }
+.solsec .sol .sart .sh-ui--t{animation:shUiT .9s cubic-bezier(.22,1,.36,1) .15s both}
+.solsec .sol .sart .sh-ui--c{animation:shUiC .75s cubic-bezier(.22,1,.36,1) .45s both}
+
+
+.solsec .sol .sart .ns-hero-media{
+  transform:scale(.58);
+  transform-origin:top right;
+  margin-inline-start:auto;
+}
+
+
+.solsec .sol .sart{position:relative}
+.solsec .sol .sart::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:radial-gradient(circle at center,rgba(11,22,32,.105) 1.1px,rgba(11,22,32,0) 1.6px);
+  background-size:18.2px 18.2px;
+  -webkit-mask-image:radial-gradient(ellipse 85% 85% at 50% 45%,#000 45%,rgba(0,0,0,0) 100%);
+          mask-image:radial-gradient(ellipse 85% 85% at 50% 45%,#000 45%,rgba(0,0,0,0) 100%);}
+.solsec .sol .sart > *{position:relative;z-index:1}

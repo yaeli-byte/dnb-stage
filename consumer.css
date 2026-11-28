@@ -1,0 +1,3 @@
+
+#d .ns-hero-media{flex:0 0 571px !important;width:auto !important;min-width:0 !important;height:450px}
+@media (max-width:1300px){#d .ns-hero-media{flex:0 1 571px !important}#d .ns-hero-copy{min-width:320px}}

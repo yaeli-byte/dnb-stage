@@ -1,0 +1,52 @@
+
+.sla{direction:rtl;font-family:'Heebo',sans-serif;color:#121212;max-width:1152px;margin:0 auto;padding:16px 0 96px}
+.sla-hero{position:relative;overflow:hidden;border-radius:16px;padding:64px 64px 56px;background-image:linear-gradient(180deg,#FCFDFE 0%,#BFE4EF 100%)}
+.sla-dots{position:absolute;inset:0;background-image:radial-gradient(rgba(0,131,161,.16) 1.1px,transparent 1.5px);background-size:18.2px 18.2px;-webkit-mask-image:linear-gradient(to left,transparent 30%,#000);mask-image:linear-gradient(to left,transparent 30%,#000)}
+.sla-eb{position:relative;display:inline-flex;align-items:center;gap:8px;font-size:15px;color:#0083A1}
+.sla-eb i{width:6px;height:6px;border-radius:50%;background:#0083A1}
+.sla-hero h1{position:relative;margin:12px 0 8px;font-size:52px;line-height:1.15;font-weight:400;color:#000}
+.sla-hero p{position:relative;margin:0;font-size:20px;line-height:28px;color:#26333D}
+.sla-grid{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:24px;margin-top:24px;align-items:start}
+.sla-main{display:flex;flex-direction:column;gap:16px}
+.sla-card{border-radius:16px;background:#FFFFFF;box-shadow:inset 0 0 0 1px #F1F3F5;padding:32px 36px}
+.sla-card.hl{background:linear-gradient(180deg,#F8FAFC,#FFFFFF 40%)}
+.sla-ch{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.sla-ic{width:44px;height:44px;border-radius:8px;background:#F0F8FA;color:#0083A1;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.sla-card h2{margin:0;font-size:26px;line-height:1.25;font-weight:400;color:#000}
+.sla-card p{margin:0 0 12px;font-size:17px;line-height:27px;color:#2F3B45}
+.sla-card p:last-child{margin-bottom:0}
+.sla-card b{font-weight:500;color:#121212}
+.sla-card a{color:#0083A1;text-decoration:underline;text-underline-offset:3px}
+.sla-list{list-style:none;margin:8px 0 16px;padding:0;display:flex;flex-direction:column;gap:10px}
+.sla-list li{display:flex;gap:12px;align-items:flex-start;padding:14px 16px;border-radius:10px;background:#F6F8FA;font-size:16px;line-height:25px;color:#2F3B45}
+.sla-li{width:32px;height:32px;border-radius:7px;background:#fff;color:#0083A1;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:inset 0 0 0 1px #CFE0EA}
+.sla-links{margin:0 0 16px;padding:0 20px 0 0;font-size:16px;line-height:27px;color:#2F3B45}
+.sla-note{display:flex;gap:12px;align-items:flex-start;margin:0 0 14px;padding:14px 16px;border-radius:10px;background:#071620;color:#F1F3F5;font-size:15px;line-height:24px}
+.sla-note svg{color:#80E7FF;flex-shrink:0;margin-top:2px}
+.sla-side{position:sticky;top:96px}
+.sla-sc{display:flex;flex-direction:column;gap:14px;padding:28px 24px;border-radius:16px;background-image:linear-gradient(173deg,#071620 16%,#071620 97%);color:#fff}
+.sla-sc .sla-eb{color:#9EEDFA}.sla-sc .sla-eb i{background:#9EEDFA}
+.sla-row{display:flex;gap:12px;align-items:center}
+.sla-row svg{width:36px;height:36px;padding:8px;border-radius:7px;background:rgba(255,255,255,.08);box-shadow:inset 0 0 0 1px rgba(255,255,255,.14);color:#80E7FF;flex-shrink:0;box-sizing:border-box}
+.sla-row span{display:flex;flex-direction:column;font-size:16px;line-height:22px}
+.sla-row small{font-size:13px;color:#9FB0BD}
+.sla-row a{color:#fff;text-decoration:none}
+.sla-btn{display:inline-flex;align-items:center;justify-content:space-between;gap:10px;height:48px;margin-top:6px;padding:0 18px 0 8px;border-radius:11px;background:#80E7FF;color:#071620;font-weight:500;font-size:15px;text-decoration:none}
+.sla-btn .b{width:24px;height:28px;border-radius:8.5px;background:#071620;color:#80E7FF;display:flex;align-items:center;justify-content:center}
+#m .sla{padding:8px 16px 64px}
+#m .sla-hero{padding:40px 20px 32px}
+#m .sla-hero h1{font-size:34px}#m .sla-hero p{font-size:17px;line-height:24px}
+#m .sla-grid{grid-template-columns:1fr;gap:16px;margin-top:16px}
+#m .sla-side{position:static;order:-1}
+#m .sla-card{padding:24px 20px}#m .sla-card h2{font-size:22px}#m .sla-card p{font-size:16px;line-height:25px}
+@media (max-width:1180px){#d .sla{padding-left:24px;padding-right:24px}#d .sla-grid{grid-template-columns:minmax(0,1fr) 280px}}
+
+.sla .dnb-btn{align-self:flex-start;width:auto;max-width:100%}
+
+.sla .dnb-btn,.sla .dnb-btn *{box-sizing:border-box}
+
+.sla-card h2{font-size:32px;line-height:36px}
+#m .sla-card h2{font-size:28px;line-height:36px}
+.sla-note{font-size:16px;line-height:24px}
+.sla-eb{font-size:14px;line-height:21px;font-weight:500;letter-spacing:1px}
+.sla-eb i{width:5px;height:5px}
